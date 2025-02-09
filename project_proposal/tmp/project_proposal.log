@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.2.8)  9 FEB 2025 12:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.2.8)  9 FEB 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -253,6 +253,12 @@ Package: babel 2022/12/26 3.84 The Babel package
 \bbl@readstream=\read2
 \bbl@dirlevel=\count194
 
+(/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
+File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
+Language: russian 2020/09/09 1.3k Russian support for the Babel system
+Package babel Info: Making " an active character on input line 124.
+Package babel Info: Default for \cyrdash is provided on input line 163.
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'british' set to \l@english
@@ -265,20 +271,14 @@ Package babel Info: Hyphen rules for 'australian' set to \l@english
 (babel)             (\language0). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
-File: russianb.ldf 2021/01/10 1.3m Russian support for the Babel system
-Language: russian 2020/09/09 1.3k Russian support for the Babel system
-Package babel Info: Making " an active character on input line 124.
-Package babel Info: Default for \cyrdash is provided on input line 163.
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex
-Package babel Info: Importing font and identification data for russian
-(babel)             from babel-ru.ini. Reported on input line 11.
-)
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
 (babel)             from babel-en.ini. Reported on input line 11.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/locale/ru/babel-russian.tex
+Package babel Info: Importing font and identification data for russian
+(babel)             from babel-ru.ini. Reported on input line 11.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -631,11 +631,11 @@ Package rerunfilecheck Info: File `project_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: D6D21638022176B8872FC51FB53C5AE2;295.
  ) 
 Here is how much of TeX's memory you used:
- 12515 strings out of 477525
- 195872 string characters out of 5832490
+ 12513 strings out of 477525
+ 195848 string characters out of 5832490
  1852330 words of memory out of 5000000
- 32476 multiletter control sequences out of 15000+600000
- 526145 words of font info for 59 fonts, out of 8000000 for 9000
+ 32475 multiletter control sequences out of 15000+600000
+ 525382 words of font info for 58 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  80i,11n,79p,338b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/kesha/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk
@@ -646,10 +646,10 @@ Here is how much of TeX's memory you used:
 home/kesha/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/s
 hare/texmf/fonts/type1/fkr/tipa/tipa10.pfb>
-Output written on ./project_proposal/tmp/project_proposal.pdf (3 pages, 56027 b
+Output written on ./project_proposal/tmp/project_proposal.pdf (3 pages, 53342 b
 ytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 216 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
