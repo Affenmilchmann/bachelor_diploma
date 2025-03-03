@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.2.8)  9 FEB 2025 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.2.8)  3 MAR 2025 16:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,6 +507,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ))
 (./project_proposal/parts/unicode_declarations.tex
    defining Unicode char U+030C (decimal 780)
@@ -594,6 +616,21 @@ Package hyperref Info: Link coloring OFF on input line 9.
 \@outlinefile=\write3
 \openout3 = `project_proposal.out'.
 
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count285
+\scratchdimen=\dimen158
+\scratchbox=\box54
+\nofMPsegments=\count286
+\nofMParguments=\count287
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen159
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
+\everyMPtoPDFconversion=\toks22
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -602,8 +639,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 12.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./project_proposal/tmp/pr
-oject_proposal.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./project_proposal/tmp/project_proposal.toc)
 \tf@toc=\write4
 \openout4 = `project_proposal.toc'.
 
@@ -613,12 +650,12 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.22     \newpage
-                  [1] (./project_proposal/parts/1_abstract.tex
+                  [1]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 3.
+(Font)              <7> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 3.
-)
+(Font)              <5> on input line 25.
+ (./project_proposal/parts/1_abstract.tex)
 (./project_proposal/parts/2_introduction.tex)
 (./project_proposal/parts/3_lit_review.tex)
 (./project_proposal/parts/4_methods.tex)
@@ -628,16 +665,16 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (./project_proposal/parts/8_references.tex) [2]
 (./project_proposal/tmp/project_proposal.aux)
 Package rerunfilecheck Info: File `project_proposal.out' has not changed.
-(rerunfilecheck)             Checksum: D6D21638022176B8872FC51FB53C5AE2;295.
+(rerunfilecheck)             Checksum: 92383CEF978F2F885773DDEEE348E5A0;871.
  ) 
 Here is how much of TeX's memory you used:
- 12513 strings out of 477525
- 195848 string characters out of 5832490
- 1852330 words of memory out of 5000000
- 32475 multiletter control sequences out of 15000+600000
+ 13464 strings out of 477525
+ 207959 string characters out of 5832490
+ 1856330 words of memory out of 5000000
+ 33401 multiletter control sequences out of 15000+600000
  525382 words of font info for 58 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 80i,11n,79p,338b,452s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,79p,865b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/kesha/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/larm1000.600pk
 > </home/kesha/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1000.600pk>
  </home/kesha/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1440.600pk> 
@@ -646,11 +683,11 @@ Here is how much of TeX's memory you used:
 home/kesha/.texlive2022/texmf-var/fonts/pk/ljfour/lh/lh-t2a/labx1728.600pk></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/s
 hare/texmf/fonts/type1/fkr/tipa/tipa10.pfb>
-Output written on ./project_proposal/tmp/project_proposal.pdf (3 pages, 53342 b
+Output written on ./project_proposal/tmp/project_proposal.pdf (3 pages, 69154 b
 ytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 65 words of extra memory for PDF output out of 10000 (max. 10000000)
 

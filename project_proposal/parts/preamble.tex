@@ -16,3 +16,7 @@
 \pagestyle{fancy}      % Использование стиля "fancy" для оформления страниц
 \fancyhf{}              % Очистка текущих значений колонтитулов
 \fancyfoot[C]{\thepage} % Установка номера страницы в нижнем колонтитуле по центру
+
+% Для оформления временных сносок
+\usepackage{xcolor}    % для работы с цветами
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{\underline{TODO: #1}}}}
