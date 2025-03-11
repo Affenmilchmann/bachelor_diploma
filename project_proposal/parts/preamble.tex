@@ -1,16 +1,27 @@
 \documentclass{article}
-\usepackage[T1,T2A]{fontenc} % поддержка кириллицы
-\usepackage[utf8]{inputenc} % кодировка исходного текста
+% \usepackage[T1,T2A]{fontenc} % поддержка кириллицы
+% \usepackage[utf8]{inputenc} % кодировка исходного текста
 \usepackage[russian,english]{babel}
+
+% шрифт
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setmainfont{Times New Roman Cyr}[Ligatures={TeX,Historic},SizeFeatures={Size=12}]
+
+% фонетические символы
+\usepackage{expex}
+\lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygla={\upshape}}
 
 \usepackage[left=3cm, right=3cm, top=2cm, bottom=2cm]{geometry} % поля страницы
 
 \usepackage{fancyhdr} % установка колонтитулов
 \usepackage{listings} % поддержка вставки исходного кода
-\usepackage{textcomp} % unicode?
-\usepackage{tipa} % phonetic letters
-\usepackage{upgreek} % non italic greek
+% \usepackage{textcomp} % unicode?
+% \usepackage{tipa} % phonetic letters
+% \usepackage{upgreek} % non italic greek
 \usepackage{hyperref} % clickable table of contents
+\usepackage{setspace} % для отступов
+\usepackage{indentfirst}
 
 % Настройка стиля страницы
 \pagestyle{fancy}      % Использование стиля "fancy" для оформления страниц
@@ -19,4 +30,4 @@
 
 % Для оформления временных сносок
 \usepackage{xcolor}    % для работы с цветами
-\newcommand{\todo}[1]{\textbf{\textcolor{red}{\underline{TODO: #1}}}}
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{TODO: #1}}}
