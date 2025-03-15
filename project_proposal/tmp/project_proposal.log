@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  11 MAR 2025 18:15
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  15 MAR 2025 16:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -155,6 +155,30 @@ LaTeX Font Warning: Font shape `TU/TimesNewRomanCyr(0)/m/n' in size <10> not av
 ailable
 (Font)              size <12> substituted on input line 9.
 
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
+)
 (/usr/share/texmf/tex/latex/expex/expex.sty
 Package: expex 5/1/2017 v5.1b LaTex wrapper for expex.tex (JF)
 
@@ -163,52 +187,51 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks16
-\XKV@tempa@toks=\toks17
-
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
 \XKV@depth=\count272
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf/tex/latex/expex/expex.tex
 File: expex.tex 5/25/2017 v5.1b ExPex linguistics example formatter (JF)
-\ep@dima=\dimen145
-\ep@dimb=\dimen146
-\ep@dimc=\dimen147
+\ep@dima=\dimen147
+\ep@dimb=\dimen148
+\ep@dimc=\dimen149
 \ep@cnta=\count273
 \epc@b=\count274
 \excnt=\count275
 \numbox=\box52
-\epd@numright=\dimen148
+\epd@numright=\dimen150
 \pexcnt=\count276
-\epd@labelleft=\dimen149
-\epd@labelright=\dimen150
-\epd@textleft=\dimen151
-\epd@preambleleft=\dimen152
-\epd@sampleexnowidth=\dimen153
-\ep@everylabel=\toks18
+\epd@labelleft=\dimen151
+\epd@labelright=\dimen152
+\epd@textleft=\dimen153
+\epd@preambleleft=\dimen154
+\epd@sampleexnowidth=\dimen155
+\ep@everylabel=\toks19
 \exnobox=\box53
 \ling@tagsfile=\write3
 \ling@tagsin=\read3
 \glstrutbox=\box54
-\ep@cascadeindent=\dimen154
-\ep@hangindentamount=\dimen155
+\ep@cascadeindent=\dimen156
+\ep@hangindentamount=\dimen157
 \ep@cascadecount=\count277
-\gltoks@a=\toks19
-\gltoks@b=\toks20
-\glw@maxht=\dimen156
-\glw@maxdp=\dimen157
+\gltoks@a=\toks20
+\gltoks@b=\toks21
+\glw@maxht=\dimen158
+\glw@maxdp=\dimen159
 \@itemtype=\count278
-\gl@maxdplast=\dimen158
-\gltoks@sofar=\toks21
-\gltoks@every=\toks22
-\gltoks@next=\toks23
+\gl@maxdplast=\dimen160
+\gltoks@sofar=\toks22
+\gltoks@every=\toks23
+\gltoks@next=\toks24
 \debug@glword=\box55
 \@glaparsestate=\count279
-\glwcascade@pshapeindent=\dimen159
-\glwcascade@pshapelinewd=\dimen160
-\ssleftwd=\dimen161
-\ssrightwd=\dimen162
+\glwcascade@pshapeindent=\dimen161
+\glwcascade@pshapelinewd=\dimen162
+\ssleftwd=\dimen163
+\ssrightwd=\dimen164
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -222,15 +245,15 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@cnth=\count280
 \Gm@cntv=\count281
 \c@Gm@tempcnt=\count282
-\Gm@bindingoffset=\dimen163
-\Gm@wd@mp=\dimen164
-\Gm@odd@mp=\dimen165
-\Gm@even@mp=\dimen166
-\Gm@layoutwidth=\dimen167
-\Gm@layoutheight=\dimen168
-\Gm@layouthoffset=\dimen169
-\Gm@layoutvoffset=\dimen170
-\Gm@dimlist=\toks24
+\Gm@bindingoffset=\dimen165
+\Gm@wd@mp=\dimen166
+\Gm@odd@mp=\dimen167
+\Gm@even@mp=\dimen168
+\Gm@layoutwidth=\dimen169
+\Gm@layoutheight=\dimen170
+\Gm@layouthoffset=\dimen171
+\Gm@layoutvoffset=\dimen172
+\Gm@dimlist=\toks25
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
@@ -248,16 +271,16 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count283
 \lst@gtempboxa=\box56
-\lst@token=\toks25
+\lst@token=\toks26
 \lst@length=\count284
-\lst@currlwidth=\dimen171
+\lst@currlwidth=\dimen173
 \lst@column=\count285
 \lst@pos=\count286
-\lst@lostspace=\dimen172
-\lst@width=\dimen173
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
 \lst@newlines=\count287
 \lst@lineno=\count288
-\lst@maxwidth=\dimen174
+\lst@maxwidth=\dimen176
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
@@ -319,7 +342,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count291
 )
-\@linkdim=\dimen175
+\@linkdim=\dimen177
 \Hy@linkcounter=\count292
 \Hy@pagecounter=\count293
 
@@ -352,7 +375,7 @@ Package hyperref Info: Bookmarks ON on input line 4410.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4748.
-\XeTeXLinkMargin=\dimen176
+\XeTeXLinkMargin=\dimen178
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -362,8 +385,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count296
-\Field@Width=\dimen177
-\Fld@charsize=\dimen178
+\Field@Width=\dimen179
+\Fld@charsize=\dimen180
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -414,6 +437,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
@@ -425,9 +451,6 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
-)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -583,12 +606,26 @@ available
 
 [1
 
-] (./project_proposal/tmp/project_proposal.toc)
+] (./project_proposal/tmp/project_proposal.toc
+
+LaTeX Font Warning: Font shape `TU/TimesNewRomanCyr(0)/m/n' in size <7> not ava
+ilable
+(Font)              size <12> substituted on input line 4.
+
+
+LaTeX Font Warning: Font shape `TU/TimesNewRomanCyr(0)/m/n' in size <5> not ava
+ilable
+(Font)              size <12> substituted on input line 4.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 4.
+)
 \tf@toc=\write5
 \openout5 = `project_proposal.toc'.
 
- [1]
-(./project_proposal/parts/0_testpage.tex
+ [1] (./project_proposal/parts/0_testpage.tex
 Missing character: There is no ғ (U+0493) in font Times New Roman Cyr/OT:langua
 ge=dflt;mapping=tex-text;!
 Missing character: There is no ғ (U+0493) in font Times New Roman Cyr/OT:langua
@@ -625,32 +662,35 @@ Missing character: There is no ̊ (U+030A) in font Times New Roman Cyr/OT:langua
 ge=dflt;mapping=tex-text;!
 ) (./project_proposal/parts/1_abstract.tex [2])
 (./project_proposal/parts/2_introduction.tex
-Overfull \hbox (77.6322pt too wide) in paragraph at lines 5--6
-[][]\TU/TimesNewRomanCyr(0)/b/n/10 TODO: Указать какую версию шугнанского я пок
-рываю, почему, и сослаться на https://aclanthology.org/2022.eurali-
+File: map.png Graphic file (type bmp)
+<map.png>
+
+Underfull \hbox (badness 4595) in paragraph at lines 8--8
+[]\TU/TimesNewRomanCyr(0)/m/n/12 Figure 1: []Mountainous Badakhshan Autonomous 
+Province of Tajikistan and
  []
 
-) (./project_proposal/parts/3_lit_review.tex)
+[3]) (./project_proposal/parts/3_lit_review.tex [4] [5])
 (./project_proposal/parts/4_methods.tex)
 (./project_proposal/parts/5_expected_outcomes.tex)
 (./project_proposal/parts/6_conclusions.tex)
 (./project_proposal/parts/7_discussion_n_future.tex)
-(./project_proposal/parts/8_references.tex) [3] [4]
+(./project_proposal/parts/8_references.tex) [6]
 (./project_proposal/tmp/project_proposal.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.4pt have occurred.
+(Font)              up to 7.0pt have occurred.
 
 Package rerunfilecheck Info: File `project_proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 9F7A22A070DA9C9532C7F38BCF4A2378;788.
+(rerunfilecheck)             Checksum: 4FA28214C839B61923587BA00F9FF106;1347.
  ) 
 Here is how much of TeX's memory you used:
- 14451 strings out of 478029
- 279612 string characters out of 5842217
- 1849991 words of memory out of 5000000
- 34280 multiletter control sequences out of 15000+600000
- 512767 words of font info for 48 fonts, out of 8000000 for 9000
+ 14787 strings out of 478029
+ 285597 string characters out of 5842217
+ 1852991 words of memory out of 5000000
+ 34597 multiletter control sequences out of 15000+600000
+ 512775 words of font info for 49 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
- 77i,11n,102p,863b,340s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,11n,102p,1296b,342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./project_proposal/tmp/project_proposal.pdf (5 pages).
+Output written on ./project_proposal/tmp/project_proposal.pdf (7 pages).

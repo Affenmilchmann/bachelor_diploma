@@ -8,6 +8,10 @@
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
 \setmainfont{Times New Roman Cyr}[Ligatures={TeX,Historic},SizeFeatures={Size=12}]
 
+% изображения
+\usepackage[dvips,xetex]{graphicx}
+% \usepackage{ifpdf,mla}% <-- mla.sty requires ifpdf.sty, but (perversely) doesn't load it
+
 % фонетические символы
 \usepackage{expex}
 \lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygla={\upshape}}
@@ -21,6 +25,7 @@
 % \usepackage{upgreek} % non italic greek
 \usepackage{hyperref} % clickable table of contents
 \usepackage{setspace} % для отступов
+\usepackage[section]{placeins} % чтоб картинки из секций не улетали
 \usepackage{indentfirst}
 
 % Настройка стиля страницы
