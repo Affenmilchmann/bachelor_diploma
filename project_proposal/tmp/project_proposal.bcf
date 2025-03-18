@@ -3056,6 +3056,26 @@
     <bcf:citekey order="17" intorder="1">edelman_languages_1999</bcf:citekey>
     <bcf:citekey order="18" intorder="1">edelman_gram_2009</bcf:citekey>
     <bcf:citekey order="19" intorder="1">kondratyuk_straka_model_2019</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">mealy_method_1955</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">mealy_method_1955</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">moore_gedanken_1955</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">moore_gedanken_1955</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">woods_trans_1970</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">woods_trans_1970</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">koskenniemi_twol_1983</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">koskenniemi_twol_1983</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">karttunen_twolc_1987</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">karttunen_twolc_1987</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">karttunen_lexc_1993</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">linden_hfst_2009</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">ivanova_free_2022</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">ivanova_free_2022</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">onal_building_2019</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">onal_building_2019</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

@@ -127,6 +127,130 @@
       \field{pages}{787\bibrangedash 824}
       \range{pages}{38}
     \endentry
+    \entry{ivanova_free_2022}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e1e3e4d23f0bba3a49226fc4f6fc7b3c}{%
+           family={Ivanova},
+           familyi={I\bibinitperiod},
+           given={Sardana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0c9a508809cd52db37596285e452223}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{13}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1029bdbe2b9621c579e6170c7f884b9b}{%
+           family={Béchet},
+           familyi={B\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8c61811b55d11f47d227ff17ca2ae97f}{%
+           family={Blache},
+           familyi={B\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a8af54ae168bb2ee38ee914570feadc6}{%
+           family={Cieri},
+           familyi={C\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=10ae9412b66f82e82d469aa7c2f6cd26}{%
+           family={Goggi},
+           familyi={G\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=352a8b64ceb27ae8b7d155bfc7894a48}{%
+           family={Isahara},
+           familyi={I\bibinitperiod},
+           given={Hitoshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a76eb2e98b2e0f5a4a2d3ee5cfed973}{%
+           family={Mazo},
+           familyi={M\bibinitperiod},
+           given={Hélène},
+           giveni={H\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Marseille, France}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association}%
+      }
+      \strng{namehash}{cbb36de10f1838b220cf7de1b839e8f4}
+      \strng{fullhash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{bibnamehash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{authorbibnamehash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{authornamehash}{cbb36de10f1838b220cf7de1b839e8f4}
+      \strng{authorfullhash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{editorbibnamehash}{751a0d182c54c23ad9365e53b35de7ef}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{751a0d182c54c23ad9365e53b35de7ef}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present, to our knowledge, the first ever published morphological analyser and generator for Sakha, a marginalised language of Siberia. The transducer, developed using HFST, has coverage of solidly above 90{\%}, and high precision. In the development of the analyser, we have expanded linguistic knowledge about Sakha, and developed strategies for complex grammatical patterns. The transducer is already being used in downstream tasks, including computer assisted language learning applications for linguistic maintenance and computational linguistic shared tasks.}
+      \field{booktitle}{Proceedings of the Thirteenth Language Resources and Evaluation Conference}
+      \field{month}{6}
+      \field{title}{A Free/Open-Source Morphological Analyser and Generator for Sakha}
+      \field{year}{2022}
+      \field{pages}{5137\bibrangedash 5142}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.lrec-1.550/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.lrec-1.550/
+      \endverb
+    \endentry
     \entry{karamshoev_dict_1988}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
@@ -154,6 +278,70 @@
       \field{labeltitlesource}{title}
       \field{title}{Шугнанско-русский словарь [Shughni-Russian dictionary]}
       \field{year}{1988--1999}
+    \endentry
+    \entry{karttunen_lexc_1993}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{fullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{bibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorbibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authornamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorfullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finite-state lexicon compiler. {Technical Report ISTL-NLTT-1993-04-02, Xerox Palo Alto Research Center, Palo Alto, CA.}}
+      \field{year}{1993}
+    \endentry
+    \entry{karttunen_twolc_1987}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2a553c9ed96bcd52d1ac4defe753059}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{fullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{bibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authorbibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authornamehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{authorfullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{tools for morphological analysis}
+      \field{month}{01}
+      \field{title}{A compiler for two-level phonological rules}
+      \field{year}{1987}
     \endentry
     \entry{kondratyuk_straka_model_2019}{article}{}
       \name{author}{2}{}{%
@@ -185,6 +373,255 @@
       \field{labeltitlesource}{title}
       \field{title}{75 Languages, 1 Model: Parsing Universal Dependencies Universally}
       \field{year}{2019}
+    \endentry
+    \entry{koskenniemi_twol_1983}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{fullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{bibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorbibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authornamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorfullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{{Two-level Morphology: A General Computational Model for Word-Form Recognition and Production}}
+      \field{year}{1983}
+    \endentry
+    \entry{linden_hfst_2009}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ad7941717fde150030c5182b4ccf1c2f}{%
+           family={Lindén},
+           familyi={L\bibinitperiod},
+           given={Krister},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81cf00d83f0af8110e9b22eca5e4d9fa}{%
+           family={Silfverberg},
+           familyi={S\bibinitperiod},
+           given={Miikka},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6413e00d5d1803bb822f0efd676cad35}{%
+           family={Pirinen},
+           familyi={P\bibinitperiod},
+           given={Tommi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b87300f1876608a4b4cba7d9a4b4a176}{%
+           family={Mahlow},
+           familyi={M\bibinitperiod},
+           given={Cerstin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bd542677ca2f75a0c28910d9b983e7ee}{%
+           family={Piotrowski},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{fullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{bibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authorbibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authornamehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{authorfullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{editorbibnamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editornamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editorfullhash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{State of the Art in Computational Morphology}
+      \field{isbn}{978-3-642-04130-3}
+      \field{series}{Communications in Computer AND Information Science}
+      \field{title}{{HFST Tools for Morphology – An Efficient Open-Source Package for Construction of Morphological Analyzers}}
+      \field{volume}{41}
+      \field{year}{2009}
+      \field{pages}{28\bibrangedash 47}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+    \endentry
+    \entry{mealy_method_1955}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2115f1db27e6d2235a055310236809b3}{%
+           family={Mealy},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{fullhash}{2115f1db27e6d2235a055310236809b3}
+      \strng{bibnamehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{authorbibnamehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{authornamehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{authorfullhash}{2115f1db27e6d2235a055310236809b3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell System Technical Journal}
+      \field{title}{A method for synthesizing sequential circuits}
+      \field{year}{1955}
+      \field{pages}{1045\bibrangedash 1079}
+      \range{pages}{35}
+    \endentry
+    \entry{moore_gedanken_1955}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c7ebbec7873d3ce02deafc86595df0c}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Edward\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=22e2130b8d96f93daba648ff62af869b}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=46e54e04ec0343d677e2b791d1532f7e}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{fullhash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{bibnamehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{authorbibnamehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{authornamehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{authorfullhash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{editorbibnamehash}{5441b1b52a7863833525b7133ecb78d4}
+      \strng{editornamehash}{5441b1b52a7863833525b7133ecb78d4}
+      \strng{editorfullhash}{5441b1b52a7863833525b7133ecb78d4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automata Studies}
+      \field{isbn}{9781400882618}
+      \field{title}{Gedanken-Experiments on Sequential Machines}
+      \field{year}{1956}
+      \field{pages}{129\bibrangedash 154}
+      \range{pages}{26}
+      \verb{doi}
+      \verb doi:10.1515/9781400882618-006
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9781400882618-006
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9781400882618-006
+      \endverb
+    \endentry
+    \entry{onal_building_2019}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4ab4b1cc1c93a5bb9c2b1c8dfee47b68}{%
+           family={Onal},
+           familyi={O\bibinitperiod},
+           given={Esra},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7016aa7a1f80162c4eb40b00063d2906}{%
+           family={Mitkov},
+           familyi={M\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8a921f900ddbf55f8200248ddfe22b73}{%
+           family={Angelova},
+           familyi={A\bibinitperiod},
+           given={Galia},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Varna, Bulgaria}%
+      }
+      \list{publisher}{1}{%
+        {INCOMA Ltd.}%
+      }
+      \strng{namehash}{42b82b333928facbcffe435874625fff}
+      \strng{fullhash}{42b82b333928facbcffe435874625fff}
+      \strng{bibnamehash}{42b82b333928facbcffe435874625fff}
+      \strng{authorbibnamehash}{42b82b333928facbcffe435874625fff}
+      \strng{authornamehash}{42b82b333928facbcffe435874625fff}
+      \strng{authorfullhash}{42b82b333928facbcffe435874625fff}
+      \strng{editorbibnamehash}{5905a106ce639854f5ce86c4927ffe9f}
+      \strng{editornamehash}{5905a106ce639854f5ce86c4927ffe9f}
+      \strng{editorfullhash}{5905a106ce639854f5ce86c4927ffe9f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study is an attempt to contribute to documentation and revitalization efforts of endangered Laz language, a member of South Caucasian language family mainly spoken on northeastern coastline of Turkey. It constitutes the first steps to create a general computational model for word form recognition and production for Laz by building a rule-based morphological analyser using Helsinki Finite-State Toolkit (HFST). The evaluation results show that the analyser has a 64.9{\%} coverage over a corpus collected for this study with 111,365 tokens. We have also performed an error analysis on randomly selected 100 tokens from the corpus which are not covered by the analyser, and these results show that the errors mostly result from Turkish words in the corpus and missing stems in our lexicon.}
+      \field{booktitle}{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}
+      \field{month}{9}
+      \field{title}{Building a Morphological Analyser for {L}az}
+      \field{year}{2019}
+      \field{pages}{869\bibrangedash 877}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.26615/978-954-452-056-4_101
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/R19-1101/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/R19-1101/
+      \endverb
     \endentry
     \entry{parker_shughni_2023}{thesis}{}
       \name{author}{1}{}{%
@@ -267,6 +704,52 @@
       \field{title}{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}
       \field{year}{1895}
     \endentry
+    \entry{sarveswaran_morph_2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bc7e0ff3534c73f72defa9e93a35fccd}{%
+           family={Sarveswaran},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48328d76f48e663d3379d5304ecd6d09}{%
+           family={Dias},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63aac502457690e4684d8c0566779e85}{%
+           family={Butt},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{fullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{bibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authorbibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authornamehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{authorfullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Translation 35}
+      \field{title}{ThamizhiMorph: A morphological parser for the Tamil language}
+      \field{year}{2021}
+      \field{pages}{37\bibrangedash 70}
+      \range{pages}{34}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+    \endentry
     \entry{tumanovich_gram_1906}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=66beb3da2b98ebf71914c603d870a27c}{%
@@ -288,6 +771,142 @@
       \field{labeltitlesource}{title}
       \field{title}{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}
       \field{year}{1906}
+    \endentry
+    \entry{washington_finite_2012}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f0c9a508809cd52db37596285e452223}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89c86109f6589f3a8ef6296fcf49aefc}{%
+           family={Ipasov},
+           familyi={I\bibinitperiod},
+           given={Mirlan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=979dc780b3343ae259affe8dcbf49f0f}{%
+           family={Doğan},
+           familyi={D\bibinitperiod},
+           given={Mehmet\bibnamedelima Uğur},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bfec001866fc980a5a370b3f8f617c1d}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Asuncion},
+           giveni={A\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Istanbul, Turkey}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association (ELRA)}%
+      }
+      \strng{namehash}{6776294cbe98409937676e83600f42b4}
+      \strng{fullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{bibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authorbibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authornamehash}{6776294cbe98409937676e83600f42b4}
+      \strng{authorfullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{editorbibnamehash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes the development of a free/open-source finite-state morphological transducer for Kyrgyz. The transducer has been developed for morphological generation for use within a prototype TurkishâKyrgyz machine translation system, but has also been extensively tested for analysis. The finite-state toolkit used for the work was the Helsinki Finite-State Toolkit (HFST). The paper describes some issues in Kyrgyz morphology, the development of the tool, some linguistic issues encountered and how they were dealt with, and which issues are left to resolve. An evaluation is presented which shows that the transducer has medium-level coverage, between 82{\%} and 87{\%} on two freely available corpora of Kyrgyz, and high precision and recall over a manually verified test set.}
+      \field{booktitle}{Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}`12)}
+      \field{month}{5}
+      \field{title}{A finite-state morphological transducer for {K}yrgyz}
+      \field{year}{2012}
+      \field{pages}{934\bibrangedash 940}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+    \endentry
+    \entry{woods_trans_1970}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d086bf0f8320481946df3c267a27cbc1}{%
+           family={Woods},
+           familyi={W\bibinitperiod},
+           given={W.A.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{fullhash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{bibnamehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{authorbibnamehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{authornamehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{authorfullhash}{d086bf0f8320481946df3c267a27cbc1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Linguistics}
+      \field{title}{Finite-State Transducers in Language and Speech Processing}
+      \field{year}{1970}
+      \verb{urlraw}
+      \verb https://cse.buffalo.edu/~rapaport/663/S02/woods.atn.pdf
+      \endverb
+      \verb{url}
+      \verb https://cse.buffalo.edu/~rapaport/663/S02/woods.atn.pdf
+      \endverb
     \endentry
     \entry{zarubin_dict_1960}{book}{}
       \name{author}{1}{}{%
@@ -427,6 +1046,130 @@
       \field{pages}{787\bibrangedash 824}
       \range{pages}{38}
     \endentry
+    \entry{ivanova_free_2022}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e1e3e4d23f0bba3a49226fc4f6fc7b3c}{%
+           family={Ivanova},
+           familyi={I\bibinitperiod},
+           given={Sardana},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0c9a508809cd52db37596285e452223}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{13}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1029bdbe2b9621c579e6170c7f884b9b}{%
+           family={Béchet},
+           familyi={B\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+        {{hash=8c61811b55d11f47d227ff17ca2ae97f}{%
+           family={Blache},
+           familyi={B\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=a8af54ae168bb2ee38ee914570feadc6}{%
+           family={Cieri},
+           familyi={C\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=10ae9412b66f82e82d469aa7c2f6cd26}{%
+           family={Goggi},
+           familyi={G\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod}}}%
+        {{hash=352a8b64ceb27ae8b7d155bfc7894a48}{%
+           family={Isahara},
+           familyi={I\bibinitperiod},
+           given={Hitoshi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0a76eb2e98b2e0f5a4a2d3ee5cfed973}{%
+           family={Mazo},
+           familyi={M\bibinitperiod},
+           given={Hélène},
+           giveni={H\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Marseille, France}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association}%
+      }
+      \strng{namehash}{cbb36de10f1838b220cf7de1b839e8f4}
+      \strng{fullhash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{bibnamehash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{authorbibnamehash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{authornamehash}{cbb36de10f1838b220cf7de1b839e8f4}
+      \strng{authorfullhash}{f0020974b7b8aea364f82d120e9ef9f3}
+      \strng{editorbibnamehash}{751a0d182c54c23ad9365e53b35de7ef}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{751a0d182c54c23ad9365e53b35de7ef}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present, to our knowledge, the first ever published morphological analyser and generator for Sakha, a marginalised language of Siberia. The transducer, developed using HFST, has coverage of solidly above 90{\%}, and high precision. In the development of the analyser, we have expanded linguistic knowledge about Sakha, and developed strategies for complex grammatical patterns. The transducer is already being used in downstream tasks, including computer assisted language learning applications for linguistic maintenance and computational linguistic shared tasks.}
+      \field{booktitle}{Proceedings of the Thirteenth Language Resources and Evaluation Conference}
+      \field{month}{6}
+      \field{title}{A Free/Open-Source Morphological Analyser and Generator for Sakha}
+      \field{year}{2022}
+      \field{pages}{5137\bibrangedash 5142}
+      \range{pages}{6}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.lrec-1.550/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.lrec-1.550/
+      \endverb
+    \endentry
     \entry{karamshoev_dict_1988}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
@@ -454,6 +1197,70 @@
       \field{labeltitlesource}{title}
       \field{title}{Шугнанско-русский словарь [Shughni-Russian dictionary]}
       \field{year}{1988--1999}
+    \endentry
+    \entry{karttunen_lexc_1993}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{fullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{bibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorbibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authornamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorfullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finite-state lexicon compiler. {Technical Report ISTL-NLTT-1993-04-02, Xerox Palo Alto Research Center, Palo Alto, CA.}}
+      \field{year}{1993}
+    \endentry
+    \entry{karttunen_twolc_1987}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2a553c9ed96bcd52d1ac4defe753059}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{fullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{bibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authorbibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authornamehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{authorfullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{tools for morphological analysis}
+      \field{month}{01}
+      \field{title}{A compiler for two-level phonological rules}
+      \field{year}{1987}
     \endentry
     \entry{kondratyuk_straka_model_2019}{article}{}
       \name{author}{2}{}{%
@@ -485,6 +1292,255 @@
       \field{labeltitlesource}{title}
       \field{title}{75 Languages, 1 Model: Parsing Universal Dependencies Universally}
       \field{year}{2019}
+    \endentry
+    \entry{koskenniemi_twol_1983}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{fullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{bibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorbibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authornamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorfullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{{Two-level Morphology: A General Computational Model for Word-Form Recognition and Production}}
+      \field{year}{1983}
+    \endentry
+    \entry{linden_hfst_2009}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ad7941717fde150030c5182b4ccf1c2f}{%
+           family={Lindén},
+           familyi={L\bibinitperiod},
+           given={Krister},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81cf00d83f0af8110e9b22eca5e4d9fa}{%
+           family={Silfverberg},
+           familyi={S\bibinitperiod},
+           given={Miikka},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6413e00d5d1803bb822f0efd676cad35}{%
+           family={Pirinen},
+           familyi={P\bibinitperiod},
+           given={Tommi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b87300f1876608a4b4cba7d9a4b4a176}{%
+           family={Mahlow},
+           familyi={M\bibinitperiod},
+           given={Cerstin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bd542677ca2f75a0c28910d9b983e7ee}{%
+           family={Piotrowski},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{fullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{bibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authorbibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authornamehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{authorfullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{editorbibnamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editornamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editorfullhash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{State of the Art in Computational Morphology}
+      \field{isbn}{978-3-642-04130-3}
+      \field{series}{Communications in Computer AND Information Science}
+      \field{title}{{HFST Tools for Morphology – An Efficient Open-Source Package for Construction of Morphological Analyzers}}
+      \field{volume}{41}
+      \field{year}{2009}
+      \field{pages}{28\bibrangedash 47}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+    \endentry
+    \entry{mealy_method_1955}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2115f1db27e6d2235a055310236809b3}{%
+           family={Mealy},
+           familyi={M\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{fullhash}{2115f1db27e6d2235a055310236809b3}
+      \strng{bibnamehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{authorbibnamehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{authornamehash}{2115f1db27e6d2235a055310236809b3}
+      \strng{authorfullhash}{2115f1db27e6d2235a055310236809b3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Bell System Technical Journal}
+      \field{title}{A method for synthesizing sequential circuits}
+      \field{year}{1955}
+      \field{pages}{1045\bibrangedash 1079}
+      \range{pages}{35}
+    \endentry
+    \entry{moore_gedanken_1955}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9c7ebbec7873d3ce02deafc86595df0c}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Edward\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=22e2130b8d96f93daba648ff62af869b}{%
+           family={Shannon},
+           familyi={S\bibinitperiod},
+           given={C.\bibnamedelimi E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=46e54e04ec0343d677e2b791d1532f7e}{%
+           family={McCarthy},
+           familyi={M\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Princeton}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{fullhash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{bibnamehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{authorbibnamehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{authornamehash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{authorfullhash}{9c7ebbec7873d3ce02deafc86595df0c}
+      \strng{editorbibnamehash}{5441b1b52a7863833525b7133ecb78d4}
+      \strng{editornamehash}{5441b1b52a7863833525b7133ecb78d4}
+      \strng{editorfullhash}{5441b1b52a7863833525b7133ecb78d4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automata Studies}
+      \field{isbn}{9781400882618}
+      \field{title}{Gedanken-Experiments on Sequential Machines}
+      \field{year}{1956}
+      \field{pages}{129\bibrangedash 154}
+      \range{pages}{26}
+      \verb{doi}
+      \verb doi:10.1515/9781400882618-006
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1515/9781400882618-006
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1515/9781400882618-006
+      \endverb
+    \endentry
+    \entry{onal_building_2019}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=4ab4b1cc1c93a5bb9c2b1c8dfee47b68}{%
+           family={Onal},
+           familyi={O\bibinitperiod},
+           given={Esra},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7016aa7a1f80162c4eb40b00063d2906}{%
+           family={Mitkov},
+           familyi={M\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=8a921f900ddbf55f8200248ddfe22b73}{%
+           family={Angelova},
+           familyi={A\bibinitperiod},
+           given={Galia},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Varna, Bulgaria}%
+      }
+      \list{publisher}{1}{%
+        {INCOMA Ltd.}%
+      }
+      \strng{namehash}{42b82b333928facbcffe435874625fff}
+      \strng{fullhash}{42b82b333928facbcffe435874625fff}
+      \strng{bibnamehash}{42b82b333928facbcffe435874625fff}
+      \strng{authorbibnamehash}{42b82b333928facbcffe435874625fff}
+      \strng{authornamehash}{42b82b333928facbcffe435874625fff}
+      \strng{authorfullhash}{42b82b333928facbcffe435874625fff}
+      \strng{editorbibnamehash}{5905a106ce639854f5ce86c4927ffe9f}
+      \strng{editornamehash}{5905a106ce639854f5ce86c4927ffe9f}
+      \strng{editorfullhash}{5905a106ce639854f5ce86c4927ffe9f}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This study is an attempt to contribute to documentation and revitalization efforts of endangered Laz language, a member of South Caucasian language family mainly spoken on northeastern coastline of Turkey. It constitutes the first steps to create a general computational model for word form recognition and production for Laz by building a rule-based morphological analyser using Helsinki Finite-State Toolkit (HFST). The evaluation results show that the analyser has a 64.9{\%} coverage over a corpus collected for this study with 111,365 tokens. We have also performed an error analysis on randomly selected 100 tokens from the corpus which are not covered by the analyser, and these results show that the errors mostly result from Turkish words in the corpus and missing stems in our lexicon.}
+      \field{booktitle}{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}
+      \field{month}{9}
+      \field{title}{Building a Morphological Analyser for {L}az}
+      \field{year}{2019}
+      \field{pages}{869\bibrangedash 877}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.26615/978-954-452-056-4_101
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/R19-1101/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/R19-1101/
+      \endverb
     \endentry
     \entry{parker_shughni_2023}{thesis}{}
       \name{author}{1}{}{%
@@ -567,6 +1623,52 @@
       \field{title}{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}
       \field{year}{1895}
     \endentry
+    \entry{sarveswaran_morph_2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bc7e0ff3534c73f72defa9e93a35fccd}{%
+           family={Sarveswaran},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48328d76f48e663d3379d5304ecd6d09}{%
+           family={Dias},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63aac502457690e4684d8c0566779e85}{%
+           family={Butt},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{fullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{bibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authorbibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authornamehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{authorfullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Machine Translation 35}
+      \field{title}{ThamizhiMorph: A morphological parser for the Tamil language}
+      \field{year}{2021}
+      \field{pages}{37\bibrangedash 70}
+      \range{pages}{34}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+    \endentry
     \entry{tumanovich_gram_1906}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=66beb3da2b98ebf71914c603d870a27c}{%
@@ -588,6 +1690,142 @@
       \field{labeltitlesource}{title}
       \field{title}{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}
       \field{year}{1906}
+    \endentry
+    \entry{washington_finite_2012}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f0c9a508809cd52db37596285e452223}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89c86109f6589f3a8ef6296fcf49aefc}{%
+           family={Ipasov},
+           familyi={I\bibinitperiod},
+           given={Mirlan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=979dc780b3343ae259affe8dcbf49f0f}{%
+           family={Doğan},
+           familyi={D\bibinitperiod},
+           given={Mehmet\bibnamedelima Uğur},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bfec001866fc980a5a370b3f8f617c1d}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Asuncion},
+           giveni={A\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Istanbul, Turkey}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association (ELRA)}%
+      }
+      \strng{namehash}{6776294cbe98409937676e83600f42b4}
+      \strng{fullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{bibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authorbibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authornamehash}{6776294cbe98409937676e83600f42b4}
+      \strng{authorfullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{editorbibnamehash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes the development of a free/open-source finite-state morphological transducer for Kyrgyz. The transducer has been developed for morphological generation for use within a prototype TurkishâKyrgyz machine translation system, but has also been extensively tested for analysis. The finite-state toolkit used for the work was the Helsinki Finite-State Toolkit (HFST). The paper describes some issues in Kyrgyz morphology, the development of the tool, some linguistic issues encountered and how they were dealt with, and which issues are left to resolve. An evaluation is presented which shows that the transducer has medium-level coverage, between 82{\%} and 87{\%} on two freely available corpora of Kyrgyz, and high precision and recall over a manually verified test set.}
+      \field{booktitle}{Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}`12)}
+      \field{month}{5}
+      \field{title}{A finite-state morphological transducer for {K}yrgyz}
+      \field{year}{2012}
+      \field{pages}{934\bibrangedash 940}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+    \endentry
+    \entry{woods_trans_1970}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d086bf0f8320481946df3c267a27cbc1}{%
+           family={Woods},
+           familyi={W\bibinitperiod},
+           given={W.A.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{fullhash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{bibnamehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{authorbibnamehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{authornamehash}{d086bf0f8320481946df3c267a27cbc1}
+      \strng{authorfullhash}{d086bf0f8320481946df3c267a27cbc1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational Linguistics}
+      \field{title}{Finite-State Transducers in Language and Speech Processing}
+      \field{year}{1970}
+      \verb{urlraw}
+      \verb https://cse.buffalo.edu/~rapaport/663/S02/woods.atn.pdf
+      \endverb
+      \verb{url}
+      \verb https://cse.buffalo.edu/~rapaport/663/S02/woods.atn.pdf
+      \endverb
     \endentry
     \entry{zarubin_dict_1960}{book}{}
       \name{author}{1}{}{%

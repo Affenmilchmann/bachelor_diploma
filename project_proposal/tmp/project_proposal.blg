@@ -1,21 +1,24 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is './project_proposal/tmp/project_proposal.blg'
-[165] biber:340> INFO - === Пн мар 17, 2025, 22:40:19
-[193] Biber.pm:418> INFO - Reading './project_proposal/tmp/project_proposal.bcf'
-[351] Biber.pm:975> INFO - Using all citekeys in bib section 0
-[385] Biber.pm:4401> INFO - Processing section 0
-[398] Biber.pm:4592> INFO - Looking for bibtex file './project_proposal/ref.bib' for section 0
-[400] bibtex.pm:1713> INFO - LaTeX decoding ...
-[410] bibtex.pm:1518> INFO - Found BibTeX data source './project_proposal/ref.bib'
-[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[521] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[521] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[551] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[551] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[551] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[551] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[562] bbl.pm:654> INFO - Writing './project_proposal/tmp/project_proposal.bbl' with encoding 'UTF-8'
-[575] bbl.pm:757> INFO - Output to ./project_proposal/tmp/project_proposal.bbl
-[575] Biber.pm:130> WARN - legacy year field '1988--1999' in entry 'karamshoev_dict_1988' is not an integer - this will probably not sort properly.
-[575] Biber.pm:132> INFO - WARNINGS: 1
+[174] biber:340> INFO - === Вт мар 18, 2025, 21:27:07
+[214] Biber.pm:418> INFO - Reading './project_proposal/tmp/project_proposal.bcf'
+[374] Biber.pm:978> INFO - Found 21 citekeys in bib section 0
+[399] Biber.pm:4401> INFO - Processing section 0
+[412] Biber.pm:4592> INFO - Looking for bibtex file './project_proposal/ref.bib' for section 0
+[415] bibtex.pm:1713> INFO - LaTeX decoding ...
+[445] bibtex.pm:1518> INFO - Found BibTeX data source './project_proposal/ref.bib'
+[720] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[720] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[720] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[720] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[783] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[783] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[784] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[784] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[814] bbl.pm:654> INFO - Writing './project_proposal/tmp/project_proposal.bbl' with encoding 'UTF-8'
+[865] bbl.pm:757> INFO - Output to ./project_proposal/tmp/project_proposal.bbl
+[865] Biber.pm:130> WARN - legacy year field '1988--1999' in entry 'karamshoev_dict_1988' is not an integer - this will probably not sort properly.
+[865] Biber.pm:130> WARN - legacy month field 'may' in entry 'washington_finite_2012' is not an integer - this will probably not sort properly.
+[865] Biber.pm:130> WARN - legacy month field 'jun' in entry 'ivanova_free_2022' is not an integer - this will probably not sort properly.
+[865] Biber.pm:130> WARN - legacy month field 'sep' in entry 'onal_building_2019' is not an integer - this will probably not sort properly.
+[865] Biber.pm:132> INFO - WARNINGS: 4
