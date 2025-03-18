@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  18 MAR 2025 21:39
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  18 MAR 2025 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,11 +1030,6 @@ Overfull \hbox (0.55444pt too wide) in paragraph at lines 41--41
 [6] [7] (./project_proposal/tmp/project_proposal.aux)
 Package rerunfilecheck Info: File `project_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: D126BB4EFB076832729365E454F4208E;1347.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'project_proposal.run.xml'.
 \openout1 = `project_proposal.run.xml'.
 
