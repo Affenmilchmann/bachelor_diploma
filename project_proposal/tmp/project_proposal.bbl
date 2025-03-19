@@ -19,6 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{beesley_fst_2002}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=11d0a55511f23ccb4cb15db4c5a20677}{%
+           family={Beesley},
+           familyi={B\bibinitperiod},
+           given={enneth\bibnamedelima R.},
+           giveni={e\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CSLI, Stanford}%
+      }
+      \strng{namehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{fullhash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{bibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorbibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authornamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorfullhash}{6288a1513a50d212babaf9bf234f978f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Finite-state morphology: Xerox tools and techniques}}
+      \field{year}{2002}
+    \endentry
     \entry{edelman_gram_2009}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
@@ -41,7 +75,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Сравнительная грамматика восточноиранских языков [Comparative Grammar of Eastern Iranian Languages]}
+      \field{title}{{Сравнительная грамматика восточноиранских языков [Comparative Grammar of Eastern Iranian Languages]}}
       \field{year}{2009}
     \endentry
     \entry{edelman_languages_1999}{inbook}{}
@@ -75,7 +109,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Языки мира: Иранские языки. III: Восточноиранские языки [Languages of the world: Iranian languages. III. Eastern Iranian languages]}
+      \field{booktitle}{{Языки мира: Иранские языки. III: Восточноиранские языки [Languages of the world: Iranian languages. III. Eastern Iranian languages]}}
       \field{title}{Shughni language}
       \field{year}{1999}
     \endentry
@@ -237,8 +271,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We present, to our knowledge, the first ever published morphological analyser and generator for Sakha, a marginalised language of Siberia. The transducer, developed using HFST, has coverage of solidly above 90{\%}, and high precision. In the development of the analyser, we have expanded linguistic knowledge about Sakha, and developed strategies for complex grammatical patterns. The transducer is already being used in downstream tasks, including computer assisted language learning applications for linguistic maintenance and computational linguistic shared tasks.}
-      \field{booktitle}{Proceedings of the Thirteenth Language Resources and Evaluation Conference}
+      \field{booktitle}{{Proceedings of the Thirteenth Language Resources and Evaluation Conference}}
       \field{month}{6}
       \field{title}{A Free/Open-Source Morphological Analyser and Generator for Sakha}
       \field{year}{2022}
@@ -249,6 +282,42 @@
       \endverb
       \verb{url}
       \verb https://aclanthology.org/2022.lrec-1.550/
+      \endverb
+    \endentry
+    \entry{karamshoev_dialect_1963}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
+           family={Karamshoev},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {изд-во АН Тадж. ССР}%
+      }
+      \strng{namehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{fullhash}{7021cf05c606530c81db02f440dda28a}
+      \strng{bibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{{Академия наук Таджикской ССР, Институт языка и литературы им. Рудаки: Труды}}
+      \field{title}{{Баджувский диалект шугнанского языка [Badzhuvskij dialect of the Shughni language]}}
+      \field{year}{1963}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
       \endverb
     \endentry
     \entry{karamshoev_dict_1988}{book}{}
@@ -269,6 +338,7 @@
       \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
       \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
       \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{2}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -276,7 +346,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Шугнанско-русский словарь [Shughni-Russian dictionary]}
+      \field{title}{{Шугнанско-русский словарь [Shughni-Russian dictionary]}}
       \field{year}{1988--1999}
     \endentry
     \entry{karttunen_lexc_1993}{article}{}
@@ -452,7 +522,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{State of the Art in Computational Morphology}
+      \field{booktitle}{{State of the Art in Computational Morphology}}
       \field{isbn}{978-3-642-04130-3}
       \field{series}{Communications in Computer AND Information Science}
       \field{title}{{HFST Tools for Morphology – An Efficient Open-Source Package for Construction of Morphological Analyzers}}
@@ -468,6 +538,55 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+    \endentry
+    \entry{makarov_digital_2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b81de0176626a311d4ede0460380c6d3}{%
+           family={Makarov},
+           familyi={M\bibinitperiod},
+           given={Yury},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3599ea1fb91e107ce3132c375e072af4}{%
+           family={Melenchenko},
+           familyi={M\bibinitperiod},
+           given={Maksim},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27116c68f4a4f4879bcb7463df25482f}{%
+           family={Novokshanov},
+           familyi={N\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {HSE University}%
+      }
+      \strng{namehash}{732cf1fdeeb5209e1d0f9e556ee00d00}
+      \strng{fullhash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \strng{bibnamehash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \strng{authorbibnamehash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \strng{authornamehash}{732cf1fdeeb5209e1d0f9e556ee00d00}
+      \strng{authorfullhash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Proceedings of The Workshop on Resources and Technologies for Indigenous, Endangered and Lesser-Resourced Languages in Eurasia within the 13th Language Resources and Evaluation Conference}}
+      \field{title}{{Digital Resources for the Shughni Language}}
+      \field{year}{2022}
+      \field{pages}{61\bibrangedash 64}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.eurali-1.9
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.eurali-1.9
       \endverb
     \endentry
     \entry{mealy_method_1955}{article}{}
@@ -541,9 +660,9 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Automata Studies}
+      \field{booktitle}{{Automata Studies}}
       \field{isbn}{9781400882618}
-      \field{title}{Gedanken-Experiments on Sequential Machines}
+      \field{title}{{Gedanken-Experiments on Sequential Machines}}
       \field{year}{1956}
       \field{pages}{129\bibrangedash 154}
       \range{pages}{26}
@@ -606,8 +725,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This study is an attempt to contribute to documentation and revitalization efforts of endangered Laz language, a member of South Caucasian language family mainly spoken on northeastern coastline of Turkey. It constitutes the first steps to create a general computational model for word form recognition and production for Laz by building a rule-based morphological analyser using Helsinki Finite-State Toolkit (HFST). The evaluation results show that the analyser has a 64.9{\%} coverage over a corpus collected for this study with 111,365 tokens. We have also performed an error analysis on randomly selected 100 tokens from the corpus which are not covered by the analyser, and these results show that the errors mostly result from Turkish words in the corpus and missing stems in our lexicon.}
-      \field{booktitle}{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}
+      \field{booktitle}{{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}}
       \field{month}{9}
       \field{title}{Building a Morphological Analyser for {L}az}
       \field{year}{2019}
@@ -700,8 +818,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Восточные заметки [Eastern notes]}
-      \field{title}{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}
+      \field{booktitle}{{Восточные заметки [Eastern notes]}}
+      \field{title}{{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}}
       \field{year}{1895}
     \endentry
     \entry{sarveswaran_morph_2021}{article}{}
@@ -738,8 +856,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Machine Translation 35}
-      \field{title}{ThamizhiMorph: A morphological parser for the Tamil language}
+      \field{journaltitle}{{Machine Translation 35}}
+      \field{title}{{ThamizhiMorph: A morphological parser for the Tamil language}}
       \field{year}{2021}
       \field{pages}{37\bibrangedash 70}
       \range{pages}{34}
@@ -769,7 +887,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}
+      \field{title}{{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}}
       \field{year}{1906}
     \endentry
     \entry{washington_finite_2012}{inbook}{}
@@ -898,8 +1016,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Computational Linguistics}
-      \field{title}{Finite-State Transducers in Language and Speech Processing}
+      \field{journaltitle}{{Computational Linguistics}}
+      \field{title}{{Finite-State Transducers in Language and Speech Processing}}
       \field{year}{1970}
       \verb{urlraw}
       \verb https://cse.buffalo.edu/~rapaport/663/S02/woods.atn.pdf
@@ -933,11 +1051,45 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Шугнанские тексты и словарь [Shughni texts and dictionary]}
+      \field{title}{{Шугнанские тексты и словарь [Shughni texts and dictionary]}}
       \field{year}{1960}
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{beesley_fst_2002}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=11d0a55511f23ccb4cb15db4c5a20677}{%
+           family={Beesley},
+           familyi={B\bibinitperiod},
+           given={enneth\bibnamedelima R.},
+           giveni={e\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CSLI, Stanford}%
+      }
+      \strng{namehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{fullhash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{bibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorbibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authornamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorfullhash}{6288a1513a50d212babaf9bf234f978f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Finite-state morphology: Xerox tools and techniques}}
+      \field{year}{2002}
+    \endentry
     \entry{edelman_gram_2009}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
@@ -960,7 +1112,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Сравнительная грамматика восточноиранских языков [Comparative Grammar of Eastern Iranian Languages]}
+      \field{title}{{Сравнительная грамматика восточноиранских языков [Comparative Grammar of Eastern Iranian Languages]}}
       \field{year}{2009}
     \endentry
     \entry{edelman_languages_1999}{inbook}{}
@@ -994,7 +1146,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Языки мира: Иранские языки. III: Восточноиранские языки [Languages of the world: Iranian languages. III. Eastern Iranian languages]}
+      \field{booktitle}{{Языки мира: Иранские языки. III: Восточноиранские языки [Languages of the world: Iranian languages. III. Eastern Iranian languages]}}
       \field{title}{Shughni language}
       \field{year}{1999}
     \endentry
@@ -1156,8 +1308,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{We present, to our knowledge, the first ever published morphological analyser and generator for Sakha, a marginalised language of Siberia. The transducer, developed using HFST, has coverage of solidly above 90{\%}, and high precision. In the development of the analyser, we have expanded linguistic knowledge about Sakha, and developed strategies for complex grammatical patterns. The transducer is already being used in downstream tasks, including computer assisted language learning applications for linguistic maintenance and computational linguistic shared tasks.}
-      \field{booktitle}{Proceedings of the Thirteenth Language Resources and Evaluation Conference}
+      \field{booktitle}{{Proceedings of the Thirteenth Language Resources and Evaluation Conference}}
       \field{month}{6}
       \field{title}{A Free/Open-Source Morphological Analyser and Generator for Sakha}
       \field{year}{2022}
@@ -1168,6 +1319,42 @@
       \endverb
       \verb{url}
       \verb https://aclanthology.org/2022.lrec-1.550/
+      \endverb
+    \endentry
+    \entry{karamshoev_dialect_1963}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
+           family={Karamshoev},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {изд-во АН Тадж. ССР}%
+      }
+      \strng{namehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{fullhash}{7021cf05c606530c81db02f440dda28a}
+      \strng{bibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{{Академия наук Таджикской ССР, Институт языка и литературы им. Рудаки: Труды}}
+      \field{title}{{Баджувский диалект шугнанского языка [Badzhuvskij dialect of the Shughni language]}}
+      \field{year}{1963}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
       \endverb
     \endentry
     \entry{karamshoev_dict_1988}{book}{}
@@ -1188,6 +1375,7 @@
       \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
       \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
       \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{2}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{extradatescope}{labelyear}
@@ -1195,7 +1383,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Шугнанско-русский словарь [Shughni-Russian dictionary]}
+      \field{title}{{Шугнанско-русский словарь [Shughni-Russian dictionary]}}
       \field{year}{1988--1999}
     \endentry
     \entry{karttunen_lexc_1993}{article}{}
@@ -1371,7 +1559,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{State of the Art in Computational Morphology}
+      \field{booktitle}{{State of the Art in Computational Morphology}}
       \field{isbn}{978-3-642-04130-3}
       \field{series}{Communications in Computer AND Information Science}
       \field{title}{{HFST Tools for Morphology – An Efficient Open-Source Package for Construction of Morphological Analyzers}}
@@ -1387,6 +1575,55 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+    \endentry
+    \entry{makarov_digital_2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b81de0176626a311d4ede0460380c6d3}{%
+           family={Makarov},
+           familyi={M\bibinitperiod},
+           given={Yury},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3599ea1fb91e107ce3132c375e072af4}{%
+           family={Melenchenko},
+           familyi={M\bibinitperiod},
+           given={Maksim},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27116c68f4a4f4879bcb7463df25482f}{%
+           family={Novokshanov},
+           familyi={N\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {HSE University}%
+      }
+      \strng{namehash}{732cf1fdeeb5209e1d0f9e556ee00d00}
+      \strng{fullhash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \strng{bibnamehash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \strng{authorbibnamehash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \strng{authornamehash}{732cf1fdeeb5209e1d0f9e556ee00d00}
+      \strng{authorfullhash}{b36c5d1cf07b3fe368ed818c73dc542f}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Proceedings of The Workshop on Resources and Technologies for Indigenous, Endangered and Lesser-Resourced Languages in Eurasia within the 13th Language Resources and Evaluation Conference}}
+      \field{title}{{Digital Resources for the Shughni Language}}
+      \field{year}{2022}
+      \field{pages}{61\bibrangedash 64}
+      \range{pages}{4}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.eurali-1.9
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.eurali-1.9
       \endverb
     \endentry
     \entry{mealy_method_1955}{article}{}
@@ -1460,9 +1697,9 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Automata Studies}
+      \field{booktitle}{{Automata Studies}}
       \field{isbn}{9781400882618}
-      \field{title}{Gedanken-Experiments on Sequential Machines}
+      \field{title}{{Gedanken-Experiments on Sequential Machines}}
       \field{year}{1956}
       \field{pages}{129\bibrangedash 154}
       \range{pages}{26}
@@ -1525,8 +1762,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{This study is an attempt to contribute to documentation and revitalization efforts of endangered Laz language, a member of South Caucasian language family mainly spoken on northeastern coastline of Turkey. It constitutes the first steps to create a general computational model for word form recognition and production for Laz by building a rule-based morphological analyser using Helsinki Finite-State Toolkit (HFST). The evaluation results show that the analyser has a 64.9{\%} coverage over a corpus collected for this study with 111,365 tokens. We have also performed an error analysis on randomly selected 100 tokens from the corpus which are not covered by the analyser, and these results show that the errors mostly result from Turkish words in the corpus and missing stems in our lexicon.}
-      \field{booktitle}{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}
+      \field{booktitle}{{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}}
       \field{month}{9}
       \field{title}{Building a Morphological Analyser for {L}az}
       \field{year}{2019}
@@ -1619,8 +1855,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Восточные заметки [Eastern notes]}
-      \field{title}{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}
+      \field{booktitle}{{Восточные заметки [Eastern notes]}}
+      \field{title}{{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}}
       \field{year}{1895}
     \endentry
     \entry{sarveswaran_morph_2021}{article}{}
@@ -1657,8 +1893,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Machine Translation 35}
-      \field{title}{ThamizhiMorph: A morphological parser for the Tamil language}
+      \field{journaltitle}{{Machine Translation 35}}
+      \field{title}{{ThamizhiMorph: A morphological parser for the Tamil language}}
       \field{year}{2021}
       \field{pages}{37\bibrangedash 70}
       \range{pages}{34}
@@ -1688,7 +1924,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}
+      \field{title}{{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}}
       \field{year}{1906}
     \endentry
     \entry{washington_finite_2012}{inbook}{}
@@ -1817,8 +2053,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Computational Linguistics}
-      \field{title}{Finite-State Transducers in Language and Speech Processing}
+      \field{journaltitle}{{Computational Linguistics}}
+      \field{title}{{Finite-State Transducers in Language and Speech Processing}}
       \field{year}{1970}
       \verb{urlraw}
       \verb https://cse.buffalo.edu/~rapaport/663/S02/woods.atn.pdf
@@ -1852,7 +2088,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Шугнанские тексты и словарь [Shughni texts and dictionary]}
+      \field{title}{{Шугнанские тексты и словарь [Shughni texts and dictionary]}}
       \field{year}{1960}
     \endentry
   \enddatalist
