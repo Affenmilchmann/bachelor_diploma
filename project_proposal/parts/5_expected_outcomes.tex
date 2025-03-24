@@ -7,13 +7,13 @@
             Description & Input example & Output example \\
             \hline
             \hline
-            Cyrillic plain analysator & дарйойен & дарйо<n>{}><pl> \\
+            Cyrillic plain analyser & дарйойен & дарйо<n>{}><pl> \\
             \hline
-            Cyrillic morph analysator & дарйо>йен & дарйо<n>{}><pl> \\
+            Cyrillic morph analyser & дарйо>йен & дарйо<n>{}><pl> \\
             \hline
-            Latin plain analysator & daryoyen & дарйо<n>{}><pl> \\
+            Latin plain analyser & daryoyen & дарйо<n>{}><pl> \\
             \hline
-            Latin morph analysator & daryo>yen & дарйо<n>{}><pl> \\
+            Latin morph analyser & daryo>yen & дарйо<n>{}><pl> \\
             \hline
             Cyrillic plain generator & дарйо<n>{}><pl> & дарйойен \\
             \hline
@@ -28,6 +28,6 @@
         \caption{A full list of planned HFST transducers}
     \end{center}
 \end{table}
-'Plain' analysators and generators work with the word-forms as they are occurring in plain text, while 'morph' analysators and generators work with word-forms that have morphemes separated by '>' symbol. The latter word-form format is useful to linguists in research, while the first format is easily applicable to plain texts.
-\par The title of this work mentions only verbs, nouns and adjectives, however this morphological parser is planned to cover all parts of speech. The title is focused on the verbs, nouns and adjectives since their morphological paradigms are the biggest. In terms of parser's quality I aim to reach 80\% \textit{coverage}, the best case scenario would be more than 90\%. 
-\par The source code and the compiled \textit{.hfst} files will be uploaded to the public GitHub repository for anyone to use and contribute to.
+'Plain' analysers and generators work with the word-forms as they are occurring in plain text, while 'morph' analysers and generators work with word-forms that have morphemes separated by '>' symbol. The latter word-form format is useful to linguists in research, while the first format is easily applicable to plain texts.
+\par The title of this work mentions only verbs, nouns and adjectives, however this morphological parser is planned to cover all parts of speech. The title is focused on the verbs, nouns and adjectives since their morphological paradigms are the biggest. In terms of parser's quality I aim to reach 80\% \textit{coverage}, the best case scenario would be more than 90\%. \todo{эти проценты хорошо бы мотивировать в предыдущих работах, типа для других языков получали вот такие вот результаты... Мы надеемся получить такие-то...}
+\par The source code and the compiled `.hfst` files will be uploaded to the public GitHub repository for anyone to use and contribute to.
