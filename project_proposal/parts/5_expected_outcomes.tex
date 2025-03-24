@@ -1,1 +1,33 @@
 \section{Expected outcomes}
+\par The main product of this work is a set of finite-state transducers capable of morphological analysis and morphological generation. This set then can be used for different NLP tasks such as POS-tagging, spell-checking, morphological tagging or even translation. In the Table \hyperref[Tab:format]{1} the planned input-output formats of the FSTs are presented.
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{|l|l|l|} 
+            \hline
+            Description & Input example & Output example \\
+            \hline
+            \hline
+            Cyrillic plain analysator & дарйойен & дарйо<n>{}><pl> \\
+            \hline
+            Cyrillic morph analysator & дарйо>йен & дарйо<n>{}><pl> \\
+            \hline
+            Latin plain analysator & daryoyen & дарйо<n>{}><pl> \\
+            \hline
+            Latin morph analysator & daryo>yen & дарйо<n>{}><pl> \\
+            \hline
+            Cyrillic plain generator & дарйо<n>{}><pl> & дарйойен \\
+            \hline
+            Cyrillic morph generator & дарйо<n>{}><pl> & дарйо>йен \\
+            \hline
+            Latin plain generator & дарйо<n>{}><pl> & daryoyen \\
+            \hline
+            Latin morph generator & дарйо<n>{}><pl> & daryo>yen \\
+            \hline
+        \end{tabular}
+        \label{Tab:format}
+        \caption{A full list of planned HFST transducers}
+    \end{center}
+\end{table}
+'Plain' analysators and generators work with the word-forms as they are occurring in plain text, while 'morph' analysators and generators work with word-forms that have morphemes separated by '>' symbol. The latter word-form format is useful to linguists in research, while the first format is easily applicable to plain texts.
+\par The title of this work mentions only verbs, nouns and adjectives, however this morphological parser is planned to cover all parts of speech. The title is focused on the verbs, nouns and adjectives since their morphological paradigms are the biggest. In terms of parser's quality I aim to reach 80\% \textit{coverage}, the best case scenario would be more than 90\%. 
+\par The source code and the compiled \textit{.hfst} files will be uploaded to the public GitHub repository for anyone to use and contribute to.

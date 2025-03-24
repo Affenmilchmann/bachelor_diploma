@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  19 MAR 2025 18:17
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  24 MAR 2025 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,10 +1020,13 @@ File: ./project_proposal/img/transducer1.png Graphic file (type bmp)
 File: ./project_proposal/img/transducer1_1.png Graphic file (type bmp)
 <./project_proposal/img/transducer1_1.png>
 )
-(./project_proposal/parts/3_lit_review.tex [4] [5] [6])
-(./project_proposal/parts/4_methods.tex)
-(./project_proposal/parts/5_expected_outcomes.tex)
-(./project_proposal/parts/6_conclusions.tex)
+(./project_proposal/parts/3_lit_review.tex [4] [5])
+(./project_proposal/parts/4_methods.tex [6] [7])
+(./project_proposal/parts/5_expected_outcomes.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./project_proposal/parts/6_conclusions.tex [8])
 (./project_proposal/parts/7_discussion_n_future.tex)
 (./project_proposal/parts/8_references.tex)
 Overfull \hbox (2.91046pt too wide) in paragraph at lines 41--41
@@ -1032,13 +1035,19 @@ Overfull \hbox (2.91046pt too wide) in paragraph at lines 41--41
  . Izd-
  []
 
-[7]
+[9]
 Overfull \hbox (1.9044pt too wide) in paragraph at lines 41--41
 [][]\TU/FreeSerif(0)/m/n/12 Salemann, K. (1895). Шугнанский словарь Д.Л. Иванов
 а [Shughni dictionary by D.L. Ivanov].
  []
 
-[8] (./project_proposal/tmp/project_proposal.aux)
+
+Overfull \hbox (1.5515pt too wide) in paragraph at lines 41--41
+[][]\TU/FreeSerif(0)/m/n/12 Swanson, D., & Howell, N. (2021). Lexd: A Finite-St
+ate Lexicon Compiler for Non-Suffixational
+ []
+
+[10] (./project_proposal/tmp/project_proposal.aux)
 Package rerunfilecheck Info: File `project_proposal.out' has not changed.
 (rerunfilecheck)             Checksum: 7B3B395BC6E22FBBC49233E94A45D8A1;1591.
 Package logreq Info: Writing requests to 'project_proposal.run.xml'.
@@ -1046,12 +1055,12 @@ Package logreq Info: Writing requests to 'project_proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23940 strings out of 478029
- 470033 string characters out of 5842217
+ 23951 strings out of 478029
+ 470318 string characters out of 5842217
  1864991 words of memory out of 5000000
- 43620 multiletter control sequences out of 15000+600000
+ 43631 multiletter control sequences out of 15000+600000
  515727 words of font info for 85 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  78i,12n,108p,1490b,5204s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./project_proposal/tmp/project_proposal.pdf (9 pages).
+Output written on ./project_proposal/tmp/project_proposal.pdf (11 pages).

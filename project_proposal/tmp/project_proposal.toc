@@ -8,7 +8,7 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Neural approach}{6}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}Rule-based approach}{6}{subsubsection.2.2.2}%
 \contentsline {section}{\numberline {3}Methods}{7}{section.3}%
-\contentsline {section}{\numberline {4}Expected outcomes}{7}{section.4}%
-\contentsline {section}{\numberline {5}Conclusions}{7}{section.5}%
-\contentsline {section}{\numberline {6}Discussion and future}{7}{section.6}%
-\contentsline {section}{References}{7}{section.6}%
+\contentsline {section}{\numberline {4}Expected outcomes}{8}{section.4}%
+\contentsline {section}{\numberline {5}Conclusions}{9}{section.5}%
+\contentsline {section}{\numberline {6}Discussion and future}{9}{section.6}%
+\contentsline {section}{References}{9}{section.6}%

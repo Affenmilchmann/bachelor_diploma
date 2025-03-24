@@ -3078,14 +3078,22 @@
     <bcf:citekey order="39" intorder="1">karttunen_twolc_1987</bcf:citekey>
     <bcf:citekey order="40" intorder="1">karttunen_lexc_1993</bcf:citekey>
     <bcf:citekey order="41" intorder="1">linden_hfst_2009</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">swanson_lexd_2021</bcf:citekey>
     <bcf:citekey order="43" intorder="1">sarveswaran_morph_2021</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">sarveswaran_morph_2021</bcf:citekey>
     <bcf:citekey order="45" intorder="1">washington_finite_2012</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">ivanova_free_2022</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">washington_finite_2012</bcf:citekey>
     <bcf:citekey order="47" intorder="1">ivanova_free_2022</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">onal_building_2019</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">ivanova_free_2022</bcf:citekey>
     <bcf:citekey order="49" intorder="1">onal_building_2019</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">onal_building_2019</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">makarov_digital_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
