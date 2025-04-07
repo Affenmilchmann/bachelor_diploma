@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  24 MAR 2025 17:42
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  26 MAR 2025 14:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1009,33 +1009,51 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout6 = `project_proposal.toc'.
 
  [1]
-(./project_proposal/parts/0_testpage.tex)
-(./project_proposal/parts/1_abstract.tex [2])
-(./project_proposal/parts/2_introduction.tex
+(./project_proposal/parts/1_abstract.tex)
+(./project_proposal/parts/2_introduction.tex [2]
 File: ./project_proposal/img/map.png Graphic file (type bmp)
 <./project_proposal/img/map.png>
- [3]
+ [3])
+(./project_proposal/parts/3_lit_review.tex [4] [5])
+(./project_proposal/parts/4_methods.tex [6]
 File: ./project_proposal/img/transducer1.png Graphic file (type bmp)
 <./project_proposal/img/transducer1.png>
 File: ./project_proposal/img/transducer1_1.png Graphic file (type bmp)
 <./project_proposal/img/transducer1_1.png>
-)
-(./project_proposal/parts/3_lit_review.tex [4] [5])
-(./project_proposal/parts/4_methods.tex [6] [7])
-(./project_proposal/parts/5_expected_outcomes.tex
+ [7]
+Overfull \hbox (14.70055pt too wide) in paragraph at lines 19--20
+[]\TU/FreeSerif(0)/m/n/12 For the matter of the morphonology part, HFST’s imple
+mentation of TWOLC (\TU/FreeMono(0)/m/n/12 hfst-twolc\TU/FreeSerif(0)/m/n/12 )
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+) (./project_proposal/parts/5_expected_outcomes.tex [8])
+(./project_proposal/parts/6_conclusions.tex [9])
+(./project_proposal/parts/8_references.tex [10])
+Overfull \hbox (5.37851pt too wide) in paragraph at lines 41--41
+[][]\TU/FreeSerif(0)/m/n/12 Buntyakova, V. A. (2023). \TU/FreeSerif(0)/m/it/12 
+Создание морфологического парсера андийского языка в системе
+ []
 
-) (./project_proposal/parts/6_conclusions.tex [8])
-(./project_proposal/parts/7_discussion_n_future.tex)
-(./project_proposal/parts/8_references.tex)
+
 Overfull \hbox (2.91046pt too wide) in paragraph at lines 41--41
 [][]\TU/FreeSerif(0)/m/n/12 Karamshoev, D. (1988–1999). \TU/FreeSerif(0)/m/it/1
 2 Шугнанско-русский словарь [Shughni-Russian dictionary]\TU/FreeSerif(0)/m/n/12
  . Izd-
  []
 
-[9]
+[11]
+Overfull \hbox (5.1345pt too wide) in paragraph at lines 41--41
+[][]\TU/FreeSerif(0)/m/n/12 Melenchenko, M. G. (2021). \TU/FreeSerif(0)/m/it/12
+ Автоматический морфологический анализ шугнанского языка
+ []
+
+
+Overfull \hbox (4.69049pt too wide) in paragraph at lines 41--41
+[][]\TU/FreeSerif(0)/m/n/12 Osorgin, I. G. (2024). \TU/FreeSerif(0)/m/it/12 Соз
+дание морфологического парсера для шугнаского языка в системе
+ []
+
+
 Overfull \hbox (1.9044pt too wide) in paragraph at lines 41--41
 [][]\TU/FreeSerif(0)/m/n/12 Salemann, K. (1895). Шугнанский словарь Д.Л. Иванов
 а [Shughni dictionary by D.L. Ivanov].
@@ -1047,20 +1065,20 @@ Overfull \hbox (1.5515pt too wide) in paragraph at lines 41--41
 ate Lexicon Compiler for Non-Suffixational
  []
 
-[10] (./project_proposal/tmp/project_proposal.aux)
+[12] (./project_proposal/tmp/project_proposal.aux)
 Package rerunfilecheck Info: File `project_proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 7B3B395BC6E22FBBC49233E94A45D8A1;1591.
+(rerunfilecheck)             Checksum: 8218CFA86848627AAFBEA3294EE6FDB0;1431.
 Package logreq Info: Writing requests to 'project_proposal.run.xml'.
 \openout1 = `project_proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23951 strings out of 478029
- 470318 string characters out of 5842217
+ 23974 strings out of 478029
+ 471135 string characters out of 5842217
  1864991 words of memory out of 5000000
- 43631 multiletter control sequences out of 15000+600000
+ 43660 multiletter control sequences out of 15000+600000
  515727 words of font info for 85 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
- 78i,12n,108p,1490b,5204s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,12n,108p,1580b,5204s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./project_proposal/tmp/project_proposal.pdf (11 pages).
+Output written on ./project_proposal/tmp/project_proposal.pdf (13 pages).

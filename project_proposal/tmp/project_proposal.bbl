@@ -53,6 +53,156 @@
       \field{title}{{Finite-state morphology: Xerox tools and techniques}}
       \field{year}{2002}
     \endentry
+    \entry{budilova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8618523d8b66a3b398eac9eceab0704}{%
+           family={Budilova},
+           familyi={B\bibinitperiod},
+           given={Zinaida\bibnamedelima Aleksandrovna},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{fullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{bibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorbibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authornamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorfullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера для чамалинского языка в системе lexd и twol [Morphological parser of Chamalal in lexd and twol]}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+    \endentry
+    \entry{buntyakova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d76e4e195a72fd8ec8a809f3138fbcc}{%
+           family={Buntyakova},
+           familyi={B\bibinitperiod},
+           given={Valeriya\bibnamedelima Antonovna},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{fullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{bibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorbibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authornamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorfullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера андийского языка в системе lexd и twol [Morphological parser of Andi in lexd and twol}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+    \endentry
+    \entry{devlin-etal-2019-bert}{inbook}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a45784fe7163b45f11d166564f5d24b6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Ming-Wei},
+           giveni={M\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dde73b4194f5bc4230c4808f3fc1534}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kenton},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b92aa283415413bb8d2a1548716d0c7d}{%
+           family={Toutanova},
+           familyi={T\bibinitperiod},
+           given={Kristina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=f974925c5c6cca1d67fd604cc9fc9c79}{%
+           family={Burstein},
+           familyi={B\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3aec97177cb69c892f2c8a2d9bc31a10}{%
+           family={Doran},
+           familyi={D\bibinitperiod},
+           given={Christy},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b47889ad94571547c92970150485798b}{%
+           family={Solorio},
+           familyi={S\bibinitperiod},
+           given={Thamar},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Minneapolis, Minnesota}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{fullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{bibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorbibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authornamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{editorbibnamehash}{3ba8abc3fd60f22784bd617fd230d1c6}
+      \strng{editornamehash}{0f9989a68b9a4dd59d368e46c7ff0bda}
+      \strng{editorfullhash}{3ba8abc3fd60f22784bd617fd230d1c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)}
+      \field{month}{6}
+      \field{title}{{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding}
+      \field{year}{2019}
+      \field{pages}{4171\bibrangedash 4186}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.18653/v1/N19-1423
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/N19-1423/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/N19-1423/
+      \endverb
+    \endentry
     \entry{edelman_gram_2009}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
@@ -617,6 +767,34 @@
       \field{pages}{1045\bibrangedash 1079}
       \range{pages}{35}
     \endentry
+    \entry{melchenko_2021_parser}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81eaa45a98d2fddf7cb219efd462e247}{%
+           family={Melenchenko},
+           familyi={M\bibinitperiod},
+           given={Maxim\bibnamedelima Glebovich},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{fullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{bibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorbibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authornamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorfullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Автоматический морфологический анализ шугнанского языка [Automatic full morphology analysis for Shughni]}}
+      \field{year}{2021}
+    \endentry
     \entry{moore_gedanken_1955}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9c7ebbec7873d3ce02deafc86595df0c}{%
@@ -676,48 +854,24 @@
       \verb https://doi.org/10.1515/9781400882618-006
       \endverb
     \endentry
-    \entry{onal_building_2019}{inbook}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=4ab4b1cc1c93a5bb9c2b1c8dfee47b68}{%
-           family={Onal},
+    \entry{osorgin_2024_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48a87c8aa98f82973306dce1438d46a8}{%
+           family={Osorgin},
            familyi={O\bibinitperiod},
-           given={Esra},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
-           family={Tyers},
-           familyi={T\bibinitperiod},
-           given={Francis},
-           giveni={F\bibinitperiod},
+           given={Ivan\bibnamedelima Gennadievich},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=7016aa7a1f80162c4eb40b00063d2906}{%
-           family={Mitkov},
-           familyi={M\bibinitperiod},
-           given={Ruslan},
-           giveni={R\bibinitperiod}}}%
-        {{hash=8a921f900ddbf55f8200248ddfe22b73}{%
-           family={Angelova},
-           familyi={A\bibinitperiod},
-           given={Galia},
-           giveni={G\bibinitperiod}}}%
+      \list{institution}{1}{%
+        {NRU HSE}%
       }
-      \list{location}{1}{%
-        {Varna, Bulgaria}%
-      }
-      \list{publisher}{1}{%
-        {INCOMA Ltd.}%
-      }
-      \strng{namehash}{42b82b333928facbcffe435874625fff}
-      \strng{fullhash}{42b82b333928facbcffe435874625fff}
-      \strng{bibnamehash}{42b82b333928facbcffe435874625fff}
-      \strng{authorbibnamehash}{42b82b333928facbcffe435874625fff}
-      \strng{authornamehash}{42b82b333928facbcffe435874625fff}
-      \strng{authorfullhash}{42b82b333928facbcffe435874625fff}
-      \strng{editorbibnamehash}{5905a106ce639854f5ce86c4927ffe9f}
-      \strng{editornamehash}{5905a106ce639854f5ce86c4927ffe9f}
-      \strng{editorfullhash}{5905a106ce639854f5ce86c4927ffe9f}
+      \strng{namehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{fullhash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{bibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorbibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authornamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorfullhash}{48a87c8aa98f82973306dce1438d46a8}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
@@ -725,21 +879,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}}
-      \field{month}{9}
-      \field{title}{Building a Morphological Analyser for {L}az}
-      \field{year}{2019}
-      \field{pages}{869\bibrangedash 877}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.26615/978-954-452-056-4_101
-      \endverb
-      \verb{urlraw}
-      \verb https://aclanthology.org/R19-1101/
-      \endverb
-      \verb{url}
-      \verb https://aclanthology.org/R19-1101/
-      \endverb
+      \field{title}{{Создание морфологического парсера для шугнаского языка в системе lexd и twol [Creating a morphological parser for the Shughni language using lexd and twol systems]}}
+      \field{year}{2024}
     \endentry
     \entry{parker_shughni_2023}{thesis}{}
       \name{author}{1}{}{%
@@ -920,6 +1061,51 @@
       \field{labeltitlesource}{title}
       \field{title}{{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}}
       \field{year}{1906}
+    \endentry
+    \entry{Turing_1937}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fdc523429c3c89c34880f733033f2099}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On Computable Numbers, with an Application to the Entscheidungsproblem}
+      \field{volume}{s2-42}
+      \field{year}{1937}
+      \field{pages}{230\bibrangedash 265}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
     \endentry
     \entry{washington_finite_2012}{inbook}{}
       \name{author}{3}{}{%
@@ -1121,6 +1307,156 @@
       \field{title}{{Finite-state morphology: Xerox tools and techniques}}
       \field{year}{2002}
     \endentry
+    \entry{budilova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8618523d8b66a3b398eac9eceab0704}{%
+           family={Budilova},
+           familyi={B\bibinitperiod},
+           given={Zinaida\bibnamedelima Aleksandrovna},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{fullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{bibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorbibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authornamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorfullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера для чамалинского языка в системе lexd и twol [Morphological parser of Chamalal in lexd and twol]}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+    \endentry
+    \entry{buntyakova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d76e4e195a72fd8ec8a809f3138fbcc}{%
+           family={Buntyakova},
+           familyi={B\bibinitperiod},
+           given={Valeriya\bibnamedelima Antonovna},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{fullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{bibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorbibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authornamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorfullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера андийского языка в системе lexd и twol [Morphological parser of Andi in lexd and twol}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+    \endentry
+    \entry{devlin-etal-2019-bert}{inbook}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
+           family={Devlin},
+           familyi={D\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a45784fe7163b45f11d166564f5d24b6}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Ming-Wei},
+           giveni={M\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8dde73b4194f5bc4230c4808f3fc1534}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kenton},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b92aa283415413bb8d2a1548716d0c7d}{%
+           family={Toutanova},
+           familyi={T\bibinitperiod},
+           given={Kristina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=f974925c5c6cca1d67fd604cc9fc9c79}{%
+           family={Burstein},
+           familyi={B\bibinitperiod},
+           given={Jill},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3aec97177cb69c892f2c8a2d9bc31a10}{%
+           family={Doran},
+           familyi={D\bibinitperiod},
+           given={Christy},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b47889ad94571547c92970150485798b}{%
+           family={Solorio},
+           familyi={S\bibinitperiod},
+           given={Thamar},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Minneapolis, Minnesota}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{fullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{bibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authorbibnamehash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{authornamehash}{ad8e2e2a80d28ade21e86852b804fc9b}
+      \strng{authorfullhash}{e8bccd48302a14eeba57d9dce2f49ef4}
+      \strng{editorbibnamehash}{3ba8abc3fd60f22784bd617fd230d1c6}
+      \strng{editornamehash}{0f9989a68b9a4dd59d368e46c7ff0bda}
+      \strng{editorfullhash}{3ba8abc3fd60f22784bd617fd230d1c6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)}
+      \field{month}{6}
+      \field{title}{{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding}
+      \field{year}{2019}
+      \field{pages}{4171\bibrangedash 4186}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.18653/v1/N19-1423
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/N19-1423/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/N19-1423/
+      \endverb
+    \endentry
     \entry{edelman_gram_2009}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
@@ -1685,6 +2021,34 @@
       \field{pages}{1045\bibrangedash 1079}
       \range{pages}{35}
     \endentry
+    \entry{melchenko_2021_parser}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81eaa45a98d2fddf7cb219efd462e247}{%
+           family={Melenchenko},
+           familyi={M\bibinitperiod},
+           given={Maxim\bibnamedelima Glebovich},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{fullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{bibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorbibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authornamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorfullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Автоматический морфологический анализ шугнанского языка [Automatic full morphology analysis for Shughni]}}
+      \field{year}{2021}
+    \endentry
     \entry{moore_gedanken_1955}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9c7ebbec7873d3ce02deafc86595df0c}{%
@@ -1744,48 +2108,24 @@
       \verb https://doi.org/10.1515/9781400882618-006
       \endverb
     \endentry
-    \entry{onal_building_2019}{inbook}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=4ab4b1cc1c93a5bb9c2b1c8dfee47b68}{%
-           family={Onal},
+    \entry{osorgin_2024_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48a87c8aa98f82973306dce1438d46a8}{%
+           family={Osorgin},
            familyi={O\bibinitperiod},
-           given={Esra},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
-           family={Tyers},
-           familyi={T\bibinitperiod},
-           given={Francis},
-           giveni={F\bibinitperiod},
+           given={Ivan\bibnamedelima Gennadievich},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
            givenun=0}}%
       }
-      \name{editor}{2}{}{%
-        {{hash=7016aa7a1f80162c4eb40b00063d2906}{%
-           family={Mitkov},
-           familyi={M\bibinitperiod},
-           given={Ruslan},
-           giveni={R\bibinitperiod}}}%
-        {{hash=8a921f900ddbf55f8200248ddfe22b73}{%
-           family={Angelova},
-           familyi={A\bibinitperiod},
-           given={Galia},
-           giveni={G\bibinitperiod}}}%
+      \list{institution}{1}{%
+        {NRU HSE}%
       }
-      \list{location}{1}{%
-        {Varna, Bulgaria}%
-      }
-      \list{publisher}{1}{%
-        {INCOMA Ltd.}%
-      }
-      \strng{namehash}{42b82b333928facbcffe435874625fff}
-      \strng{fullhash}{42b82b333928facbcffe435874625fff}
-      \strng{bibnamehash}{42b82b333928facbcffe435874625fff}
-      \strng{authorbibnamehash}{42b82b333928facbcffe435874625fff}
-      \strng{authornamehash}{42b82b333928facbcffe435874625fff}
-      \strng{authorfullhash}{42b82b333928facbcffe435874625fff}
-      \strng{editorbibnamehash}{5905a106ce639854f5ce86c4927ffe9f}
-      \strng{editornamehash}{5905a106ce639854f5ce86c4927ffe9f}
-      \strng{editorfullhash}{5905a106ce639854f5ce86c4927ffe9f}
+      \strng{namehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{fullhash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{bibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorbibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authornamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorfullhash}{48a87c8aa98f82973306dce1438d46a8}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{extradatescope}{labelyear}
@@ -1793,21 +2133,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{{Proceedings of the International Conference on Recent Advances in Natural Language Processing (RANLP 2019)}}
-      \field{month}{9}
-      \field{title}{Building a Morphological Analyser for {L}az}
-      \field{year}{2019}
-      \field{pages}{869\bibrangedash 877}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.26615/978-954-452-056-4_101
-      \endverb
-      \verb{urlraw}
-      \verb https://aclanthology.org/R19-1101/
-      \endverb
-      \verb{url}
-      \verb https://aclanthology.org/R19-1101/
-      \endverb
+      \field{title}{{Создание морфологического парсера для шугнаского языка в системе lexd и twol [Creating a morphological parser for the Shughni language using lexd and twol systems]}}
+      \field{year}{2024}
     \endentry
     \entry{parker_shughni_2023}{thesis}{}
       \name{author}{1}{}{%
@@ -1988,6 +2315,51 @@
       \field{labeltitlesource}{title}
       \field{title}{{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}}
       \field{year}{1906}
+    \endentry
+    \entry{Turing_1937}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fdc523429c3c89c34880f733033f2099}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On Computable Numbers, with an Application to the Entscheidungsproblem}
+      \field{volume}{s2-42}
+      \field{year}{1937}
+      \field{pages}{230\bibrangedash 265}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
     \endentry
     \entry{washington_finite_2012}{inbook}{}
       \name{author}{3}{}{%

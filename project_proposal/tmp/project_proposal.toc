@@ -2,13 +2,12 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Shughni}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Morphology parsing}{4}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Literature review}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Shughni}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Morphology modeling}{6}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Neural approach}{6}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Rule-based approach}{6}{subsubsection.2.2.2}%
-\contentsline {section}{\numberline {3}Methods}{7}{section.3}%
-\contentsline {section}{\numberline {4}Expected outcomes}{8}{section.4}%
-\contentsline {section}{\numberline {5}Conclusions}{9}{section.5}%
-\contentsline {section}{\numberline {6}Discussion and future}{9}{section.6}%
-\contentsline {section}{References}{9}{section.6}%
+\contentsline {section}{\numberline {2}Literature review}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Shughni}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Morphology modeling}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Neural approach}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Rule-based approach}{5}{subsubsection.2.2.2}%
+\contentsline {section}{\numberline {3}Methods}{6}{section.3}%
+\contentsline {section}{\numberline {4}Expected outcomes}{9}{section.4}%
+\contentsline {section}{\numberline {5}Conclusion}{10}{section.5}%
+\contentsline {section}{References}{11}{section.5}%
