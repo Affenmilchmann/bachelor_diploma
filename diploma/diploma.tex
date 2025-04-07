@@ -1,20 +1,9 @@
 \newcommand*{\rootdir}{./diploma}%
 \input{\rootdir/parts/preamble.tex}
-\input{\rootdir/parts/unicode_declarations.tex}
-
-\title{\textbf{Project Proposal}}
-\author{Elen Kartina}
-\date{}
 
 \begin{document}
     %% Title page %%
-    \maketitle
-    \thispagestyle{empty}
-    \vspace{6cm}
-    \begin{center}
-        \LARGE Rule-based morphological parser for Shughni language: nouns, verbs and adjectives
-    \end{center}
-    \newpage
+    \input{\rootdir/parts/00_title.tex}
 
     %% Table of contents %%
     \setcounter{page}{1}
@@ -22,5 +11,14 @@
     \newpage
 
     %% Content pages %%
+    \onehalfspacing
+    \input{\rootdir/parts/01_abstract.tex}
+    \input{\rootdir/parts/1_introduction.tex}
+    \input{\rootdir/parts/2_existing_solutions.tex}
+    \input{\rootdir/parts/3_data.tex}
+    \input{\rootdir/parts/4_methods.tex}
+    \input{\rootdir/parts/5_results.tex}
+    \input{\rootdir/parts/6_conclusion.tex}
+    \input{\rootdir/parts/7_references.tex}
 
 \end{document}

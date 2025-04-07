@@ -1,18 +1,50 @@
-\documentclass{article}
-\usepackage[T1,T2A]{fontenc} % поддержка кириллицы
-\usepackage[utf8]{inputenc} % кодировка исходного текста
-\usepackage[english,russian]{babel}
+\documentclass[12pt]{article}
+% \usepackage[T1,T2A]{fontenc} % поддержка кириллицы
+% \usepackage[utf8]{inputenc} % кодировка исходного текста
+\usepackage[russian,english]{babel}
+\babelfont{rm}{FreeSerif}
+\babelfont{sf}{FreeSans}
+\babelfont{tt}{FreeMono}
+
+% шрифт
+\usepackage{fontspec}
+% \usepackage[default]{droidsans}
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+% \setmainfont[BoldFont          = *-Bold ,
+%              ItalicFont        = *-Italic ,
+%              Ligatures={TeX,Historic},
+%              SizeFeatures={Size=12}]{Times New Roman Cyr}
+
+% изображения
+\usepackage[dvips,xetex]{graphicx}
+% \usepackage{ifpdf,mla}% <-- mla.sty requires ifpdf.sty, but (perversely) doesn't load it
+
+% фонетические символы
+\usepackage{expex}
+\lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygla={\upshape}}
 
 \usepackage[left=3cm, right=3cm, top=2cm, bottom=2cm]{geometry} % поля страницы
 
 \usepackage{fancyhdr} % установка колонтитулов
 \usepackage{listings} % поддержка вставки исходного кода
-\usepackage{textcomp} % unicode?
-\usepackage{tipa} % phonetic letters
-\usepackage{upgreek} % non italic greek
+% \usepackage{textcomp} % unicode?
+% \usepackage{tipa} % phonetic letters
+% \usepackage{upgreek} % non italic greek
+\usepackage{setspace} % для отступов
+\usepackage[section]{placeins} % чтоб картинки из секций не улетали
+\usepackage{indentfirst}
 \usepackage{hyperref} % clickable table of contents
+
+% Библиограифя
+\usepackage{csquotes}
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{\rootdir/ref.bib}
 
 % Настройка стиля страницы
 \pagestyle{fancy}      % Использование стиля "fancy" для оформления страниц
 \fancyhf{}              % Очистка текущих значений колонтитулов
 \fancyfoot[C]{\thepage} % Установка номера страницы в нижнем колонтитуле по центру
+
+% Для оформления временных сносок
+\usepackage{xcolor}    % для работы с цветами
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{TODO: #1}}}

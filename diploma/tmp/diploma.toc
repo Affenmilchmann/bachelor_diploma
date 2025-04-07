@@ -1,0 +1,24 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Shughni language}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Morphology parsing \textbf {\textcolor {red}{TODO: rethink this heading}}}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Existing methods and solutions}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Deep learning methods}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Rule-based methods}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Existing solutions for Shughni}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Data}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Grammar descriptions}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Dictionaries}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Text corpora}{4}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Methods}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Finite-state transducers}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Rule declaration \textbf {\textcolor {red}{TODO: rethink heading}}}{4}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Nouns}{4}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Verbs}{4}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Adjectives}{4}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Pronouns(?)}{4}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Numerals(?)}{4}{subsubsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.6}Anything else(?)}{4}{subsubsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.3}Metrics}{4}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Results}{4}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}%
