@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  7 APR 2025 17:33
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  7 APR 2025 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,12 +987,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `diploma.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'diploma.bbl' not found.
+Package biblatex Info: ... file 'diploma.bbl' found.
 
-No file diploma.bbl.
+(./diploma/tmp/diploma.bbl)
 Package biblatex Info: Reference section=0 on input line 4.
 Package biblatex Info: Reference segment=0 on input line 4.
-(./diploma/parts/00_title.tex
+ (./diploma/parts/00_title.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1010,48 +1010,43 @@ Overfull \hbox (45.79758pt too wide) in paragraph at lines 21--33
 \tf@toc=\write6
 \openout6 = `diploma.toc'.
 
- [1] (./diploma/parts/01_abstract.tex
-
-LaTeX Warning: Citation 'melchenko_2021_parser' on page 2 undefined on input li
-ne 3.
-
-
-LaTeX Warning: Citation 'osorgin_2024_twol' on page 2 undefined on input line 3
-.
-
-[2]) (./diploma/parts/1_introduction.tex)
-(./diploma/parts/2_existing_solutions.tex) (./diploma/parts/3_data.tex)
-(./diploma/parts/4_methods.tex) (./diploma/parts/5_results.tex)
-(./diploma/parts/6_conclusion.tex) (./diploma/parts/7_references.tex [3]
-Overfull \vbox (33.25479pt too high) has occurred while \output is active []
+ [1] (./diploma/parts/01_abstract.tex [2])
+(./diploma/parts/1_introduction.tex) (./diploma/parts/2_existing_solutions.tex)
+(./diploma/parts/3_data.tex) (./diploma/parts/4_methods.tex)
+(./diploma/parts/5_results.tex) (./diploma/parts/6_conclusion.tex)
+(./diploma/parts/7_references.tex [3] [4])
+Overfull \hbox (0.23444pt too wide) in paragraph at lines 22--22
+\TU/FreeSerif(0)/m/it/12 nian languages. III. Eastern Iranian languages]\TU/Fre
+eSerif(0)/m/n/12 . []$[][][][][] [] [] [] [][][][][] [][] [][][] [] [][] [] [][
+][] [] [][] [] [][][][][][][][][][][][] []
+ []
 
 
-[4])
+Overfull \hbox (5.1345pt too wide) in paragraph at lines 22--22
+[][]\TU/FreeSerif(0)/m/n/12 Melenchenko, M. G. (2021). \TU/FreeSerif(0)/m/it/12
+ Автоматический морфологический анализ шугнанского языка
+ []
 
-LaTeX Warning: Empty bibliography on input line 7.
 
-(./diploma/tmp/diploma.aux)
+Overfull \hbox (4.69049pt too wide) in paragraph at lines 22--22
+[][]\TU/FreeSerif(0)/m/n/12 Osorgin, I. G. (2024). \TU/FreeSerif(0)/m/it/12 Соз
+дание морфологического парсера для шугнаского языка в системе
+ []
 
-LaTeX Warning: There were undefined references.
-
+[5] (./diploma/tmp/diploma.aux)
 Package rerunfilecheck Info: File `diploma.out' has not changed.
-(rerunfilecheck)             Checksum: B5D99E36F7ABE99C1119CCC48E9DDF19;3243.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                diploma
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 82405D7F5704EBD3EB0F09556AF71708;3289.
 Package logreq Info: Writing requests to 'diploma.run.xml'.
 \openout1 = `diploma.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23702 strings out of 478029
- 460893 string characters out of 5842217
+ 23773 strings out of 478029
+ 463100 string characters out of 5842217
  1852991 words of memory out of 5000000
- 43393 multiletter control sequences out of 15000+600000
- 515719 words of font info for 84 fonts, out of 8000000 for 9000
+ 43461 multiletter control sequences out of 15000+600000
+ 515727 words of font info for 85 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  78i,11n,108p,1199b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./diploma/tmp/diploma.pdf (5 pages).
+Output written on ./diploma/tmp/diploma.pdf (6 pages).

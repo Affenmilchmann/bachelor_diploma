@@ -1,0 +1,331 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{edelman_languages_1999}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
+           family={Edelman},
+           familyi={E\bibinitperiod},
+           given={Dzoy\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5329541223e6a8af0883929a47aea037}{%
+           family={Yusufbekov},
+           familyi={Y\bibinitperiod},
+           given={Sh.P.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Moscow, Russia}%
+      }
+      \strng{namehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{fullhash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{bibnamehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{authorbibnamehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{authornamehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{authorfullhash}{9fca0bed322d6e99683b6998074d11fd}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Языки мира: Иранские языки. III: Восточноиранские языки [Languages of the world: Iranian languages. III. Eastern Iranian languages]}}
+      \field{title}{{Шугнанский язык [Shughni language]}}
+      \field{year}{1999}
+      \verb{urlraw}
+      \verb https://iling-ran.ru/web/ru/publications/langworld/volumes/7
+      \endverb
+      \verb{url}
+      \verb https://iling-ran.ru/web/ru/publications/langworld/volumes/7
+      \endverb
+    \endentry
+    \entry{melchenko_2021_parser}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81eaa45a98d2fddf7cb219efd462e247}{%
+           family={Melenchenko},
+           familyi={M\bibinitperiod},
+           given={Maxim\bibnamedelima Glebovich},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{fullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{bibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorbibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authornamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorfullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Автоматический морфологический анализ шугнанского языка [Automatic full morphology analysis for Shughni]}}
+      \field{year}{2021}
+    \endentry
+    \entry{osorgin_2024_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48a87c8aa98f82973306dce1438d46a8}{%
+           family={Osorgin},
+           familyi={O\bibinitperiod},
+           given={Ivan\bibnamedelima Gennadievich},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{fullhash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{bibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorbibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authornamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorfullhash}{48a87c8aa98f82973306dce1438d46a8}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера для шугнаского языка в системе lexd и twol [Creating a morphological parser for the Shughni language using lexd and twol systems]}}
+      \field{year}{2024}
+    \endentry
+    \entry{parker_shughni_2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12bcf2b59ceb2b017ba851ecb151b33b}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Clinton},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Department of Linguistics, McGill University}%
+      }
+      \strng{namehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{fullhash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{bibnamehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{authorbibnamehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{authornamehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{authorfullhash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{A grammar of the Shughni language}}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{plungian_study_2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=72d90faadf14a8f9859c7b825e792745}{%
+           family={Plungian},
+           familyi={P\bibinitperiod},
+           given={V.A.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{fullhash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{bibnamehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{authorbibnamehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{authornamehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{authorfullhash}{72d90faadf14a8f9859c7b825e792745}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RSUH/RGGU Bulletin: “Literary Teory. Linguistics. Cultural Studies”, Series. 2022;(5):11-22}
+      \field{title}{The study of Shughni: the past and the future}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{edelman_languages_1999}{inbook}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
+           family={Edelman},
+           familyi={E\bibinitperiod},
+           given={Dzoy\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5329541223e6a8af0883929a47aea037}{%
+           family={Yusufbekov},
+           familyi={Y\bibinitperiod},
+           given={Sh.P.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Moscow, Russia}%
+      }
+      \strng{namehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{fullhash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{bibnamehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{authorbibnamehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{authornamehash}{9fca0bed322d6e99683b6998074d11fd}
+      \strng{authorfullhash}{9fca0bed322d6e99683b6998074d11fd}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Языки мира: Иранские языки. III: Восточноиранские языки [Languages of the world: Iranian languages. III. Eastern Iranian languages]}}
+      \field{title}{{Шугнанский язык [Shughni language]}}
+      \field{year}{1999}
+      \verb{urlraw}
+      \verb https://iling-ran.ru/web/ru/publications/langworld/volumes/7
+      \endverb
+      \verb{url}
+      \verb https://iling-ran.ru/web/ru/publications/langworld/volumes/7
+      \endverb
+    \endentry
+    \entry{melchenko_2021_parser}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=81eaa45a98d2fddf7cb219efd462e247}{%
+           family={Melenchenko},
+           familyi={M\bibinitperiod},
+           given={Maxim\bibnamedelima Glebovich},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{fullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{bibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorbibnamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authornamehash}{81eaa45a98d2fddf7cb219efd462e247}
+      \strng{authorfullhash}{81eaa45a98d2fddf7cb219efd462e247}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Автоматический морфологический анализ шугнанского языка [Automatic full morphology analysis for Shughni]}}
+      \field{year}{2021}
+    \endentry
+    \entry{osorgin_2024_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=48a87c8aa98f82973306dce1438d46a8}{%
+           family={Osorgin},
+           familyi={O\bibinitperiod},
+           given={Ivan\bibnamedelima Gennadievich},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{fullhash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{bibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorbibnamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authornamehash}{48a87c8aa98f82973306dce1438d46a8}
+      \strng{authorfullhash}{48a87c8aa98f82973306dce1438d46a8}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера для шугнаского языка в системе lexd и twol [Creating a morphological parser for the Shughni language using lexd and twol systems]}}
+      \field{year}{2024}
+    \endentry
+    \entry{parker_shughni_2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=12bcf2b59ceb2b017ba851ecb151b33b}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Clinton},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Department of Linguistics, McGill University}%
+      }
+      \strng{namehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{fullhash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{bibnamehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{authorbibnamehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{authornamehash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \strng{authorfullhash}{12bcf2b59ceb2b017ba851ecb151b33b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{A grammar of the Shughni language}}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+    \endentry
+    \entry{plungian_study_2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=72d90faadf14a8f9859c7b825e792745}{%
+           family={Plungian},
+           familyi={P\bibinitperiod},
+           given={V.A.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{fullhash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{bibnamehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{authorbibnamehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{authornamehash}{72d90faadf14a8f9859c7b825e792745}
+      \strng{authorfullhash}{72d90faadf14a8f9859c7b825e792745}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RSUH/RGGU Bulletin: “Literary Teory. Linguistics. Cultural Studies”, Series. 2022;(5):11-22}
+      \field{title}{The study of Shughni: the past and the future}
+      \field{year}{2022}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

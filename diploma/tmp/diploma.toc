@@ -1,6 +1,6 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Shughni language}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Shughni}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Morphology parsing \textbf {\textcolor {red}{TODO: rethink this heading}}}{4}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Existing methods and solutions}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Deep learning methods}{4}{subsection.2.1}%
@@ -22,3 +22,4 @@
 \contentsline {subsection}{\numberline {4.3}Metrics}{4}{subsection.4.3}%
 \contentsline {section}{\numberline {5}Results}{4}{section.5}%
 \contentsline {section}{\numberline {6}Conclusion}{4}{section.6}%
+\contentsline {section}{References}{5}{section.6}%
