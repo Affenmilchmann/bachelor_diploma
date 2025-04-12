@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  7 APR 2025 19:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  12 APR 2025 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,7 +1014,11 @@ Overfull \hbox (45.79758pt too wide) in paragraph at lines 21--33
 (./diploma/parts/1_introduction.tex) (./diploma/parts/2_existing_solutions.tex)
 (./diploma/parts/3_data.tex) (./diploma/parts/4_methods.tex)
 (./diploma/parts/5_results.tex) (./diploma/parts/6_conclusion.tex)
-(./diploma/parts/7_references.tex [3] [4])
+(./diploma/parts/7_references.tex [3] [4]
+Overfull \vbox (89.81067pt too high) has occurred while \output is active []
+
+
+[5])
 Overfull \hbox (0.23444pt too wide) in paragraph at lines 22--22
 \TU/FreeSerif(0)/m/it/12 nian languages. III. Eastern Iranian languages]\TU/Fre
 eSerif(0)/m/n/12 . []$[][][][][] [] [] [] [][][][][] [][] [][][] [] [][] [] [][
@@ -1033,9 +1037,9 @@ Overfull \hbox (4.69049pt too wide) in paragraph at lines 22--22
 дание морфологического парсера для шугнаского языка в системе
  []
 
-[5] (./diploma/tmp/diploma.aux)
+[6] (./diploma/tmp/diploma.aux)
 Package rerunfilecheck Info: File `diploma.out' has not changed.
-(rerunfilecheck)             Checksum: 82405D7F5704EBD3EB0F09556AF71708;3289.
+(rerunfilecheck)             Checksum: 61EB08F8E6440EACF456379BB7879119;4010.
 Package logreq Info: Writing requests to 'diploma.run.xml'.
 \openout1 = `diploma.run.xml'.
 
@@ -1043,10 +1047,10 @@ Package logreq Info: Writing requests to 'diploma.run.xml'.
 Here is how much of TeX's memory you used:
  23773 strings out of 478029
  463100 string characters out of 5842217
- 1852991 words of memory out of 5000000
+ 1854991 words of memory out of 5000000
  43461 multiletter control sequences out of 15000+600000
  515727 words of font info for 85 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  78i,11n,108p,1199b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./diploma/tmp/diploma.pdf (6 pages).
+Output written on ./diploma/tmp/diploma.pdf (7 pages).
