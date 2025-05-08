@@ -1,19 +1,19 @@
-[1] Config.pm:306> INFO - This is Biber 2.18
-[2] Config.pm:309> INFO - Logfile is './diploma/tmp/diploma.blg'
-[151] biber:340> INFO - === Пн апр  7, 2025, 18:43:13
-[173] Biber.pm:418> INFO - Reading './diploma/tmp/diploma.bcf'
-[292] Biber.pm:978> INFO - Found 5 citekeys in bib section 0
-[318] Biber.pm:4401> INFO - Processing section 0
-[332] Biber.pm:4592> INFO - Looking for bibtex file './diploma/ref.bib' for section 0
-[333] bibtex.pm:1713> INFO - LaTeX decoding ...
-[340] bibtex.pm:1518> INFO - Found BibTeX data source './diploma/ref.bib'
-[421] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[421] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[421] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[421] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[445] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[445] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[445] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[445] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[461] bbl.pm:654> INFO - Writing './diploma/tmp/diploma.bbl' with encoding 'UTF-8'
-[469] bbl.pm:757> INFO - Output to ./diploma/tmp/diploma.bbl
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is './diploma/tmp/diploma.blg'
+[140] biber:340> INFO - === Чт мая  8, 2025, 17:54:12
+[165] Biber.pm:418> INFO - Reading './diploma/tmp/diploma.bcf'
+[314] Biber.pm:978> INFO - Found 11 citekeys in bib section 0
+[350] Biber.pm:4401> INFO - Processing section 0
+[368] Biber.pm:4592> INFO - Looking for bibtex file './diploma/ref.bib' for section 0
+[371] bibtex.pm:1713> INFO - LaTeX decoding ...
+[390] bibtex.pm:1518> INFO - Found BibTeX data source './diploma/ref.bib'
+[647] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[648] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[648] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[648] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[720] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[720] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[721] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[721] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[751] bbl.pm:654> INFO - Writing './diploma/tmp/diploma.bbl' with encoding 'UTF-8'
+[788] bbl.pm:757> INFO - Output to ./diploma/tmp/diploma.bbl
