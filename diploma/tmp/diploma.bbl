@@ -19,6 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{beesley_fst_2002}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=11d0a55511f23ccb4cb15db4c5a20677}{%
+           family={Beesley},
+           familyi={B\bibinitperiod},
+           given={enneth\bibnamedelima R.},
+           giveni={e\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CSLI, Stanford}%
+      }
+      \strng{namehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{fullhash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{bibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorbibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authornamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorfullhash}{6288a1513a50d212babaf9bf234f978f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Finite-state morphology: Xerox tools and techniques}}
+      \field{year}{2002}
+    \endentry
     \entry{devlin_2019}{inbook}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
@@ -419,6 +453,51 @@
       \field{journaltitle}{RSUH/RGGU Bulletin: “Literary Teory. Linguistics. Cultural Studies”, Series. 2022;(5):11-22}
       \field{title}{The study of Shughni: the past and the future}
       \field{year}{2022}
+    \endentry
+    \entry{Turing_1937}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fdc523429c3c89c34880f733033f2099}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On Computable Numbers, with an Application to the Entscheidungsproblem}
+      \field{volume}{s2-42}
+      \field{year}{1937}
+      \field{pages}{230\bibrangedash 265}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
     \endentry
     \entry{transformer_2017}{inbook}{}
       \name{author}{8}{}{%
@@ -540,6 +619,40 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{beesley_fst_2002}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=11d0a55511f23ccb4cb15db4c5a20677}{%
+           family={Beesley},
+           familyi={B\bibinitperiod},
+           given={enneth\bibnamedelima R.},
+           giveni={e\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {CSLI, Stanford}%
+      }
+      \strng{namehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{fullhash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{bibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorbibnamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authornamehash}{6288a1513a50d212babaf9bf234f978f}
+      \strng{authorfullhash}{6288a1513a50d212babaf9bf234f978f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Finite-state morphology: Xerox tools and techniques}}
+      \field{year}{2002}
+    \endentry
     \entry{devlin_2019}{inbook}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
@@ -940,6 +1053,51 @@
       \field{journaltitle}{RSUH/RGGU Bulletin: “Literary Teory. Linguistics. Cultural Studies”, Series. 2022;(5):11-22}
       \field{title}{The study of Shughni: the past and the future}
       \field{year}{2022}
+    \endentry
+    \entry{Turing_1937}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fdc523429c3c89c34880f733033f2099}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the London Mathematical Society}
+      \field{number}{1}
+      \field{title}{On Computable Numbers, with an Application to the Entscheidungsproblem}
+      \field{volume}{s2-42}
+      \field{year}{1937}
+      \field{pages}{230\bibrangedash 265}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1112/plms/s2-42.1.230
+      \endverb
     \endentry
     \entry{transformer_2017}{inbook}{}
       \name{author}{8}{}{%

@@ -3057,9 +3057,12 @@
     <bcf:citekey order="18" intorder="1">devlin_2019</bcf:citekey>
     <bcf:citekey order="19" intorder="1">kondratyuk_straka_model_2019</bcf:citekey>
     <bcf:citekey order="20" intorder="1">kondratyuk_straka_model_2019</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Turing_1937</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">beesley_fst_2002</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">beesley_fst_2002</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">makarov_digital_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
