@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  10 MAY 2025 16:07
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  10 MAY 2025 20:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1021,10 +1021,10 @@ File: ./diploma/img/transducer1.png Graphic file (type bmp)
  [5]
 File: ./diploma/img/transducer1_1.png Graphic file (type bmp)
 <./diploma/img/transducer1_1.png>
-) (./diploma/parts/3_data.tex
-[6]) (./diploma/parts/4_methods.tex) (./diploma/parts/5_results.tex)
-(./diploma/parts/6_conclusion.tex) (./diploma/parts/7_references.tex [7]
-[8])
+ [6])
+(./diploma/parts/3_data.tex) (./diploma/parts/4_methods.tex)
+(./diploma/parts/5_results.tex) (./diploma/parts/6_conclusion.tex)
+(./diploma/parts/7_references.tex [7] [8])
 Overfull \hbox (0.23444pt too wide) in paragraph at lines 22--22
 \TU/FreeSerif(0)/m/it/12 nian languages. III. Eastern Iranian languages]\TU/Fre
 eSerif(0)/m/n/12 . []$[][][][][] [] [] [] [][][][][] [][] [][][] [] [][] [] [][
@@ -1043,20 +1043,26 @@ Overfull \hbox (4.69049pt too wide) in paragraph at lines 22--22
 дание морфологического парсера для шугнаского языка в системе
  []
 
-[9] (./diploma/tmp/diploma.aux)
+
+Overfull \hbox (1.5515pt too wide) in paragraph at lines 22--22
+[][]\TU/FreeSerif(0)/m/n/12 Swanson, D., & Howell, N. (2021). Lexd: A Finite-St
+ate Lexicon Compiler for Non-Suffixational
+ []
+
+[9] [10] (./diploma/tmp/diploma.aux)
 Package rerunfilecheck Info: File `diploma.out' has not changed.
-(rerunfilecheck)             Checksum: F1592972DE1D5A182C25F41B7C2045FE;4047.
+(rerunfilecheck)             Checksum: 483778A023F2E9554F35DD01B331C27D;4281.
 Package logreq Info: Writing requests to 'diploma.run.xml'.
 \openout1 = `diploma.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23873 strings out of 478029
- 466076 string characters out of 5842217
- 1862991 words of memory out of 5000000
- 43556 multiletter control sequences out of 15000+600000
+ 23903 strings out of 478029
+ 467253 string characters out of 5842217
+ 1865991 words of memory out of 5000000
+ 43586 multiletter control sequences out of 15000+600000
  515727 words of font info for 85 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
- 78i,11n,108p,1203b,5200s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 78i,12n,108p,1285b,5200s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./diploma/tmp/diploma.pdf (10 pages).
+Output written on ./diploma/tmp/diploma.pdf (11 pages).

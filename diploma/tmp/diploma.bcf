@@ -3060,9 +3060,15 @@
     <bcf:citekey order="21" intorder="1">Turing_1937</bcf:citekey>
     <bcf:citekey order="22" intorder="1">beesley_fst_2002</bcf:citekey>
     <bcf:citekey order="23" intorder="1">beesley_fst_2002</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">koskenniemi_twol_1983</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">karttunen_twolc_1987</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">karttunen_twolc_1987</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">karttunen_lexc_1993</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">swanson_lexd_2021</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">linden_hfst_2009</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">makarov_digital_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

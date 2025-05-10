@@ -263,6 +263,70 @@
       \verb 10.1162/neco.1997.9.8.1735
       \endverb
     \endentry
+    \entry{karttunen_lexc_1993}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{fullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{bibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorbibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authornamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorfullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finite-state lexicon compiler. {Technical Report ISTL-NLTT-1993-04-02, Xerox Palo Alto Research Center, Palo Alto, CA.}}
+      \field{year}{1993}
+    \endentry
+    \entry{karttunen_twolc_1987}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2a553c9ed96bcd52d1ac4defe753059}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{fullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{bibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authorbibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authornamehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{authorfullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{tools for morphological analysis}
+      \field{month}{01}
+      \field{title}{A compiler for two-level phonological rules}
+      \field{year}{1987}
+    \endentry
     \entry{kondratyuk_straka_model_2019}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=5a13cc03ed90c502d17d94d693bb1d55}{%
@@ -293,6 +357,102 @@
       \field{labeltitlesource}{title}
       \field{title}{75 Languages, 1 Model: Parsing Universal Dependencies Universally}
       \field{year}{2019}
+    \endentry
+    \entry{koskenniemi_twol_1983}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{fullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{bibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorbibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authornamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorfullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{{Two-level Morphology: A General Computational Model for Word-Form Recognition and Production}}
+      \field{year}{1983}
+    \endentry
+    \entry{linden_hfst_2009}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ad7941717fde150030c5182b4ccf1c2f}{%
+           family={Lindén},
+           familyi={L\bibinitperiod},
+           given={Krister},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81cf00d83f0af8110e9b22eca5e4d9fa}{%
+           family={Silfverberg},
+           familyi={S\bibinitperiod},
+           given={Miikka},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6413e00d5d1803bb822f0efd676cad35}{%
+           family={Pirinen},
+           familyi={P\bibinitperiod},
+           given={Tommi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b87300f1876608a4b4cba7d9a4b4a176}{%
+           family={Mahlow},
+           familyi={M\bibinitperiod},
+           given={Cerstin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bd542677ca2f75a0c28910d9b983e7ee}{%
+           family={Piotrowski},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{fullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{bibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authorbibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authornamehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{authorfullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{editorbibnamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editornamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editorfullhash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{State of the Art in Computational Morphology}}
+      \field{isbn}{978-3-642-04130-3}
+      \field{series}{Communications in Computer AND Information Science}
+      \field{title}{{HFST Tools for Morphology – An Efficient Open-Source Package for Construction of Morphological Analyzers}}
+      \field{volume}{41}
+      \field{year}{2009}
+      \field{pages}{28\bibrangedash 47}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
     \endentry
     \entry{makarov_digital_2022}{article}{}
       \name{author}{3}{}{%
@@ -453,6 +613,37 @@
       \field{journaltitle}{RSUH/RGGU Bulletin: “Literary Teory. Linguistics. Cultural Studies”, Series. 2022;(5):11-22}
       \field{title}{The study of Shughni: the past and the future}
       \field{year}{2022}
+    \endentry
+    \entry{swanson_lexd_2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0698d7604289fdee9fe496b6b067fccf}{%
+           family={Swanson},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e94ee3b2e3717b7ca8c8602eba953e3}{%
+           family={Howell},
+           familyi={H\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{fullhash}{01ca82ef303370987b226737072b7cbc}
+      \strng{bibnamehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{authorbibnamehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{authornamehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{authorfullhash}{01ca82ef303370987b226737072b7cbc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Lexd: A Finite-State Lexicon Compiler for Non-Suffixational Morphologies}}
+      \field{year}{2021}
     \endentry
     \entry{Turing_1937}{misc}{}
       \name{author}{1}{}{%
@@ -863,6 +1054,70 @@
       \verb 10.1162/neco.1997.9.8.1735
       \endverb
     \endentry
+    \entry{karttunen_lexc_1993}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{fullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{bibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorbibnamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authornamehash}{4dc2330480061b3b4ca4266707f7c473}
+      \strng{authorfullhash}{4dc2330480061b3b4ca4266707f7c473}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Finite-state lexicon compiler. {Technical Report ISTL-NLTT-1993-04-02, Xerox Palo Alto Research Center, Palo Alto, CA.}}
+      \field{year}{1993}
+    \endentry
+    \entry{karttunen_twolc_1987}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
+           family={Karttunen},
+           familyi={K\bibinitperiod},
+           given={Lauri},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2a553c9ed96bcd52d1ac4defe753059}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{fullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{bibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authorbibnamehash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \strng{authornamehash}{7bf88467442d143748a3c31e38d0ec22}
+      \strng{authorfullhash}{77b8f401ad286429d7e62a9ec46fa3af}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{tools for morphological analysis}
+      \field{month}{01}
+      \field{title}{A compiler for two-level phonological rules}
+      \field{year}{1987}
+    \endentry
     \entry{kondratyuk_straka_model_2019}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=5a13cc03ed90c502d17d94d693bb1d55}{%
@@ -893,6 +1148,102 @@
       \field{labeltitlesource}{title}
       \field{title}{75 Languages, 1 Model: Parsing Universal Dependencies Universally}
       \field{year}{2019}
+    \endentry
+    \entry{koskenniemi_twol_1983}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ec74c924fc1657f6a533bd5553da53e1}{%
+           family={Koskenniemi},
+           familyi={K\bibinitperiod},
+           given={Kimmo},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{fullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{bibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorbibnamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authornamehash}{ec74c924fc1657f6a533bd5553da53e1}
+      \strng{authorfullhash}{ec74c924fc1657f6a533bd5553da53e1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{{Two-level Morphology: A General Computational Model for Word-Form Recognition and Production}}
+      \field{year}{1983}
+    \endentry
+    \entry{linden_hfst_2009}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=ad7941717fde150030c5182b4ccf1c2f}{%
+           family={Lindén},
+           familyi={L\bibinitperiod},
+           given={Krister},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81cf00d83f0af8110e9b22eca5e4d9fa}{%
+           family={Silfverberg},
+           familyi={S\bibinitperiod},
+           given={Miikka},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6413e00d5d1803bb822f0efd676cad35}{%
+           family={Pirinen},
+           familyi={P\bibinitperiod},
+           given={Tommi},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b87300f1876608a4b4cba7d9a4b4a176}{%
+           family={Mahlow},
+           familyi={M\bibinitperiod},
+           given={Cerstin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bd542677ca2f75a0c28910d9b983e7ee}{%
+           family={Piotrowski},
+           familyi={P\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{fullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{bibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authorbibnamehash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{authornamehash}{c26d3bce3dadc9877097ed00cb3ca9ea}
+      \strng{authorfullhash}{96486f355fffeb1fcd1d0faa5160204c}
+      \strng{editorbibnamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editornamehash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \strng{editorfullhash}{d916b3c4b1c6f719fdbf3367b9b89b70}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{State of the Art in Computational Morphology}}
+      \field{isbn}{978-3-642-04130-3}
+      \field{series}{Communications in Computer AND Information Science}
+      \field{title}{{HFST Tools for Morphology – An Efficient Open-Source Package for Construction of Morphological Analyzers}}
+      \field{volume}{41}
+      \field{year}{2009}
+      \field{pages}{28\bibrangedash 47}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-642-04131-0_3
+      \endverb
     \endentry
     \entry{makarov_digital_2022}{article}{}
       \name{author}{3}{}{%
@@ -1053,6 +1404,37 @@
       \field{journaltitle}{RSUH/RGGU Bulletin: “Literary Teory. Linguistics. Cultural Studies”, Series. 2022;(5):11-22}
       \field{title}{The study of Shughni: the past and the future}
       \field{year}{2022}
+    \endentry
+    \entry{swanson_lexd_2021}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0698d7604289fdee9fe496b6b067fccf}{%
+           family={Swanson},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e94ee3b2e3717b7ca8c8602eba953e3}{%
+           family={Howell},
+           familyi={H\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{fullhash}{01ca82ef303370987b226737072b7cbc}
+      \strng{bibnamehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{authorbibnamehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{authornamehash}{01ca82ef303370987b226737072b7cbc}
+      \strng{authorfullhash}{01ca82ef303370987b226737072b7cbc}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Lexd: A Finite-State Lexicon Compiler for Non-Suffixational Morphologies}}
+      \field{year}{2021}
     \endentry
     \entry{Turing_1937}{misc}{}
       \name{author}{1}{}{%
