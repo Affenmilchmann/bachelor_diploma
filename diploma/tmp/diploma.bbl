@@ -53,6 +53,74 @@
       \field{title}{{Finite-state morphology: Xerox tools and techniques}}
       \field{year}{2002}
     \endentry
+    \entry{budilova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8618523d8b66a3b398eac9eceab0704}{%
+           family={Budilova},
+           familyi={B\bibinitperiod},
+           given={Zinaida\bibnamedelima Aleksandrovna},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{fullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{bibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorbibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authornamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorfullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера для чамалинского языка в системе lexd и twol [Morphological parser of Chamalal in lexd and twol]}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+    \endentry
+    \entry{buntyakova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d76e4e195a72fd8ec8a809f3138fbcc}{%
+           family={Buntyakova},
+           familyi={B\bibinitperiod},
+           given={Valeriya\bibnamedelima Antonovna},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{fullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{bibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorbibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authornamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorfullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера андийского языка в системе lexd и twol [Morphological parser of Andi in lexd and twol}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+    \endentry
     \entry{devlin_2019}{inbook}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
@@ -134,6 +202,31 @@
       \verb{url}
       \verb https://aclanthology.org/N19-1423/
       \endverb
+    \endentry
+    \entry{edelman_gram_2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
+           family={Edelman},
+           familyi={E\bibinitperiod},
+           given={Dzoy\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{fullhash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{bibnamehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{authorbibnamehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{authornamehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{authorfullhash}{19002828a07ce5039ce201388dfe8c93}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Сравнительная грамматика восточноиранских языков [Comparative Grammar of Eastern Iranian Languages]}}
+      \field{year}{2009}
     \endentry
     \entry{edelman_languages_1999}{inbook}{}
       \name{author}{2}{}{%
@@ -262,6 +355,71 @@
       \verb{doi}
       \verb 10.1162/neco.1997.9.8.1735
       \endverb
+    \endentry
+    \entry{karamshoev_dialect_1963}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
+           family={Karamshoev},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {изд-во АН Тадж. ССР}%
+      }
+      \strng{namehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{fullhash}{7021cf05c606530c81db02f440dda28a}
+      \strng{bibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{{Академия наук Таджикской ССР, Институт языка и литературы им. Рудаки: Труды}}
+      \field{title}{{Баджувский диалект шугнанского языка [Badzhuvskij dialect of the Shughni language]}}
+      \field{year}{1963}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
+      \endverb
+    \endentry
+    \entry{karamshoev_dict_1988}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
+           family={Karamshoev},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Izd-vo Akademii nauk SSSR}%
+      }
+      \strng{namehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{fullhash}{7021cf05c606530c81db02f440dda28a}
+      \strng{bibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Шугнанско-русский словарь [Shughni-Russian dictionary]}}
+      \field{year}{1988--1999}
     \endentry
     \entry{karttunen_lexc_1993}{article}{}
       \name{author}{1}{}{%
@@ -614,6 +772,78 @@
       \field{title}{The study of Shughni: the past and the future}
       \field{year}{2022}
     \endentry
+    \entry{salemann_dict_1895}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb8abf31e1ac5aa52269f4806328705b}{%
+           family={Salemann},
+           familyi={S\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{fullhash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{bibnamehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{authorbibnamehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{authornamehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{authorfullhash}{fb8abf31e1ac5aa52269f4806328705b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Восточные заметки [Eastern notes]}}
+      \field{title}{{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}}
+      \field{year}{1895}
+    \endentry
+    \entry{sarveswaran_morph_2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bc7e0ff3534c73f72defa9e93a35fccd}{%
+           family={Sarveswaran},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48328d76f48e663d3379d5304ecd6d09}{%
+           family={Dias},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63aac502457690e4684d8c0566779e85}{%
+           family={Butt},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{fullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{bibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authorbibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authornamehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{authorfullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Machine Translation 35}}
+      \field{title}{{ThamizhiMorph: A morphological parser for the Tamil language}}
+      \field{year}{2021}
+      \field{pages}{37\bibrangedash 70}
+      \range{pages}{34}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+    \endentry
     \entry{swanson_lexd_2021}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=0698d7604289fdee9fe496b6b067fccf}{%
@@ -644,6 +874,28 @@
       \field{labeltitlesource}{title}
       \field{title}{{Lexd: A Finite-State Lexicon Compiler for Non-Suffixational Morphologies}}
       \field{year}{2021}
+    \endentry
+    \entry{tumanovich_gram_1906}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66beb3da2b98ebf71914c603d870a27c}{%
+           family={Tumanovich},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{fullhash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{bibnamehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{authorbibnamehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{authornamehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{authorfullhash}{66beb3da2b98ebf71914c603d870a27c}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}}
+      \field{year}{1906}
     \endentry
     \entry{Turing_1937}{misc}{}
       \name{author}{1}{}{%
@@ -807,6 +1059,138 @@
       \verb{url}
       \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
       \endverb
+    \endentry
+    \entry{washington_finite_2012}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f0c9a508809cd52db37596285e452223}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89c86109f6589f3a8ef6296fcf49aefc}{%
+           family={Ipasov},
+           familyi={I\bibinitperiod},
+           given={Mirlan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=979dc780b3343ae259affe8dcbf49f0f}{%
+           family={Doğan},
+           familyi={D\bibinitperiod},
+           given={Mehmet\bibnamedelima Uğur},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bfec001866fc980a5a370b3f8f617c1d}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Asuncion},
+           giveni={A\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Istanbul, Turkey}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association (ELRA)}%
+      }
+      \strng{namehash}{6776294cbe98409937676e83600f42b4}
+      \strng{fullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{bibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authorbibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authornamehash}{6776294cbe98409937676e83600f42b4}
+      \strng{authorfullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{editorbibnamehash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes the development of a free/open-source finite-state morphological transducer for Kyrgyz. The transducer has been developed for morphological generation for use within a prototype TurkishâKyrgyz machine translation system, but has also been extensively tested for analysis. The finite-state toolkit used for the work was the Helsinki Finite-State Toolkit (HFST). The paper describes some issues in Kyrgyz morphology, the development of the tool, some linguistic issues encountered and how they were dealt with, and which issues are left to resolve. An evaluation is presented which shows that the transducer has medium-level coverage, between 82{\%} and 87{\%} on two freely available corpora of Kyrgyz, and high precision and recall over a manually verified test set.}
+      \field{booktitle}{Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}`12)}
+      \field{month}{5}
+      \field{title}{A finite-state morphological transducer for {K}yrgyz}
+      \field{year}{2012}
+      \field{pages}{934\bibrangedash 940}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+    \endentry
+    \entry{zarubin_dict_1960}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d73f29b435a8bf5db8c0b9ee103b199e}{%
+           family={Zarubin},
+           familyi={Z\bibinitperiod},
+           given={I.I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Izd-vo Akademii nauk SSSR}%
+      }
+      \strng{namehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{fullhash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{bibnamehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{authorbibnamehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{authornamehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{authorfullhash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Шугнанские тексты и словарь [Shughni texts and dictionary]}}
+      \field{year}{1960}
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
@@ -844,6 +1228,74 @@
       \field{title}{{Finite-state morphology: Xerox tools and techniques}}
       \field{year}{2002}
     \endentry
+    \entry{budilova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a8618523d8b66a3b398eac9eceab0704}{%
+           family={Budilova},
+           familyi={B\bibinitperiod},
+           given={Zinaida\bibnamedelima Aleksandrovna},
+           giveni={Z\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{fullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{bibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorbibnamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authornamehash}{a8618523d8b66a3b398eac9eceab0704}
+      \strng{authorfullhash}{a8618523d8b66a3b398eac9eceab0704}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера для чамалинского языка в системе lexd и twol [Morphological parser of Chamalal in lexd and twol]}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214661
+      \endverb
+    \endentry
+    \entry{buntyakova_2023_twol}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d76e4e195a72fd8ec8a809f3138fbcc}{%
+           family={Buntyakova},
+           familyi={B\bibinitperiod},
+           given={Valeriya\bibnamedelima Antonovna},
+           giveni={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {NRU HSE}%
+      }
+      \strng{namehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{fullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{bibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorbibnamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authornamehash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \strng{authorfullhash}{0d76e4e195a72fd8ec8a809f3138fbcc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Создание морфологического парсера андийского языка в системе lexd и twol [Morphological parser of Andi in lexd and twol}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+      \verb{url}
+      \verb https://www.hse.ru/edu/vkr/837214826
+      \endverb
+    \endentry
     \entry{devlin_2019}{inbook}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=13202969e372bc82318f9629cbdd199b}{%
@@ -925,6 +1377,31 @@
       \verb{url}
       \verb https://aclanthology.org/N19-1423/
       \endverb
+    \endentry
+    \entry{edelman_gram_2009}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=19002828a07ce5039ce201388dfe8c93}{%
+           family={Edelman},
+           familyi={E\bibinitperiod},
+           given={Dzoy\bibnamedelima I.},
+           giveni={D\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{fullhash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{bibnamehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{authorbibnamehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{authornamehash}{19002828a07ce5039ce201388dfe8c93}
+      \strng{authorfullhash}{19002828a07ce5039ce201388dfe8c93}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Сравнительная грамматика восточноиранских языков [Comparative Grammar of Eastern Iranian Languages]}}
+      \field{year}{2009}
     \endentry
     \entry{edelman_languages_1999}{inbook}{}
       \name{author}{2}{}{%
@@ -1053,6 +1530,71 @@
       \verb{doi}
       \verb 10.1162/neco.1997.9.8.1735
       \endverb
+    \endentry
+    \entry{karamshoev_dialect_1963}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
+           family={Karamshoev},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {изд-во АН Тадж. ССР}%
+      }
+      \strng{namehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{fullhash}{7021cf05c606530c81db02f440dda28a}
+      \strng{bibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{1}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{series}{{Академия наук Таджикской ССР, Институт языка и литературы им. Рудаки: Труды}}
+      \field{title}{{Баджувский диалект шугнанского языка [Badzhuvskij dialect of the Shughni language]}}
+      \field{year}{1963}
+      \verb{urlraw}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.ru/books?id=8q1GXwAACAAJ
+      \endverb
+    \endentry
+    \entry{karamshoev_dict_1988}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7021cf05c606530c81db02f440dda28a}{%
+           family={Karamshoev},
+           familyi={K\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Izd-vo Akademii nauk SSSR}%
+      }
+      \strng{namehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{fullhash}{7021cf05c606530c81db02f440dda28a}
+      \strng{bibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorbibnamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authornamehash}{7021cf05c606530c81db02f440dda28a}
+      \strng{authorfullhash}{7021cf05c606530c81db02f440dda28a}
+      \field{extraname}{2}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Шугнанско-русский словарь [Shughni-Russian dictionary]}}
+      \field{year}{1988--1999}
     \endentry
     \entry{karttunen_lexc_1993}{article}{}
       \name{author}{1}{}{%
@@ -1405,6 +1947,78 @@
       \field{title}{The study of Shughni: the past and the future}
       \field{year}{2022}
     \endentry
+    \entry{salemann_dict_1895}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fb8abf31e1ac5aa52269f4806328705b}{%
+           family={Salemann},
+           familyi={S\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{fullhash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{bibnamehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{authorbibnamehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{authornamehash}{fb8abf31e1ac5aa52269f4806328705b}
+      \strng{authorfullhash}{fb8abf31e1ac5aa52269f4806328705b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Восточные заметки [Eastern notes]}}
+      \field{title}{{Шугнанский словарь Д.Л. Иванова [Shughni dictionary by D.L. Ivanov]}}
+      \field{year}{1895}
+    \endentry
+    \entry{sarveswaran_morph_2021}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=bc7e0ff3534c73f72defa9e93a35fccd}{%
+           family={Sarveswaran},
+           familyi={S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=48328d76f48e663d3379d5304ecd6d09}{%
+           family={Dias},
+           familyi={D\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63aac502457690e4684d8c0566779e85}{%
+           family={Butt},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{fullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{bibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authorbibnamehash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \strng{authornamehash}{1b9665f52360c78b10e1434416b58c2c}
+      \strng{authorfullhash}{bd537b13f0c53ad8fd8709b4120f2a75}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{{Machine Translation 35}}
+      \field{title}{{ThamizhiMorph: A morphological parser for the Tamil language}}
+      \field{year}{2021}
+      \field{pages}{37\bibrangedash 70}
+      \range{pages}{34}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10590-021-09261-5
+      \endverb
+    \endentry
     \entry{swanson_lexd_2021}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=0698d7604289fdee9fe496b6b067fccf}{%
@@ -1435,6 +2049,28 @@
       \field{labeltitlesource}{title}
       \field{title}{{Lexd: A Finite-State Lexicon Compiler for Non-Suffixational Morphologies}}
       \field{year}{2021}
+    \endentry
+    \entry{tumanovich_gram_1906}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=66beb3da2b98ebf71914c603d870a27c}{%
+           family={Tumanovich},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{fullhash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{bibnamehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{authorbibnamehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{authornamehash}{66beb3da2b98ebf71914c603d870a27c}
+      \strng{authorfullhash}{66beb3da2b98ebf71914c603d870a27c}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Краткая грамматика и словарь шугнанского наречия [Brief grammar and dictionary of Shughni]}}
+      \field{year}{1906}
     \endentry
     \entry{Turing_1937}{misc}{}
       \name{author}{1}{}{%
@@ -1598,6 +2234,138 @@
       \verb{url}
       \verb https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
       \endverb
+    \endentry
+    \entry{washington_finite_2012}{inbook}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f0c9a508809cd52db37596285e452223}{%
+           family={Washington},
+           familyi={W\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=89c86109f6589f3a8ef6296fcf49aefc}{%
+           family={Ipasov},
+           familyi={I\bibinitperiod},
+           given={Mirlan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb2678f10639c5b9dc06f409e52d497b}{%
+           family={Tyers},
+           familyi={T\bibinitperiod},
+           given={Francis},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=c341e33a4b6ea903f6c723a46650c1be}{%
+           family={Calzolari},
+           familyi={C\bibinitperiod},
+           given={Nicoletta},
+           giveni={N\bibinitperiod}}}%
+        {{hash=39867e26feb655084bcaa95ee00ad1b3}{%
+           family={Choukri},
+           familyi={C\bibinitperiod},
+           given={Khalid},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa314aaff9cde7c75dd1dbefb7df9aee}{%
+           family={Declerck},
+           familyi={D\bibinitperiod},
+           given={Thierry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=979dc780b3343ae259affe8dcbf49f0f}{%
+           family={Doğan},
+           familyi={D\bibinitperiod},
+           given={Mehmet\bibnamedelima Uğur},
+           giveni={M\bibinitperiod\bibinitdelim U\bibinitperiod}}}%
+        {{hash=f89d93ac385cd2c8048bd80b6bec272c}{%
+           family={Maegaard},
+           familyi={M\bibinitperiod},
+           given={Bente},
+           giveni={B\bibinitperiod}}}%
+        {{hash=bdf0b8f2adba0ed452d8c7a080e79edb}{%
+           family={Mariani},
+           familyi={M\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bfec001866fc980a5a370b3f8f617c1d}{%
+           family={Moreno},
+           familyi={M\bibinitperiod},
+           given={Asuncion},
+           giveni={A\bibinitperiod}}}%
+        {{hash=663e887ebca3a6dfcd35d2bbf8163b42}{%
+           family={Odijk},
+           familyi={O\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d79dd4fb50589491e453c48e1d3c56a}{%
+           family={Piperidis},
+           familyi={P\bibinitperiod},
+           given={Stelios},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Istanbul, Turkey}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association (ELRA)}%
+      }
+      \strng{namehash}{6776294cbe98409937676e83600f42b4}
+      \strng{fullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{bibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authorbibnamehash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{authornamehash}{6776294cbe98409937676e83600f42b4}
+      \strng{authorfullhash}{d1ccace3da01aa2beb73e3c7adcb8494}
+      \strng{editorbibnamehash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
+      \strng{editorfullhash}{a6d28cecd2434c77761dc5afab9a8bf1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes the development of a free/open-source finite-state morphological transducer for Kyrgyz. The transducer has been developed for morphological generation for use within a prototype TurkishâKyrgyz machine translation system, but has also been extensively tested for analysis. The finite-state toolkit used for the work was the Helsinki Finite-State Toolkit (HFST). The paper describes some issues in Kyrgyz morphology, the development of the tool, some linguistic issues encountered and how they were dealt with, and which issues are left to resolve. An evaluation is presented which shows that the transducer has medium-level coverage, between 82{\%} and 87{\%} on two freely available corpora of Kyrgyz, and high precision and recall over a manually verified test set.}
+      \field{booktitle}{Proceedings of the Eighth International Conference on Language Resources and Evaluation ({LREC}`12)}
+      \field{month}{5}
+      \field{title}{A finite-state morphological transducer for {K}yrgyz}
+      \field{year}{2012}
+      \field{pages}{934\bibrangedash 940}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/L12-1642/
+      \endverb
+    \endentry
+    \entry{zarubin_dict_1960}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d73f29b435a8bf5db8c0b9ee103b199e}{%
+           family={Zarubin},
+           familyi={Z\bibinitperiod},
+           given={I.I.},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Izd-vo Akademii nauk SSSR}%
+      }
+      \strng{namehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{fullhash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{bibnamehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{authorbibnamehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{authornamehash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \strng{authorfullhash}{d73f29b435a8bf5db8c0b9ee103b199e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Шугнанские тексты и словарь [Shughni texts and dictionary]}}
+      \field{year}{1960}
     \endentry
   \enddatalist
 \endrefsection

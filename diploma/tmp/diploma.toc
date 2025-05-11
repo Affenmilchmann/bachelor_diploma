@@ -1,18 +1,18 @@
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Shughni}{3}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Morphology modeling}{4}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Existing methods}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Machine learning methods}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Rule-based methods}{5}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Finite-state transducers}{5}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}FST formalisms}{6}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Helsinki finite-state technology}{7}{subsubsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.3}Existing morphology models for Shughni}{7}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Data}{8}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Grammar descriptions}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Dictionaries}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Text corpora}{8}{subsection.3.3}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Shughni}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Morphology modeling}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Existing methods}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Machine learning methods}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Rule-based methods}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Finite-state transducers}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}FST formalisms}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Helsinki finite-state technology}{5}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Existing morphology models for Shughni}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Data}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Grammar descriptions}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Dictionaries}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Text corpora}{6}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Methods}{8}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Finite-state transducers \textbf {\textcolor {red}{TODO: Move to introduction?}}}{8}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Rule declaration \textbf {\textcolor {red}{TODO: rethink heading}}}{8}{subsection.4.2}%

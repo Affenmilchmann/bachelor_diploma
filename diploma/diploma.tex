@@ -5,14 +5,18 @@
     %% Title page %%
     \input{\rootdir/parts/00_title.tex}
 
+    %% Abstract %%
+    \thispagestyle{empty}
+    \input{\rootdir/parts/01_abstract.tex}
+
     %% Table of contents %%
-    \setcounter{page}{1}
+    \thispagestyle{empty}
     \tableofcontents
     \newpage
+    \setcounter{page}{1}
 
     %% Content pages %%
     \onehalfspacing
-    \input{\rootdir/parts/01_abstract.tex}
     \input{\rootdir/parts/1_introduction.tex}
     \input{\rootdir/parts/2_existing_solutions.tex}
     \input{\rootdir/parts/3_data.tex}

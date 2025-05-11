@@ -3066,9 +3066,41 @@
     <bcf:citekey order="27" intorder="1">karttunen_lexc_1993</bcf:citekey>
     <bcf:citekey order="28" intorder="1">swanson_lexd_2021</bcf:citekey>
     <bcf:citekey order="29" intorder="1">linden_hfst_2009</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">buntyakova_2023_twol</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">buntyakova_2023_twol</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">budilova_2023_twol</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">budilova_2023_twol</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">salemann_dict_1895</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">karamshoev_dialect_1963</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">karamshoev_dialect_1963</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">edelman_gram_2009</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">tumanovich_gram_1906</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">salemann_dict_1895</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">makarov_digital_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

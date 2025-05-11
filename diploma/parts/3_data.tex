@@ -1,5 +1,60 @@
 \section{Data} \label{data_section}
 
 \subsection{Grammar descriptions}
+Several Shughni grammar descriptions were written throughout the years, starting from basic grammar description done by D. L. Ivanov \parencite[274-281]{salemann_dict_1895}. An important mention is a work by \textcite{karamshoev_dialect_1963}, which was the most detailed Shughni grammar description of its time. Latest significant works were `Shughni language' \parencite[225-242]{edelman_languages_1999}, 'Comparative Grammar of Eastern Iranian Languages' \parencite{edelman_gram_2009} and `A grammar of the Shughhi language' by \textcite{parker_shughni_2023}, which is the biggest existing grammar, the most detailed and the most recent one.
+
+For this work the main reference for compiling Shughni grammar rules was the work of \textcite{parker_shughni_2023}. It was picked as it is the most recent, the most detailed and the biggest one. Other grammar description works were used too, but only as a secondary reference. The second most used grammar description was a work by \textcite{edelman_languages_1999}.
+
 \subsection{Dictionaries}
+There are two main dictionaries of the Shughni language: one by \textcite{zarubin_dict_1960} and one by \textcite{karamshoev_dict_1988}, both are written using Cyrillic script and include Russian translations. Some early dictionaries are `Brief grammar and dictionary of Shughni' \parencite{tumanovich_gram_1906}, that is also using Cyrillic and translates to Russian, and `Shughni dictionary by D. L. Ivanov' \parencite{salemann_dict_1895}, that translates to Russian but uses Arabic script alongside Cyrillic transcriptions for Shughhi word-forms.
+
+An important lexical source for this work was the `Digital Resources for the Shughni Language' project \parencite{makarov_digital_2022}. As a part of their work, authors compiled a digital dictionary for Shughni, where they digitalized both major Shughni dictionaries by \textcite{karamshoev_dict_1988} and \textcite{zarubin_dict_1960}. The digital dictionary is available at their website via a web-interface, but I was given access by the authors to a copy of the underlying database, which simplified the process of exporting lexicons for this project. All the lexicons for FST compilation were taken from their database.
+
 \subsection{Text corpora}
+I was given access to unpublished native texts that were gathered during HSE expeditions to Tajikistan in 2019-2024. It is not a large corpus of texts, its size can be seen on Table \hyperref[Tab:native_texts]{1}. The `Pear Story' is a spoken text, it was written down from a retelling of the `Pear Story' movie during an expedition.
+
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            \textbf{Text name} & \textbf{Total tokens} & \textbf{Unique tokens} \\
+            \hline
+            \textit{`The Gospel of Luke'} & 2978 & 1001 \\
+            \textit{`Pear Story'} & 1117 & 438 \\
+            Miscellaneous texts & 164 & 106 \\
+            \hline
+            All texts & 4259 & 1393 \\
+            \hline
+        \end{tabular}
+        \label{Tab:native_texts}
+        \caption{A list of native Shughni texts and their sizes gathered during HSE expeditions to Tajikistan in 2019-2024}
+    \end{center}
+\end{table}
+
+The database provided by \textcite{makarov_digital_2022} also contained a lot of different useful data parsed from dictionaries including dictionary entries' usage examples. Such data is not as valuable as native texts, as sometimes it might not come from a native speaker but from a researcher. I would argue that for \textit{Coverage} evaluation it might be quite useful. 
+
+From materials of HSE expeditions to Tajikistan I also acquired manually glossed texts in \texttt{.eaf} (ELAN) format. These texts were utilized for \textit{Accuracy} evaluation, which will be discussed in Section \ref{metrics_section}. 
+
+A full list of text sources can be seen on Table \hyperref[Tab:all_texts]{2}.
+
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{|l|l|l|l|l|}
+            \hline
+            \textbf{Text name} & \textbf{Total tokens} & \textbf{Unique tokens} & \textbf{Native} & \textbf{Glossed} \\
+            \hline
+            Dictionary examples & 164 225 & 29 013 & Uncertain & No \\
+            \hline
+            \textit{`The Gospel of Luke'} & 2 978 & 1 001 & Yes & No \\
+            \textit{`Pear Story'} & 1 117 & 438 & Yes & No \\
+            Miscellaneous texts & 164 & 106 & Yes & No \\
+            \hline
+            \textit{`The Gospel of Luke'} & 2 942 & 635 & Yes & Yes \\
+            \textit{`Pear Story'} & 228 & 83 & Yes & Yes \\
+            \textit{`Mama'} & 267 & 123 & Yes & Yes \\
+            \hline
+        \end{tabular}
+        \label{Tab:all_texts}
+        \caption{A list of all available digital textual data }
+    \end{center}
+\end{table}
