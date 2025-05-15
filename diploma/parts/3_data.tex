@@ -11,7 +11,7 @@ There are two main dictionaries of the Shughni language: one by \textcite{zarubi
 An important lexical source for this work was the `Digital Resources for the Shughni Language' project \parencite{makarov_digital_2022}. As a part of their work, authors compiled a digital dictionary for Shughni, where they digitalized both major Shughni dictionaries by \textcite{karamshoev_dict_1988} and \textcite{zarubin_dict_1960}. The digital dictionary is available at their website via a web-interface, but I was given access by the authors to a copy of the underlying database, which simplified the process of exporting lexicons for this project. All the lexicons for FST compilation were taken from their database.
 
 \subsection{Text corpora}
-I was given access to unpublished native texts that were gathered during HSE expeditions to Tajikistan in 2019-2024. It is not a large corpus of texts, its size can be seen on Table \hyperref[Tab:native_texts]{1}. The `Pear Story' is a spoken text, it was written down from a retelling of the `Pear Story' movie during an expedition.
+I was given access to unpublished native texts that were gathered during HSE expeditions to Tajikistan in 2019-2024. It is not a large corpus of texts. It consists of a translation of `The Gospel of Luke' in Shughni, of a `Pear Story' text, which is a spoken text that was written down from a retelling of the `Pear Story' movie during an expedition, and it also includes a group of miscellaneous untitled small texts. Texts size can be seen on Table \hyperref[Tab:native_texts]{1}
 
 \begin{table}[!h]
     \begin{center}
@@ -26,16 +26,14 @@ I was given access to unpublished native texts that were gathered during HSE exp
             All texts & 4259 & 1393 \\
             \hline
         \end{tabular}
-        \label{Tab:native_texts}
         \caption{A list of native Shughni texts and their sizes gathered during HSE expeditions to Tajikistan in 2019-2024}
+        \label{Tab:native_texts}
     \end{center}
 \end{table}
 
-The database provided by \textcite{makarov_digital_2022} also contained a lot of different useful data parsed from dictionaries including dictionary entries' usage examples. Such data is not as valuable as native texts, as sometimes it might not come from a native speaker but from a researcher. I would argue that for \textit{Coverage} evaluation it might be quite useful. 
+The database provided by \textcite{makarov_digital_2022} also contained a lot of different useful data parsed from dictionaries including dictionary entries' usage examples. Such data is not as valuable as native texts, as sometimes it might not come from a native speaker but from a researcher. I would argue that for \textit{Coverage} evaluation it might still be quite useful. 
 
-From materials of HSE expeditions to Tajikistan I also acquired manually glossed texts in \texttt{.eaf} (ELAN) format. These texts were utilized for \textit{Accuracy} evaluation, which will be discussed in Section \ref{metrics_section}. 
-
-A full list of text sources can be seen on Table \hyperref[Tab:all_texts]{2}.
+From materials of HSE expeditions to Tajikistan I also acquired manually glossed texts in \texttt{.eaf} (ELAN) format. These texts were utilized for \textit{Accuracy} evaluation, which will be discussed in Section \ref{metrics_section} along with \textit{Coverage}. A full list of text sources can be seen on Table \hyperref[Tab:all_texts]{2}.
 
 \begin{table}[!h]
     \begin{center}
@@ -54,7 +52,7 @@ A full list of text sources can be seen on Table \hyperref[Tab:all_texts]{2}.
             \textit{`Mama'} & 267 & 123 & Yes & Yes \\
             \hline
         \end{tabular}
-        \label{Tab:all_texts}
         \caption{A list of all available digital textual data }
+        \label{Tab:all_texts}
     \end{center}
 \end{table}

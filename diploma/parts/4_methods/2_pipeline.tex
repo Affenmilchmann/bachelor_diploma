@@ -1,0 +1,80 @@
+\subsection{FST compilation pipeline}
+\subsubsection*{Analyzers and generators}
+First, there are two main types of FSTs: generators and analyzers. They differ only in the directionality of a FST. Analyzers take wordforms as input and return glossed strings as output. Generators work in reverse, as shown in Code block \ref{code:pipeline_1}.
+
+\begin{verbbox}
+$ echo "дарйойен" | hfst-lookup -q sgh_analyze_stem_word_cyr.hfst
+дарйойен        дарйо<n>><3pl>  0.000000
+дарйойен        дарйо<n>><pl>   0.000000
+$ echo "дарйо<n>><pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
+дарйо<n>><pl>   дарйо-йен       0.000000
+дарйо<n>><pl>   дарйойен        0.000000
+\end{verbbox}
+{\centering
+\vspace*{0.5cm}
+\begin{code_frame} \theverbbox \end{code_frame}
+\captionof{Code}{FST analyzer vs generator output formats.}
+\label{code:pipeline_1}
+\vspace*{0.5cm}
+}
+
+The \texttt{lexd} source code is written as a generator, meaning by default, compiled FST takes glossed stem or lemma as input and returns a wordform. To compile any analyzer, a corresponding generator is inverted, as shown in Code block \ref{code:pipeline_2}.
+
+\begin{verbbox}
+$ hfst-invert sgh_gen_stem_word_cyr.hfst  \
+           -o sgh_analyze_stem_word_cyr.hfst
+$
+\end{verbbox}
+{\centering
+\vspace*{0.5cm}
+\begin{code_frame} \theverbbox \end{code_frame}
+\captionof{Code}{FST analyzer creation from a FST generator.}
+\label{code:pipeline_2}
+\vspace*{0.5cm}
+}
+
+\subsubsection*{Shughni stems and Russian lemmas}
+The next format only applies to the glossed side of FSTs (to the analyzers' output and to the generators' input). It sets whether a Cyrillic Shughni stem or a Russian translated lemma will be used as a stem's gloss, as shown in Code block \ref{code:pipeline_3}. Shughni stems can have multiple Russian candidates (\textit{`дарйо'} can be translated as \textit{`река'} or \textit{`море'}). This leads to composed transducer having more output candidates. This works both ways, meaning Russian lemmas can translate as multiple Shughni stems (\textit{`река'} can be translated as \textit{`дарйо'} or \textit{`х̌ац'}).
+
+\begin{verbbox}
+$ echo "дарйо<n>><3pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
+дарйо<n>><3pl>	  дарйо-йен     0.000000
+дарйо<n>><3pl>	  дарйойен      0.000000
+$ echo "река<n>><3pl>" | hfst-lookup -q sgh_gen_rulem_word_cyr.hfst
+река<n>><3pl>	    дарйо-йен     0.000000
+река<n>><3pl>	    дарйойен      0.000000
+река<n>><3pl>	    х̌ац-ен        0.000000
+река<n>><3pl>	    х̌ацен         0.000000
+$ echo "дарйойен" | hfst-lookup -q sgh_analyze_rulem_word_cyr.hfst
+дарйойен	        море<n>><3pl> 0.000000
+дарйойен	        море<n>><pl>  0.000000
+дарйойен	        река<n>><3pl> 0.000000
+дарйойен	        река<n>><pl>  0.000000
+\end{verbbox}
+{\centering
+\vspace*{0.5cm}
+\begin{code_frame} \theverbbox \end{code_frame}
+\captionof{Code}{Shughni stem vs Russian lemma versions of FST.}
+\label{code:pipeline_3}
+\vspace*{0.5cm}
+}
+
+The \texttt{lexd} source code contains lexicons with Shughni stems on the glossed side, meaning default compiled FST contains only Shughni stems. The process of creating a FST that works with Russian lemmas on the glossed side is more complicated. It is achieved with the help of a second FST \texttt{rulem2sgh.hfst}, its only purpose is translating stems to lemmas. It is attached to the input of a generator FST, creating a pipeline 
+
+\vspace*{0.3cm}
+\noindent \texttt{`река<n>><pl>'} $\rightarrow$ \texttt{rulem2sgh} $\rightarrow$ \texttt{`дарйо<n>><pl>'} $\rightarrow$ \texttt{generator} $\rightarrow$ \texttt{`дарйойен'}\\
+
+
+It can be done with `compose' transducer operation (see Code block \ref{code:bash_7}), which takes two FSTs, directs first's output to the second's input and returns the resulting composed FST. Details of translator FST's development are described in Section \ref{rulemm_section}.
+
+\begin{verbbox}
+$ hfst-compose rulem2sgh.hfst sgh_gen_stem_word_cyr.hfst
+  -o sgh_gen_rulem_word_cyr.hfst
+\end{verbbox}
+{\centering
+\vspace*{0.5cm}
+\begin{code_frame} \theverbbox \end{code_frame}
+\captionof{Code}{Shughni stem translator composition.}
+\label{code:bash_7}
+\vspace*{0.5cm}
+}
