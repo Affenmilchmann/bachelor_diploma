@@ -421,6 +421,37 @@
       \field{title}{{Шугнанско-русский словарь [Shughni-Russian dictionary]}}
       \field{year}{1988--1999}
     \endentry
+    \entry{kartina_2025_repo}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d77cd4c882ddc19b1d676fb1ee6a7da}{%
+           family={Kartina},
+           familyi={K\bibinitperiod},
+           given={Elen},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{fullhash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{bibnamehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{authorbibnamehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{authornamehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{authorfullhash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{afmigoo/bachelor\_diploma}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/afmigoo/bachelor_diploma
+      \endverb
+      \verb{url}
+      \verb https://github.com/afmigoo/bachelor_diploma
+      \endverb
+    \endentry
     \entry{karttunen_lexc_1993}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=4dc2330480061b3b4ca4266707f7c473}{%
@@ -1595,6 +1626,37 @@
       \field{labeltitlesource}{title}
       \field{title}{{Шугнанско-русский словарь [Shughni-Russian dictionary]}}
       \field{year}{1988--1999}
+    \endentry
+    \entry{kartina_2025_repo}{unpublished}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1d77cd4c882ddc19b1d676fb1ee6a7da}{%
+           family={Kartina},
+           familyi={K\bibinitperiod},
+           given={Elen},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{fullhash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{bibnamehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{authorbibnamehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{authornamehash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \strng{authorfullhash}{1d77cd4c882ddc19b1d676fb1ee6a7da}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{afmigoo/bachelor\_diploma}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://github.com/afmigoo/bachelor_diploma
+      \endverb
+      \verb{url}
+      \verb https://github.com/afmigoo/bachelor_diploma
+      \endverb
     \endentry
     \entry{karttunen_lexc_1993}{article}{}
       \name{author}{1}{}{%

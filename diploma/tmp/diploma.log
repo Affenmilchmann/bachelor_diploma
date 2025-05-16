@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  16 MAY 2025 00:25
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  16 MAY 2025 22:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1782,70 +1782,81 @@ File: ./diploma/img/transducer1_1.png Graphic file (type bmp)
 (./diploma/parts/4_methods/1_formats.tex [7]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 63.
+(caption)                particular \caption on input line 62.
 See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown Code defaults to 0 on input l
-ine 63.
-[8]) (./diploma/parts/4_methods/2_pipeline.tex
+ine 62.
+) (./diploma/parts/4_methods/2_pipeline.tex [8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 16.
+(caption)                particular \caption on input line 15.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 31.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 57.
+(caption)                particular \caption on input line 27.
 See the caption package documentation for explanation.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 51.
+See the caption package documentation for explanation.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 77.
+(caption)                particular \caption on input line 69.
 See the caption package documentation for explanation.
-
-) (./diploma/parts/4_methods/3_file_structure.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
 
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 38.
-See the caption package documentation for explanation.
-
-[11]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 60.
+(caption)                particular \caption on input line 99.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 77.
+(caption)                particular \caption on input line 113.
 See the caption package documentation for explanation.
 
-[12]) (./diploma/parts/4_methods/4_lexd.tex
+) (./diploma/parts/4_methods/3_file_structure.tex)
+(./diploma/parts/4_methods/4_lexd.tex
 LaTeX Font Info:    Font shape `TU/FreeMono(0)/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-)
-(./diploma/parts/4_methods/5_twol.tex) (./diploma/parts/4_methods/6_lexicon.tex
-) (./diploma/parts/4_methods/7_translit.tex)
+ [11]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 14.
+See the caption package documentation for explanation.
+
+) (./diploma/parts/4_methods/5_twol.tex [12]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 30.
+See the caption package documentation for explanation.
+
+[13]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 42.
+See the caption package documentation for explanation.
+
+) (./diploma/parts/4_methods/6_lexicon.tex)
+(./diploma/parts/4_methods/7_translit.tex)
 (./diploma/parts/4_methods/8_rulem.tex)
 (./diploma/parts/4_methods/9_testing.tex)
 (./diploma/parts/4_methods/10_metrics.tex)) (./diploma/parts/5_results.tex)
-(./diploma/parts/6_conclusion.tex) (./diploma/parts/7_references.tex [13]
-[14])
+(./diploma/parts/6_conclusion.tex) (./diploma/parts/7_references.tex [14])
 Overfull \hbox (3.70172pt too wide) in paragraph at lines 26--26
 [][]\TU/FreeSerif(0)/m/n/12 Edelman, D. I. (2009). Сравнительная грамматика вос
 точноиранских языков [Comparative Gram-
@@ -1865,26 +1876,19 @@ Overfull \hbox (0.72575pt too wide) in paragraph at lines 26--26
  []
 
 [15] [16] (./diploma/tmp/diploma.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `diploma.out' has not changed.
-(rerunfilecheck)             Checksum: 43B095A566DCACDB06C14109487FEAA5;4700.
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+(rerunfilecheck)             Checksum: 3F8065BFD325B5FF6BD1E0DAC2069AA0;4538.
 Package logreq Info: Writing requests to 'diploma.run.xml'.
 \openout1 = `diploma.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52509 strings out of 478029
- 1190673 string characters out of 5842217
- 2290665 words of memory out of 5000000
- 71753 multiletter control sequences out of 15000+600000
+ 51703 strings out of 478029
+ 1176415 string characters out of 5842217
+ 2290797 words of memory out of 5000000
+ 70947 multiletter control sequences out of 15000+600000
  516409 words of font info for 89 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
- 119i,12n,120p,1663b,5371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,120p,1663b,5371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on ./diploma/tmp/diploma.pdf (19 pages).

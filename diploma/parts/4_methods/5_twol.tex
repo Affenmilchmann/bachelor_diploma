@@ -1,1 +1,46 @@
 \subsection{\texttt{twol} phonology}
+Shughni is not rich for morphonological rules. The only global phonological rule is `J' drop (\todo{citation needed; `drop' is a questinable name for this}) on some morphemes' borders after a consonant:
+\[
+j \rightarrow \emptyset 
+\ /\ 
+[+consonant]
+\ \_
+\]
+\todo{как показать границу морфемы, нужна ли вообще нотация правила если я не могу на неё сослаться}
+
+For this rule a special multichar symbol is introduced in FST lexicons: `\texttt{\{Й\}}' (symbol includes curly brackets). A FST treats multichar symbols as single unique symbols, even though they visually consist of multiple characters. This feature allows us to mark which lexicon entries are affected by this phonological rule and which are not. An example of lexicon definition with this symbol is shown in Code block \ref{code:5_1}.
+
+\begin{code_frame}[float]
+    \begin{verbatim}
+LEXICON PCS # Personal clitics
+<1sg>:{Й}ум
+<2sg>:{Й}ат
+<2sg>:т
+<3sg>:{Й}и
+<1pl>:{Й}āм
+<1pl>:{Й}ам
+<2pl>:{Й}ет
+<3pl>:{Й}ен
+
+LEXICON DIM # Diminutive clitic
+<dim>:{Й}ик
+<dim>:{Й}ак
+    \end{verbatim}
+    \tcblower
+    \captionof{Code}{A real \texttt{lexd} example of `\texttt{\{Й\}}' multichar usage.}
+    \label{code:5_1}
+\end{code_frame}
+
+But without \texttt{twol} rules these morphemes will remain as they are specified in \texttt{lexd}, meaning that feeding `\texttt{brother<n>><dim>}' to the input of a generator will literally output `\texttt{вирод\{Й\}ик}'. To get rid of this intermediate symbol, we can use \texttt{twol} rule shown in Code block \ref{code:5_2}. The composition of \texttt{twol} rules with the main FST is the same as it was for morpheme border filtration (Code block \ref{code:bash_8}). 
+
+\begin{code_frame}[float]
+    \begin{verbatim}
+"Вставка йота"
+%{Й%}:0 <=> Consonant (%>) (%-) (%>) _ ;
+    \end{verbatim}
+    \tcblower
+    \captionof{Code}{A \texttt{twol} rule for `j' insertion depending on the previous morpheme's segment. symbol in \texttt{twol} is used to escape a character.}
+    \label{code:5_2}
+\end{code_frame}
+
+

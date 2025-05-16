@@ -57,13 +57,28 @@
 % Счётик для блоков кода
 \newfloat{Code}
 \captionsetup{Code}
+\captionsetup[Code]{belowskip=0pt, aboveskip=0pt}
+\preto{\verbatim}{\topsep=0pt \partopsep=0pt}
 % Кастомные коробки для блоков кода
+% \newtcolorbox{code_block}[1][]{ % https://tex.stackexchange.com/questions/263706/latex-adding-cell-padding-to-a-text-frame
+%   frame hidden,
+%   colback=white,
+%   #1
+% }
 \newtcolorbox{code_frame}[1][]{ % https://tex.stackexchange.com/questions/263706/latex-adding-cell-padding-to-a-text-frame
   enhanced,
-  arc=3pt,
-  outer arc=3pt,
+  arc=4pt,
+  outer arc=4pt,
   colback=white,
-  boxrule=0.8pt,
+  boxrule=0.9pt,
   #1
 }
-
+% Template
+% \begin{code_frame}[float]
+%     \begin{verbatim}
+% C O D E
+%     \end{verbatim}
+%     \tcblower
+%     \captionof{Code}{Title}
+%     \label{code:label}
+% \end{code_frame}

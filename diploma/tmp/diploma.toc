@@ -16,20 +16,19 @@
 \contentsline {section}{\numberline {4}Methods}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Input and output format}{7}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}FST compilation pipeline}{9}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Repository structure}{11}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}\texttt {lexd} rule declaration}{14}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Nouns}{14}{subsubsection.4.4.1}%
-\contentsline {subsubsection}{\numberline {4.4.2}Verbs}{14}{subsubsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.3}Adjectives}{14}{subsubsection.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.4}Pronouns}{14}{subsubsection.4.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.5}Numerals}{14}{subsubsection.4.4.5}%
-\contentsline {subsubsection}{\numberline {4.4.6}Anything else(?)}{14}{subsubsection.4.4.6}%
-\contentsline {subsection}{\numberline {4.5}\texttt {twol} phonology}{14}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Stem lexicons processing}{14}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Transliteration}{14}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{14}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Testing}{14}{subsection.4.9}%
-\contentsline {subsection}{\numberline {4.10}Metrics}{14}{subsection.4.10}%
+\contentsline {subsection}{\numberline {4.3}\texttt {lexd} rule declaration}{11}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Nouns}{13}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Verbs}{13}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Adjectives}{13}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Pronouns}{13}{subsubsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Numerals}{13}{subsubsection.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.6}Anything else(?)}{13}{subsubsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.4}\texttt {twol} phonology}{13}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Stem lexicons processing}{14}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Transliteration}{14}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{14}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Testing}{14}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Metrics}{14}{subsection.4.9}%
 \contentsline {section}{\numberline {5}Results}{14}{section.5}%
 \contentsline {section}{\numberline {6}Conclusion}{14}{section.6}%
 \contentsline {section}{References}{15}{section.6}%

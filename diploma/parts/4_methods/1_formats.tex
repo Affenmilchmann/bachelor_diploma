@@ -13,13 +13,13 @@ Every FST converts between two types of strings: wordforms (e.g. `\texttt{дар
 
 The Shughni morphological parser in this work is presented in a variety of input and output formats. A full list of \texttt{.hfst} files with their formats of input and output is shown in Table \ref{Tab:all_hfst}. Motivation for this many variations of the morphological parser was support of different formats. Parser comes with four format variables:
 \begin{itemize}
-    \item Wordform script: Latin or Cyrillic.\\
-    \texttt{дарйойен} (Latin); \texttt{daryoyen} (Cyrillic)
-    \item Wordform morpheme borders: plain word or morphemes are separated with (`\texttt{>}') delimeter symbol. Notated in file names as \texttt{word} and \texttt{morph} respectively.\\
-    \texttt{дарйойен} (plain word); \texttt{дарйо>йен} (morphemes separated)
+    \item FST directionality: analyzer or generator. This simply shows the direction of a FST, analyzers take wordforms as input and return glossed strings, generators take glossed strings and return wordforms
     \item Glossed string stem glosses: Shughni stems or Russian lemmas. Notated in file names as \texttt{stem} and \texttt{rulem} respectively.\\
     \texttt{дарйо<n>><pl>} (Shughni stem); \texttt{река<n>><pl>} (Russian lemma)
-    \item FST directionality: analyzer or generator. This simply shows the direction of a FST, analyzers take wordforms as input and return glossed strings, generators take glossed strings and return wordforms
+    \item Wordform morpheme borders: plain word or morphemes are separated with (`\texttt{>}') delimeter symbol. Notated in file names as \texttt{word} and \texttt{morph} respectively.\\
+    \texttt{дарйойен} (plain word); \texttt{дарйо>йен} (morphemes separated)
+    \item Wordform script: Latin or Cyrillic.\\
+    \texttt{дарйойен} (Latin); \texttt{daryoyen} (Cyrillic)
 \end{itemize}
 
 \begin{table}[!h]
@@ -53,14 +53,12 @@ The Shughni morphological parser in this work is presented in a variety of input
 
 Four binary variables result in 16 ($=2^4$) FST variations. Every FST listed in Table \ref{Tab:all_hfst} can be built with \texttt{make} command as shown in Code block \ref{code:make_1}. Regular \texttt{.hfst} binary FSTs are not recommended using in production environments, as they are not optimized. For production use an optimized format called \texttt{.hfstol} (HFST \textbf{O}ptimized \textbf{L}ookup), which can also be compiled automatically for every listed FST using \texttt{make}.
 
-\begin{verbbox}
+\begin{code_frame}[float]
+    \begin{verbatim}
 $ make sgh_gen_stem_morph_cyr.hfst
 $ make sgh_gen_stem_morph_cyr.hfstol
-\end{verbbox}
-{\centering
-\vspace*{0.5cm}
-\begin{code_frame} \theverbbox \end{code_frame}
-\captionof{Code}{Example of FST compilation with \texttt{make}.}
-\label{code:make_1}
-\vspace*{0.5cm}
-}
+    \end{verbatim}
+    \tcblower
+    \captionof{Code}{Example of FST compilation with \texttt{make}.}
+    \label{code:make_1}
+\end{code_frame}
