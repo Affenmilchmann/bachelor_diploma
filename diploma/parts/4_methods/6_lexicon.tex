@@ -1,1 +1,47 @@
 \subsection{Stem lexicons processing} \label{stem_lexicons}
+Describing morphological rules and morphemes is not sufficient to make a morphological parser. An important part of the development was gathering stem lexicons for various parts of speech. For some POS, like conjunctions or numerals, lexicons were listed by hand. But for others, like verbs, manual lexicon construction is an extremely time-consuming task. Such lexicons were extracted from the \texttt{SQLite} database provided by \textcite{makarov_digital_2022}. 
+
+The database in question contains digital versions of Shughni main dictionaries: \textcite{karamshoev_dict_1988} and \textcite{zarubin_dict_1960}. It has a decently organized structure, which allows selecting dictionary entries by parsed metadata like POS or glosses. To transfer stems from the database to a \texttt{lexd}-formatted file it follows the following pipeline:
+
+\begin{center}
+    \texttt{Database} $\rightarrow$ \texttt{noun.csv} $\rightarrow$ \texttt{form\_lexd.py} $\rightarrow$ \texttt{noun.lexd}
+\end{center}
+
+\newtcolorbox{subbox}[1][]{
+  enhanced,
+  arc=0pt,
+  outer arc=0pt,
+  colframe=white,
+  coltitle=black,
+  boxrule=0.9pt,
+  left=0mm,top=1mm,bottom=1mm,right=0mm,boxsep=1mm,width=7.5cm,nobeforeafter,
+  height=5cm,
+  #1}
+
+\begin{code_frame}[float]
+    \begin{subbox}[title={Exported \texttt{noun.csv} fragment}]
+        \begin{verbatim}
+cyrillic,meaning
+абδуст,рукавица
+абδустеҷ,материал
+абед,обед; время обеда
+абӣн,ненавистница
+абку̊мпāрт,обком партии
+        \end{verbatim}
+    \end{subbox}
+    \begin{subbox}[title={Generated \texttt{noun.lexd} fragment}]
+        \begin{verbatim}
+LEXICON LexiconNoun[pl_all,sg]
+абδуст      # рукавица
+абδустеҷ    # материал
+абед        # обед; время обеда
+абӣн        # ненавистница
+абку̊мпāрт   # обком партии
+        \end{verbatim}
+    \end{subbox}
+    \tcblower
+    \captionof{Code}{An example of exported noun stems from the database converted to \texttt{lexd} source code.}
+    \label{code:6_1}
+\end{code_frame}
+
+An example of real \texttt{csv} and resulted \texttt{lexd} fragments are shown in Code block \ref{code:6_1}. I decided to keep meanings from the source as \texttt{lexd} comments. This should not influence the compilation process, and later it makes it easier to debug lexicons manually.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  16 MAY 2025 22:25
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  18 MAY 2025 01:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1845,18 +1845,31 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 30.
 See the caption package documentation for explanation.
 
-[13]
+
+Overfull \hbox (10.86272pt too wide) in paragraph at lines 34--35
+\TU/FreeSerif(0)/m/n/12 ing ‘\TU/FreeMono(0)/m/n/12 вирод<n>><dim>\TU/FreeSerif
+(0)/m/n/12 ’(\TU/FreeSerif(0)/m/it/12 =brother.N-DIM\TU/FreeSerif(0)/m/n/12 ) t
+o the input of a generator will output literally ‘\TU/FreeMono(0)/m/n/12 вирод{
+Й}ик\TU/FreeSerif(0)/m/n/12 ’.
+ []
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 42.
 See the caption package documentation for explanation.
 
-) (./diploma/parts/4_methods/6_lexicon.tex)
-(./diploma/parts/4_methods/7_translit.tex)
+) (./diploma/parts/4_methods/6_lexicon.tex [13]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 43.
+See the caption package documentation for explanation.
+
+) (./diploma/parts/4_methods/7_translit.tex)
 (./diploma/parts/4_methods/8_rulem.tex)
 (./diploma/parts/4_methods/9_testing.tex)
-(./diploma/parts/4_methods/10_metrics.tex)) (./diploma/parts/5_results.tex)
-(./diploma/parts/6_conclusion.tex) (./diploma/parts/7_references.tex [14])
+(./diploma/parts/4_methods/10_metrics.tex)) (./diploma/parts/5_results.tex
+[14] [15]) (./diploma/parts/6_conclusion.tex) (./diploma/parts/7_references.tex
+[16])
 Overfull \hbox (3.70172pt too wide) in paragraph at lines 26--26
 [][]\TU/FreeSerif(0)/m/n/12 Edelman, D. I. (2009). Сравнительная грамматика вос
 точноиранских языков [Comparative Gram-
@@ -1875,7 +1888,7 @@ Overfull \hbox (0.72575pt too wide) in paragraph at lines 26--26
  Автоматический морфологический анализ шугнанского языка [Au-
  []
 
-[15] [16] (./diploma/tmp/diploma.aux)
+[17] [18] (./diploma/tmp/diploma.aux)
 Package rerunfilecheck Info: File `diploma.out' has not changed.
 (rerunfilecheck)             Checksum: 3F8065BFD325B5FF6BD1E0DAC2069AA0;4538.
 Package logreq Info: Writing requests to 'diploma.run.xml'.
@@ -1883,12 +1896,12 @@ Package logreq Info: Writing requests to 'diploma.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51703 strings out of 478029
- 1176415 string characters out of 5842217
- 2290797 words of memory out of 5000000
- 70947 multiletter control sequences out of 15000+600000
+ 51728 strings out of 478029
+ 1176802 string characters out of 5842217
+ 2290929 words of memory out of 5000000
+ 70972 multiletter control sequences out of 15000+600000
  516409 words of font info for 89 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  103i,12n,120p,1663b,5371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./diploma/tmp/diploma.pdf (19 pages).
+Output written on ./diploma/tmp/diploma.pdf (21 pages).

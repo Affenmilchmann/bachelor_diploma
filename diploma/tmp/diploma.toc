@@ -25,10 +25,10 @@
 \contentsline {subsubsection}{\numberline {4.3.6}Anything else(?)}{13}{subsubsection.4.3.6}%
 \contentsline {subsection}{\numberline {4.4}\texttt {twol} phonology}{13}{subsection.4.4}%
 \contentsline {subsection}{\numberline {4.5}Stem lexicons processing}{14}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Transliteration}{14}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{14}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Testing}{14}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Metrics}{14}{subsection.4.9}%
-\contentsline {section}{\numberline {5}Results}{14}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}%
-\contentsline {section}{References}{15}{section.6}%
+\contentsline {subsection}{\numberline {4.6}Transliteration}{15}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{15}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Testing}{15}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Metrics}{15}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Results}{16}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}%
+\contentsline {section}{References}{17}{section.6}%

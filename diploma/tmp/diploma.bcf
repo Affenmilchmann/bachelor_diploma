@@ -3104,6 +3104,14 @@
     <bcf:citekey order="65" intorder="1">kartina_2025_repo</bcf:citekey>
     <bcf:citekey order="66" intorder="1">makarov_digital_2022</bcf:citekey>
     <bcf:citekey order="67" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">zarubin_dict_1960</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
