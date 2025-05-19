@@ -20,6 +20,7 @@ The database in question contains digital versions of Shughni main dictionaries:
 
 \begin{code_frame}[float]
     \begin{subbox}[title={Exported \texttt{noun.csv} fragment}]
+        \begin{footnotesize}
         \begin{verbatim}
 cyrillic,meaning
 абδуст,рукавица
@@ -28,8 +29,10 @@ cyrillic,meaning
 абӣн,ненавистница
 абку̊мпāрт,обком партии
         \end{verbatim}
+        \end{footnotesize}
     \end{subbox}
     \begin{subbox}[title={Generated \texttt{noun.lexd} fragment}]
+        \begin{footnotesize}
         \begin{verbatim}
 LEXICON LexiconNoun[pl_all,sg]
 абδуст      # рукавица
@@ -38,10 +41,13 @@ LEXICON LexiconNoun[pl_all,sg]
 абӣн        # ненавистница
 абку̊мпāрт   # обком партии
         \end{verbatim}
+        \end{footnotesize}
     \end{subbox}
     \tcblower
     \captionof{Code}{An example of exported noun stems from the database converted to \texttt{lexd} source code.}
     \label{code:6_1}
 \end{code_frame}
 
-An example of real \texttt{csv} and resulted \texttt{lexd} fragments are shown in Code block \ref{code:6_1}. I decided to keep meanings from the source as \texttt{lexd} comments. This should not influence the compilation process, and later it makes it easier to debug lexicons manually.
+An example of real \texttt{csv} and resulted \texttt{lexd} fragments are shown in Code block \ref{code:6_1}. I decided to keep meanings from the source as \texttt{lexd} comments. Later it makes it easier to debug lexicons manually, this should not influence the compilation process as comments are ignored. The \texttt{form\_lexd.py} script is located in \texttt{scripts/lexicons/} directory. Besides formatting it also preprocesses the Shughni stems: removes stresses, unifies Cyrillic script and filters out affix entries (source dictionaries have entries for affixes alongside with regular stems). For convenience the script also sorts stems alphabetically.
+
+The \texttt{form\_lexd.py} script does not read command line arguments. The configuration is `hard-coded' to read all the \texttt{.csv} files from \texttt{scripts/db\_dumps/} directory and save the generated \texttt{.lexd} files to \texttt{lexd/lexicons/}.

@@ -1,1 +1,25 @@
 \subsection{Transliteration} \label{translit_section}
+The transliteration in this work is implemented for Latin and Cyrillic scripts of the Shughni language. It is developed as a pair of separate FSTs: \texttt{translit/lat2cyr.hfst} (Latin to Cyrillic transliteration) and \texttt{translit/cyr2lat.hfst} (Cyrillic to Latin transliteration). I found it more convenient to compile transducers with \texttt{lexd} (opposed to raw `strings' format). \texttt{Lexd} allows splitting characters and special symbols into separate lexicons and writing comments, which makes the source file much more readable. Also, as a side bonus, \texttt{lexd} syntax allows repeating (making it infinitely cyclic) the transducer without the need to repeat it via HFST tools in the \texttt{Makefile}.
+
+The transliterator only works for wordforms (e.g. `\texttt{daryoyen}'\textit{=river.N-PL}). It does not work for glossed strings (e.g. `\texttt{daryo<n>><pl>}'). The reason for this is that in case of Latin to Cyrillic transliteration the FST would also transliterate grammatical tags, outputting `\texttt{дарйо<н>><пл>}' given `\texttt{daryo<n>><pl>}' as input. This could be solved by listing all the possible grammatical tags as multichar symbols in the transliterator's lexicon, but this seems unnecessarily complicated to me for transliteration purposes. 
+
+As shown in Code block \ref{code:7_1}, transliteration for wordforms works for both plain text wordforms and morpheme-separated wordforms (the difference was explained in Section \ref{morpheme_borders}: \textit{Morpheme borders}). This ensures that the transliteration FST can be successfuly composed with any version of wordform side of FSTs.
+
+\begin{code_frame}[float]
+    \begin{footnotesize}
+    \begin{verbatim}
+$ cat lat.txt | hfst-lookup -q translit/lat2cyr.hfst
+na>čis>en   на>чис>ен   0.000000
+na-čis-en   на-чис-ен   0.000000
+načisen     начисен     0.000000
+$ cat cyr.txt | hfst-lookup -q translit/cyr2lat.hfst
+на>чис>ен   na>čis>en   0.000000
+на-чис-ен   na-čis-en   0.000000
+начисен     načisen     0.000000
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{An example of transliteration FST work. The mentioned word `\texttt{na>čis>en}' can be glossed as \textit{NEG-look.V.PRS=3PL}}
+    \label{code:7_1}
+\end{code_frame}
+

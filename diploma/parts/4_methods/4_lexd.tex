@@ -6,19 +6,21 @@ The \texttt{lexd} source code is stored in the \texttt{lexd/} directory. I decid
 There is no module import feature in \texttt{lexd}. So in order to be able to make a modular \texttt{.lexd} source file structure compilable into a single \texttt{.hfst} file we can concatenate every \texttt{.lexd} module into a single large temporary \texttt{.lexd} file and feed it to the compiler. This is achieved with \texttt{bash} command shown in Code block \ref{code:4_1}. The \texttt{lexd} compiler outputs FST in AT\&T format and \texttt{hfst-txt2fst} converts it to a binary \texttt{.hfst} file.
 
 \begin{code_frame}[float]
+    \begin{footnotesize}
     \begin{verbatim}
 $ cat lexd/*.lexd lexd/lexicons/*.lexd > sgh.lexd
 $ lexd sgh.lexd | hfst-txt2fst -o sgh_base_stem.hfst
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{Bash command pipeline compiling multiple \texttt{.lexd} files into a single FST.}
     \label{code:4_1}
 \end{code_frame}
 
 \todo{Finish when done!!}
-\subsubsection{Nouns}
-\subsubsection{Verbs}
-\subsubsection{Adjectives}
-\subsubsection{Pronouns}
-\subsubsection{Numerals}
-\subsubsection{Anything else(?)}
+\subsubsection*{Nouns}
+\subsubsection*{Verbs}
+\subsubsection*{Adjectives}
+\subsubsection*{Pronouns}
+\subsubsection*{Numerals}
+\subsubsection*{Anything else(?)}

@@ -1,1 +1,111 @@
 \subsection{Russian lemmas \todo{rethink heading}} \label{rulemm_section}
+The Shughni stem translator is a separate FST which translates Shughni stems to Russian lemmas. It is supposed to be applied to the glossed side of transducers as shown in Code block \ref{code:8_1}. Shughni has some cases of compound words which consist of multiple stems, e.g. \textit{`дароз-зӯɣ̌'} (=`long-sleeved') \parencite[173]{parker_shughni_2023}. This was taken into account, so the translator FST translates any amount of stems in a single word. This FST is blind to morphology rules and will translate anything that contains a set of existing stems and tags, even if the combination is nonsensical. But after composition with a morphology model FST ungrammatical and nonsensical strings are left outside the of resulted FST's paradigm.
+
+\begin{code_frame}[float,floatplacement=h!]
+    \begin{footnotesize}
+    \begin{verbatim}
+$ cat glossed.txt | hfst-lookup -q translate/sgh2rulem.hfst 
+зӯɣ̌<n>               рукав<n>                  0.000000
+дароз<adj>>зӯɣ̌<n>    длинный<adj>>рукав<n>     0.000000
+дароз<adj>><dim>     длинный<adj>><dim>        0.000000
+$ cat nonsense.txt | hfst-lookup -q translate/sgh2rulem.hfst 
+<adj><v>>зӯɣ̌<n><pl><sg>    <adj><v>>рукав<n><pl><sg>      0.000000
+<dim><pl><sg><1sg><2sg>    <dim><pl><sg><1sg><2sg>        0.000000
+$ hfst-compose translate/rulem2sgh.hfst sgh_gen_stem_word_cyr.hfst
+  -o sgh_gen_rulem_word_cyr.hfst
+$ cat nonsense.txt | hfst-lookup -q sgh_gen_rulem_word_cyr.hfst
+<adj><v>>зӯɣ̌<n><pl><sg>    <adj><v>>зӯɣ̌<n><pl><sg>+?    inf
+<dim><pl><sg><1sg><2sg>    <dim><pl><sg><1sg><2sg>+?    inf
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{An example of Shughni stem translator work. `\texttt{+?}' at the end of second column's string and `\texttt{inf}' in the third column means that FST did not find a valid path for the current word.\\ `\texttt{зӯɣ̌}'\textit{=a sleeve}; `\texttt{дароз}'\textit{=long}\\ \textit{Note: output is edited: contextually insignificant lines are removed to keep Code section small.}}
+    \label{code:8_1}
+\end{code_frame}
+
+The \texttt{lexd} source code pattern is shown in Code block \ref{code:8_2}. \texttt{RuLemmasBase} pattern contains lexicons grouped by POS. This ensures that homographs (wordforms with same graphical form but different meanings) with different POS will not share contexts. An example of a homograph in Shughni is \textit{`ди'}, which can stand for a verb (\textit{`hit.V.PRS/IMP'}), a demonstrative (\textit{`D2.M.SG'}) or a conjunction (=\textit{`when.CONJ'}). An example of FST with and without POS-grouping is shown in Code block \ref{code:8_3}. A wordform `\texttt{ди}', when fed into \texttt{analyze\_pos\_ignored.hfst}, where homographs are not taken into account, returns ungrammatical glosses like \textit{`когда<v>'}(`when<v>') and \textit{`этот<v>'}(`this\_one<v>'), which is an unwanted result. But when fed into \texttt{analyze\_pos\_fixed.hfst}, where translator has POS tags are glued to stems, the result contains only verbal Russian lemma `\textit{бить<v>}'(`hit<v>').
+\begin{code_frame}[float,floatplacement=h]
+    \begin{footnotesize}
+    \begin{verbatim}
+PATTERNS
+(RuLemmasBase|RuLemmasTags)+
+
+PATTERN RuLemmasBase
+RuLemmasAdj [<adj>]
+RuLemmasConj [<conj>]
+RuLemmasN [<n>]
+RuLemmasNum [<num>]
+RuLemmasPrep [<prep>]
+RuLemmasPro [<pro>]|[<pers>]|[<dem>]
+RuLemmasV [<v>]
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A fragment of translator FST's \texttt{lexd} source code. The fragment contains only pattern rules. \todo{update if set of POS changes!}}
+    \label{code:8_2}
+\end{code_frame}
+
+\begin{code_frame}[float,floatplacement=!htbp]
+    \begin{footnotesize}
+    \begin{verbatim}
+$ hfst-compose translate/rulem2sgh_no_pos.hfst sgh_base_stem.hfst | 
+  hfst-invert -o analyze_pos_ignored.hfst
+$ echo "мā>ди" | hfst-lookup -q analyze_pos_ignored.hfst
+ди     бить<v><imp>                0.000000
+ди     когда<v><imp>               0.000000
+ди     этот<v><imp>                0.000000
+$ hfst-compose translate/rulem2sgh.hfst sgh_base_stem.hfst | 
+  hfst-invert -o analyze_pos_fixed.hfst
+$ echo "мā>ди" | hfst-lookup -q analyze_pos_fixed.hfst
+ди     бить<v><imp>            0.000000
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A comparison of FST analyzers. The first one called \texttt{analyze\_pos\_ignored.hfst} treats all homographs independently of their part of speech, which results in incorrect output. The second one (\texttt{analyze\_pos\_fixed.hfst}) returns only verb Russian lemmas.\\ \textit{Note: output is edited: contextually insignificant lines are removed to keep Code section small.}}
+    \label{code:8_3}
+\end{code_frame}
+
+\subsubsection*{Translation lexicon generation} \label{stem_lexicons}
+Translation lexicons (\texttt{RuLemmasAdj}, \texttt{RuLemmasConj}, etc.) are compiled using a \texttt{Python} script \texttt{scripts/ru\_lemmas/form\_lexd.py}. This FST module (\texttt{sgh2rulem.hfst}) does not share source code with the main morphology FST, so its lexicons are stored in a separate \texttt{translate/lexd/} directory. For convenience every POS lexicon is stored in a separate file under this directory. Compilation process is done by the same principle as for the main FST (see Code block \ref{code:4_1}).
+
+The biggest challenge of this process was the extraction of Russian lemmas from the database dictionary (provided by \textcite{makarov_digital_2022}). Gloss lemmas are preferred to be concise. They usually consist of a single word like (e.g. \textit{swim}) or maximum of 2-3 words (e.g. \textit{swim\_deep}) if lemma language can not describe semantics in a single word, and it is important to mention this semantic nuance. Dictionary entries in the database are parsed from real dictionaries, that were written by hand and therefore do not have a strict format. This fact makes it challenging to consistently extract perfect lemmas, some examples are presented in Table \ref{Tab:8_1}. In addition, as shown by `чи' entry, sometimes a real lemma (in this case `кто') can be hidden in the middle of a text. 
+
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{|p{3cm}|p{5cm}|p{7cm}|}
+            \hline
+            \textbf{Word} & \textbf{Dictionary entry} & \textbf{Extracted lemma (by script)} \\
+            \hline
+            \hline
+            цирӯвд & горевать, тосковать, печалиться; скорбеть & горевать \\
+            \hline
+            х̌ӣвдоw & сбивать палкой орехи, бить по орешнику палкой & сбивать\_палкой\_орехи \\
+            \hline
+            цу̊н & подчинительный союз: сколько ни, как ни & сколько\_ни \\
+            \hline
+            чи & косвенная форма к прямой форме вопросительного местоимения ЧĀЙ кто (см.), употребляемая в различных косвенных позициях & косвенная\_форма\_к\_прямой\_форме\_ \_вопросительного\_местоимения\_чй\_ \_кто \\
+            \hline
+        \end{tabular}
+        \caption{Examples of extracted Russian lemmas from dictionary entries.}
+        \label{Tab:8_1}
+    \end{center}
+\end{table}
+
+Fortunately, most of the lemmas can be extracted automatically without a problem. Russian lemma size minimal statistics are provided in Table \ref{Tab:8_2}. Most of the Russian lemmas consist of a couple of words: $76.5\%$ consist of $1$ word; $88.9\%$ of $\leq 2$ words; $94.2\%$ of $\leq 3$ words; $96.6\%$ of $\leq 4$ words. Nevertheless, there are still many long lemmas similar to the ones shown in the Tables \ref{Tab:8_1} and \ref{Tab:8_2}. Considering that a single Shughni stem often has multiple Russian lemmas, the probability of getting at least one long lemma rises.
+
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{8.5cm}|}
+            \hline
+            \textbf{Type} & \textbf{Mean} & \textbf{Median} & \textbf{Max} \\
+            \hline
+            \hline
+            Length (characters) & 10.737 & 8 & 105 `указывает\_на\_косвенное\_дополнение\_со\_ \_значением\_адресата\_действия\_при\_ряде\_ \_глаголов\_и\_глагольных\_сочетаний' \\
+            \hline
+            Length (words) & 1.487 & 1 & 16 `косв\_форма\_мн\_ч\_указ\_мест\_дальн\_ст\_к\_ \_прямой\_форме\_w\_них\_и\_т\_п' \\
+            \hline
+        \end{tabular}
+        \caption{Examples of extracted Russian lemmas from dictionary entries.}
+        \label{Tab:8_2}
+    \end{center}
+\end{table}

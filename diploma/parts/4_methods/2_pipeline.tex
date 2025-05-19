@@ -3,6 +3,7 @@
 First, there are two main types of FSTs: generators and analyzers. They differ only in the directionality of a FST. Analyzers take wordforms as input and return glossed strings as output. Generators work in reverse, as shown in Code block \ref{code:pipeline_1}.
 
 \begin{code_frame}[float]
+    \begin{footnotesize}
     \begin{verbatim}
 $ echo "дарйойен" | hfst-lookup -q sgh_analyze_stem_word_cyr.hfst
 дарйойен        дарйо<n>><3pl>  0.000000
@@ -11,6 +12,7 @@ $ echo "дарйо<n>><pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
 дарйо<n>><pl>   дарйо-йен       0.000000
 дарйо<n>><pl>   дарйойен        0.000000
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{FST analyzer vs generator output formats.}
     \label{code:pipeline_1}
@@ -19,10 +21,12 @@ $ echo "дарйо<n>><pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
 The \texttt{lexd} source code is written as a generator, meaning by default, compiled FST takes glossed stem or lemma as input and returns a wordform. To compile any analyzer, a corresponding generator is inverted, as shown in Code block \ref{code:pipeline_2}.
 
 \begin{code_frame}[float]
+    \begin{footnotesize}
     \begin{verbatim}
 $ hfst-invert sgh_gen_stem_word_cyr.hfst  \
            -o sgh_analyze_stem_word_cyr.hfst
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{FST analyzer creation from a FST generator.}
     \label{code:pipeline_2}
@@ -32,6 +36,7 @@ $ hfst-invert sgh_gen_stem_word_cyr.hfst  \
 The next format only applies to the glossed side of FSTs (to the analyzers' output and to the generators' input). It sets whether a Cyrillic Shughni stem or a Russian translated lemma will be used as a stem's gloss, as shown in Code block \ref{code:pipeline_3}. Shughni stems can have multiple Russian candidates (\textit{`дарйо'} can be translated as \textit{`река'} or \textit{`море'}). This leads to composed transducer having more output candidates. This works both ways, meaning Russian lemmas can translate as multiple Shughni stems (\textit{`река'} can be translated as \textit{`дарйо'} or \textit{`х̌ац'}).
 
 \begin{code_frame}[float]
+    \begin{footnotesize}
     \begin{verbatim}
 $ echo "дарйо<n>><3pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
 дарйо<n>><3pl>	  дарйо-йен     0.000000
@@ -47,6 +52,7 @@ $ echo "дарйойен" | hfst-lookup -q sgh_analyze_rulem_word_cyr.hfst
 дарйойен	        река<n>><3pl> 0.000000
 дарйойен	        река<n>><pl>  0.000000
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{Shughni stem vs Russian lemma versions of FST.}
     \label{code:pipeline_3}
@@ -61,10 +67,12 @@ The \texttt{lexd} source code contains lexicons with Shughni stems on the glosse
 It can be done with `compose' transducer operation (see Code block \ref{code:bash_7}), which takes two FSTs, directs first's output to the second's input and returns the resulting composed FST. Details of the translator FST's development are described in Section \ref{rulemm_section}.
 
 \begin{code_frame}[float]
+    \begin{footnotesize}
     \begin{verbatim}
 $ hfst-compose rulem2sgh.hfst sgh_gen_stem_word_cyr.hfst
   -o sgh_gen_rulem_word_cyr.hfst
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{Shughni stem translator composition.}
     \label{code:bash_7}
@@ -78,12 +86,13 @@ The source code contains only Cyrillic lexicons. The support of Latin script com
 
 The compilation process is the same as it is for Russian lemmas shown in Code block \ref{code:bash_7}. The only difference is that generator comes first and transliterator comes second, as it is applied to the wordform instead of the glossed side. See Section \ref{translit_section} for more details about the transliterator development.
 
-\subsubsection*{Morpheme borders}
+\subsubsection*{Morpheme borders} \label{morpheme_borders}
 Theoretical linguists sometimes need wordforms to have morphemes separated by a special symbol that does not appear naturally in a language. In this morphological parser I choose the right angular bracket symbol '\texttt{>}' for this role to keep it consistent with glossed strings morpheme separator. This presented a slight challenge to the development, as regular wordforms often may contain hyphens (`-') between some morphemes. For an example, `\texttt{дарйойен}' can also be spelled as `\texttt{дарйо-йен}'. But for the morpheme separated FST wordform must contain only `\texttt{дарйо>йен}', with no extra optional hyphens. 
 
 This was solved with the help of \texttt{twol} rules. The base \texttt{lexd} FST (\texttt{sgh\_base\_stem.hfst}) contains both hyphens and morpheme separators, which looks like `\texttt{дарйо>-йен}' and `\texttt{дарйо>йен}' on the wordform side. Then the filtering is done with help of two FSTs that contain \texttt{twol} rules shown in Code block \ref{code:twol_4_1}. The \texttt{sep.hfst} removes all separator symbols (`\texttt{>}') from the wordform, leaving `\texttt{дарйо-йен}' and `\texttt{дарйойен}'. And \texttt{hyphen.hfst} removes all hyphens from the wordform, leaving `\texttt{дарйо>йен}' and `\texttt{дарйо>йен}', which then fold into a single FST path after optimization.
 
-\begin{code_frame}[float]
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}
     \begin{verbatim}
 # hyphen.twol
 Rules
@@ -95,6 +104,7 @@ Rules
 "Morpeme separator removal"
 %>:0 <=> _ ;
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{\texttt{twol} rules that filter morpheme border.}
     \label{code:twol_4_1}
@@ -102,13 +112,15 @@ Rules
 
 For this case compose-intersect operation is applied, that allows \texttt{twol}-compiled FSTs to be composed with regular lexicon \texttt{lexd} FSTs. Compilation command is shown in Code block \ref{code:bash_8}.
 
-\begin{code_frame}[float]
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}
     \begin{verbatim}
 $ hfst-compose-intersect sgh_base_stem.hfst twol/sep.hfst 
   -o sgh_gen_stem_word_cyr.hfst
 $ hfst-compose-intersect sgh_base_stem.hfst twol/hyphen.hfst 
   -o sgh_gen_stem_morph_cyr.hfst
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{Plain text and morpheme separated text FST versions compilation.}
     \label{code:bash_8}

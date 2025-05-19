@@ -3112,6 +3112,9 @@
     <bcf:citekey order="73" intorder="1">karamshoev_dict_1988</bcf:citekey>
     <bcf:citekey order="74" intorder="1">zarubin_dict_1960</bcf:citekey>
     <bcf:citekey order="75" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">makarov_digital_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

@@ -54,10 +54,12 @@ The Shughni morphological parser in this work is presented in a variety of input
 Four binary variables result in 16 ($=2^4$) FST variations. Every FST listed in Table \ref{Tab:all_hfst} can be built with \texttt{make} command as shown in Code block \ref{code:make_1}. Regular \texttt{.hfst} binary FSTs are not recommended using in production environments, as they are not optimized. For production use an optimized format called \texttt{.hfstol} (HFST \textbf{O}ptimized \textbf{L}ookup), which can also be compiled automatically for every listed FST using \texttt{make}.
 
 \begin{code_frame}[float]
+    \begin{footnotesize}
     \begin{verbatim}
 $ make sgh_gen_stem_morph_cyr.hfst
 $ make sgh_gen_stem_morph_cyr.hfstol
     \end{verbatim}
+    \end{footnotesize}
     \tcblower
     \captionof{Code}{Example of FST compilation with \texttt{make}.}
     \label{code:make_1}
