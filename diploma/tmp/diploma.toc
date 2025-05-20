@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {4.6}Transliteration}{15}{subsection.4.6}%
 \contentsline {subsection}{\numberline {4.7}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{16}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Testing}{17}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Metrics}{19}{subsection.4.9}%
-\contentsline {section}{\numberline {5}Results}{20}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{20}{section.6}%
-\contentsline {section}{References}{21}{section.6}%
+\contentsline {subsection}{\numberline {4.9}Metrics}{21}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Results}{22}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{22}{section.6}%
+\contentsline {section}{References}{23}{section.6}%

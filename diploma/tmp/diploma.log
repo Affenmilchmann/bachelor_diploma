@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  19 MAY 2025 23:22
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  20 MAY 2025 19:03
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1887,7 +1887,7 @@ See the caption package documentation for explanation.
 ) (./diploma/parts/4_methods/6_lexicon.tex
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 47.
+(caption)                particular \caption on input line 36.
 See the caption package documentation for explanation.
 
 [14]) (./diploma/parts/4_methods/7_translit.tex
@@ -1997,10 +1997,41 @@ Underfull \hbox (badness 5578) in paragraph at lines 105--106
 []|\TU/FreeSerif(0)/m/n/12 16 ‘косв_форма_мн_ч_указ_мест_дальн_ст_к_
  []
 
-) (./diploma/parts/4_methods/9_testing.tex)
-(./diploma/parts/4_methods/10_metrics.tex)) (./diploma/parts/5_results.tex
-[17] [18] [19]) (./diploma/parts/6_conclusion.tex)
-(./diploma/parts/7_references.tex [20])
+) (./diploma/parts/4_methods/9_testing.tex [17] [18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 18--31
+[][]
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 32.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (2.22145pt too wide) in paragraph at lines 47--47
+[]\TU/FreeMono(0)/m/n/10 Fail [verb.csv:sgh_gen_stem_morph_cyr] вуδҷ<v><prs>:ву
+δҷ (fst output: вуδҷ[] 
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 55.
+See the caption package documentation for explanation.
+
+) (./diploma/parts/4_methods/10_metrics.tex [20]
+Overfull \hbox (1.04744pt too wide) in paragraph at lines 9--10
+[]\TU/FreeSerif(0)/m/n/12 The evaluation is done via a \TU/FreeMono(0)/m/n/12 P
+ython \TU/FreeSerif(0)/m/n/12 script \TU/FreeMono(0)/m/n/12 scripts/coverage/ev
+al.py\TU/FreeSerif(0)/m/n/12 . It reads Shughni
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 31.
+See the caption package documentation for explanation.
+
+[21])) (./diploma/parts/5_results.tex) (./diploma/parts/6_conclusion.tex)
+(./diploma/parts/7_references.tex [22])
 Overfull \hbox (3.70172pt too wide) in paragraph at lines 26--26
 [][]\TU/FreeSerif(0)/m/n/12 Edelman, D. I. (2009). Сравнительная грамматика вос
 точноиранских языков [Comparative Gram-
@@ -2019,7 +2050,7 @@ Overfull \hbox (0.72575pt too wide) in paragraph at lines 26--26
  Автоматический морфологический анализ шугнанского языка [Au-
  []
 
-[21] [22] (./diploma/tmp/diploma.aux)
+[23] [24] (./diploma/tmp/diploma.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2030,12 +2061,12 @@ Package logreq Info: Writing requests to 'diploma.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51814 strings out of 478029
- 1178202 string characters out of 5842217
- 2296424 words of memory out of 5000000
- 71054 multiletter control sequences out of 15000+600000
+ 51825 strings out of 478029
+ 1178352 string characters out of 5842217
+ 2298270 words of memory out of 5000000
+ 71065 multiletter control sequences out of 15000+600000
  516425 words of font info for 91 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
  103i,12n,120p,1663b,5371s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./diploma/tmp/diploma.pdf (25 pages).
+Output written on ./diploma/tmp/diploma.pdf (27 pages).

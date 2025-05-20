@@ -1,3 +1,59 @@
 \subsection{Testing} \label{testing_section}
+In context of this work, testing is creating a list of pairs of wordforms and their glossed strings and comparing it to the morphology model's output. These pairs are taken from reliable sources such as field work data or examples from other papers. Testing is useful mostly for the developer for debugging purposes: it lets the developer know if anything stopped working as intended after a change in the source code. 
 
-Whoa so much testing
+Testing is integrated in the project's \texttt{Makefile}. In order to run all existing tests `\texttt{make test}' bash command can be used. It runs \texttt{scripts/testing/runtests.py} script, which reads pairs of wordforms and glossed strings from all \texttt{.csv} files under the \texttt{scripts/testing/tests/} directory. An example of a \texttt{.csv} with test cases is shown in Code block \ref{code:9_1}. The script allows testing not only morphology, but any other FSTs too. Currently, this script tests morphology and transliteration. Morphology test cases mainly come from \textcite{parker_shughni_2023} and unpublished materials of HSE expeditions to Tajikistan. Transliteration tests come from the dictionary database provided by \textcite{makarov_digital_2022} project. Every database's dictionary entry has Cyrillic and Latin word versions, which were exported and formatted to match my testing \texttt{.csv} format. The only downside of the transliteration test cases is that most of Latin words most likely were generated automatically from Cyrillic words. Therefore, running transliteration tests ensures that my transliteration FST matches the transliteration tool developed by \textcite{makarov_digital_2022}. Unfortunately I do not possess other reliable transliteration test data.
+
+\begin{code_frame}[float,floatplacement=!htbp]
+    \begin{subbox}[title={A fragment of \texttt{scripts/testing/tests/verb.csv}},
+                   width=15.5cm,height=3.5cm]
+        \begin{footnotesize}
+        \begin{verbatim}
+analysis,form,mustpass,hfst,source,page,description
+вāр<v><prs>><1pl>,вāр>āм,pass,sgh_gen_stem_morph_cyr,[Parker 2023],258,…
+тойд<v><pst><f>,тойд,pass,sgh_gen_stem_morph_cyr,[Parker 2023],113,…
+вирӯд<v><pst>,вирӯд,pass,sgh_gen_stem_morph_cyr,[Parker 2023],115,…
+находить<v><pst>,virūd,pass,sgh_gen_rulem_morph_lat,[Parker 2023],115,…
+        \end{verbatim}
+        \end{footnotesize}
+    \end{subbox}
+    \begin{subbox}[title={A fragment of \texttt{scripts/testing/tests/translit.csv}},
+                   width=15.5cm,height=3.5cm]
+        \begin{footnotesize}
+        \begin{verbatim}
+input,output,mustpass,hfst,source,page,description
+агāн,agān,pass,translit/cyr2lat,https://pamiri.online/,,
+агāнт,agānt,pass,translit/cyr2lat,https://pamiri.online/,,
+агāнтоw,agāntow,pass,translit/cyr2lat,https://pamiri.online/,,
+агāнч,agānč,pass,translit/cyr2lat,https://pamiri.online/,,
+        \end{verbatim}
+        \end{footnotesize}
+    \end{subbox}
+    \tcblower
+    \captionof{Code}{An example of a file with test cases for verbs. First two columns contain reference input and output pair. \texttt{hfst} column specifies which FST's format variation must be used for current row. \texttt{mustpass} column allows to ignore some cases without the need to remove them from the file. Other columns are ignored by the script, their purpose is to keep track of test case sources.}
+    \label{code:9_1}
+\end{code_frame}
+
+A \textbf{test case} in current context is a single row of a \texttt{.csv} file (e.g. Code block \ref{code:9_1}). For every test case the \texttt{scripts/testing/runtests.py} script does the following: (1) feeds the string from the first column to the FST specified in the fourth column, (2) marks the test case as passed if the string from the second column matches \textbf{any} string in the FSTs output, (3) logs failed cases. Finally, after all test cases were processed, the script prints general statistics. Script's output example is shown in Code block \ref{code:9_2}.
+
+\begin{code_frame}[float,floatplacement=!htbp]
+    \begin{footnotesize}
+    \begin{verbatim}
+$ python3 scripts/testing/runtests.py
+Loaded 27300 test cases from 1 files
+Fail [translit.csv:translit/cyr2lat] анę:anę (fst output: анę+?)
+... 44 more Fail lines ...
+Fail [translit.csv:translit/cyr2lat] лǫ:lǫ (fst output: лǫ+?)
+Loaded 61 test cases from 7 files
+Fail [verb.csv:sgh_gen_stem_morph_cyr] вуδҷ<v><prs>:вуδҷ (fst output: вуδҷ
+<v><prs>+?)
+Transliteration: 27254 (99.83%) passed; 46 failed; 27300 total
+Morphology: 60 (98.36%) passed; 1 failed; 61 total
+Testing done in 1.415sec
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{Example of testing script's output  with some failed test cases.}
+    \label{code:9_2}
+\end{code_frame}
+
+The testing output statistics are not considered as a metric of morphology model's quality. It is only utilized as a development tool: to make sure that FST was compiled as intended.
