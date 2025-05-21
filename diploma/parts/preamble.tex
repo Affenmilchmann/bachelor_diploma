@@ -1,42 +1,28 @@
 \documentclass[12pt]{article}
-% \usepackage[T1,T2A]{fontenc} % поддержка кириллицы
-% \usepackage[utf8]{inputenc} % кодировка исходного текста
+\usepackage[left=2.5cm, right=2.5cm, top=1.5cm, bottom=2cm]{geometry} % поля страницы
 \usepackage[russian,english]{babel}
+
+% шрифт
 \babelfont{rm}{FreeSerif}
 \babelfont{sf}{FreeSans}
 \babelfont{tt}[Scale=1.0]{FreeMono}
-
-% шрифт
 \usepackage{fontspec}
-% \usepackage[default]{droidsans}
 \defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
-% \setmainfont[BoldFont          = *-Bold ,
-%              ItalicFont        = *-Italic ,
-%              Ligatures={TeX,Historic},
-%              SizeFeatures={Size=12}]{Times New Roman Cyr}
 
 % изображения
 \usepackage[dvips,xetex]{graphicx}
 % \usepackage{ifpdf,mla}% <-- mla.sty requires ifpdf.sty, but (perversely) doesn't load it
 
-% фонетические символы
+% лингвистические примеры
 \usepackage{expex}
 \lingset{belowglpreambleskip=0ex, aboveglftskip=0ex, everygla={\upshape}}
-
-\usepackage[left=2.5cm, right=2.5cm, top=1.5cm, bottom=2cm]{geometry} % поля страницы
+\usepackage[edges]{forest} % trees
 
 \usepackage{fancyhdr} % установка колонтитулов
-\usepackage{listings} % поддержка вставки исходного кода
-\renewcommand{\lstlistingname}{Code block}% Listing -> Algorithm
-\usepackage[edges]{forest} % trees
-% \usepackage{textcomp} % unicode?
-% \usepackage{tipa} % phonetic letters
-% \usepackage{upgreek} % non italic greek
 \usepackage{setspace} % для отступов
 \usepackage[section]{placeins} % чтоб картинки из секций не улетали
-\usepackage{indentfirst}
+\usepackage{indentfirst} % apply indents to fist paragraphs
 \usepackage{hyperref} % clickable table of contents
-\usepackage{array}
 
 % Библиограифя
 \usepackage{csquotes}
@@ -47,12 +33,15 @@
 \pagestyle{fancy}      % Использование стиля "fancy" для оформления страниц
 \fancyhf{}              % Очистка текущих значений колонтитулов
 \fancyfoot[C]{\thepage} % Установка номера страницы в нижнем колонтитуле по центру
+\newcommand{\globalspacing}{\linespread{1.5}}
+\newcommand{\codespacing}{\linespread{0.9}}
+\newcommand{\bibspacing}{\linespread{1.0}}
 
 % Для оформления временных сносок
 \usepackage{xcolor}    % для работы с цветами
 \newcommand{\todo}[1]{\textbf{\textcolor{red}{TODO: #1}}}
 
-% БЛОКИ КОДА
+%%% БЛОКИ КОДА %%%
 \usepackage[most]{tcolorbox}
 \usepackage{verbatimbox,caption,float,lipsum} % https://tex.stackexchange.com/questions/581714/how-to-use-caption-in-a-verbatim-environment
 % Счётик для блоков кода
@@ -61,11 +50,6 @@
 \captionsetup[Code]{belowskip=0pt, aboveskip=0pt}
 \preto{\verbatim}{\topsep=0pt \partopsep=0pt}
 % Кастомные коробки для блоков кода
-% \newtcolorbox{code_block}[1][]{ % https://tex.stackexchange.com/questions/263706/latex-adding-cell-padding-to-a-text-frame
-%   frame hidden,
-%   colback=white,
-%   #1
-% }
 \newtcolorbox{code_frame}[1][]{ % https://tex.stackexchange.com/questions/263706/latex-adding-cell-padding-to-a-text-frame
   enhanced,
   arc=4pt,
@@ -74,7 +58,6 @@
   boxrule=0.9pt,
   #1
 }
-
 \newtcolorbox{subbox}[1][]{
   enhanced,
   arc=0pt,
@@ -87,9 +70,11 @@
   #1}
 % Template
 % \begin{code_frame}[float]
+%     \begin{footnotesize}\codespacing
 %     \begin{verbatim}
 % C O D E
 %     \end{verbatim}
+%     \end{footnotesize}
 %     \tcblower
 %     \captionof{Code}{Title}
 %     \label{code:label}

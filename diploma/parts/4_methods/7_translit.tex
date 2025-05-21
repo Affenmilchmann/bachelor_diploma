@@ -8,7 +8,7 @@ The transliterator only works for wordforms (e.g. `\texttt{daryoyen}'\textit{=ri
 As shown in Code block \ref{code:7_1}, transliteration for wordforms works for both plain text wordforms and morpheme-separated wordforms (the difference was explained in Section \ref{morpheme_borders}: \textit{Morpheme borders}). This ensures that the transliteration FST can be successfuly composed with any version of wordform side of FSTs.
 
 \begin{code_frame}[float]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ cat lat.txt | hfst-lookup -q translit/lat2cyr.hfst
 na>čis>en   на>чис>ен   0.000000

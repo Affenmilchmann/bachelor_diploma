@@ -7,22 +7,22 @@
 \contentsline {subsection}{\numberline {2.2}Rule-based methods}{3}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Finite-state transducers}{3}{subsubsection.2.2.1}%
 \contentsline {subsubsection}{\numberline {2.2.2}FST formalisms}{4}{subsubsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.3}Helsinki finite-state technology}{5}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3}Helsinki finite-state technology}{4}{subsubsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.3}Existing morphology models for Shughni}{5}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Data}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Grammar descriptions}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Dictionaries}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Text corpora}{6}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Methods}{7}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Input and output format}{7}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}FST compilation pipeline}{9}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}\texttt {lexd} rule declaration}{12}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}\texttt {twol} phonology}{13}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Stem lexicons processing}{14}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Transliteration}{15}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{16}{subsection.4.7}%
+\contentsline {subsection}{\numberline {3.2}Dictionaries}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Text corpora}{5}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Methods}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Input and output format}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}FST compilation pipeline}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\texttt {lexd} rule declaration}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}\texttt {twol} phonology}{11}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Stem lexicons processing}{13}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Transliteration}{13}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Russian lemmas \textbf {\textcolor {red}{TODO: rethink heading}}}{14}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Testing}{17}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Metrics}{21}{subsection.4.9}%
-\contentsline {section}{\numberline {5}Results}{22}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{22}{section.6}%
-\contentsline {section}{References}{23}{section.6}%
+\contentsline {subsection}{\numberline {4.9}Metrics}{19}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Results}{20}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{20}{section.6}%
+\contentsline {section}{References}{21}{section.6}%

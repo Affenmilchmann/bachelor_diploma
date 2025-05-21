@@ -3,7 +3,7 @@
 First, there are two main types of FSTs: generators and analyzers. They differ only in the directionality of a FST. Analyzers take wordforms as input and return glossed strings as output. Generators work in reverse, as shown in Code block \ref{code:pipeline_1}.
 
 \begin{code_frame}[float]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ echo "дарйойен" | hfst-lookup -q sgh_analyze_stem_word_cyr.hfst
 дарйойен        дарйо<n>><3pl>  0.000000
@@ -21,7 +21,7 @@ $ echo "дарйо<n>><pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
 The \texttt{lexd} source code is written as a generator, meaning by default, compiled FST takes glossed stem or lemma as input and returns a wordform. To compile any analyzer, a corresponding generator is inverted, as shown in Code block \ref{code:pipeline_2}.
 
 \begin{code_frame}[float]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ hfst-invert sgh_gen_stem_word_cyr.hfst  \
            -o sgh_analyze_stem_word_cyr.hfst
@@ -36,7 +36,7 @@ $ hfst-invert sgh_gen_stem_word_cyr.hfst  \
 The next format only applies to the glossed side of FSTs (to the analyzers' output and to the generators' input). It sets whether a Cyrillic Shughni stem or a Russian translated lemma will be used as a stem's gloss, as shown in Code block \ref{code:pipeline_3}. Shughni stems can have multiple Russian candidates (\textit{`дарйо'} can be translated as \textit{`река'} or \textit{`море'}). This leads to composed transducer having more output candidates. This works both ways, meaning Russian lemmas can translate as multiple Shughni stems (\textit{`река'} can be translated as \textit{`дарйо'} or \textit{`х̌ац'}).
 
 \begin{code_frame}[float]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ echo "дарйо<n>><3pl>" | hfst-lookup -q sgh_gen_stem_word_cyr.hfst
 дарйо<n>><3pl>	  дарйо-йен     0.000000
@@ -67,7 +67,7 @@ The \texttt{lexd} source code contains lexicons with Shughni stems on the glosse
 It can be done with `compose' transducer operation (see Code block \ref{code:bash_7}), which takes two FSTs, directs first's output to the second's input and returns the resulting composed FST. Details of the translator FST's development are described in Section \ref{rulemm_section}.
 
 \begin{code_frame}[float]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ hfst-compose rulem2sgh.hfst sgh_gen_stem_word_cyr.hfst
   -o sgh_gen_rulem_word_cyr.hfst
@@ -93,7 +93,7 @@ Theoretical linguists sometimes need wordforms to have morphemes separated by a 
 This was solved with the help of \texttt{twol} rules. The base \texttt{lexd} FST (\texttt{sgh\_base\_stem.hfst}) contains both hyphens and morpheme separators, which looks like `\texttt{дарйо>-йен}' and `\texttt{дарйо>йен}' on the wordform side. Then the filtering is done with help of two FSTs that contain \texttt{twol} rules shown in Code block \ref{code:twol_4_1}. The \texttt{sep.hfst} removes all separator symbols (`\texttt{>}') from the wordform, leaving `\texttt{дарйо-йен}' and `\texttt{дарйойен}'. And \texttt{hyphen.hfst} removes all hyphens from the wordform, leaving `\texttt{дарйо>йен}' and `\texttt{дарйо>йен}', which then fold into a single FST path after optimization.
 
 \begin{code_frame}[float,floatplacement=!h]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 # hyphen.twol
 Rules
@@ -114,7 +114,7 @@ Rules
 For this case compose-intersect operation is applied, that allows \texttt{twol}-compiled FSTs to be composed with regular lexicon \texttt{lexd} FSTs. Compilation command is shown in Code block \ref{code:bash_8}.
 
 \begin{code_frame}[float,floatplacement=!h]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ hfst-compose-intersect sgh_base_stem.hfst twol/sep.hfst 
   -o sgh_gen_stem_word_cyr.hfst

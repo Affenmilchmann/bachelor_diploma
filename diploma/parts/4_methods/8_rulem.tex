@@ -3,7 +3,7 @@
 The Shughni stem translator is a separate FST which translates Shughni stems to Russian lemmas. It is supposed to be applied to the glossed side of transducers as shown in Code block \ref{code:8_1}. Shughni has some cases of compound words which consist of multiple stems, e.g. \textit{`дароз-зӯɣ̌'} (=`long-sleeved') \parencite[173]{parker_shughni_2023}. This was taken into account, so the translator FST translates any amount of stems in a single word. This FST is blind to morphology rules and will translate anything that contains a set of existing stems and tags, even if the combination is nonsensical. But after composition with a morphology model FST ungrammatical and nonsensical strings are left outside the of resulted FST's paradigm.
 
 \begin{code_frame}[float,floatplacement=h!]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ cat glossed.txt | hfst-lookup -q translate/sgh2rulem.hfst 
 зӯɣ̌<n>               рукав<n>                  0.000000
@@ -26,7 +26,7 @@ $ cat nonsense.txt | hfst-lookup -q sgh_gen_rulem_word_cyr.hfst
 
 The \texttt{lexd} source code pattern is shown in Code block \ref{code:8_2}. \texttt{RuLemmasBase} pattern contains lexicons grouped by POS. This ensures that homographs (wordforms with same graphical form but different meanings) with different POS will not share contexts. An example of a homograph in Shughni is \textit{`ди'}, which can stand for a verb (\textit{`hit.V.PRS/IMP'}), a demonstrative (\textit{`D2.M.SG'}) or a conjunction (=\textit{`when.CONJ'}). An example of FST with and without POS-grouping is shown in Code block \ref{code:8_3}. A wordform `\texttt{ди}', when fed into \texttt{analyze\_pos\_ignored.hfst}, where homographs are not taken into account, returns ungrammatical glosses like \textit{`когда<v>'}(`when<v>') and \textit{`этот<v>'}(`this\_one<v>'), which is an unwanted result. But when fed into \texttt{analyze\_pos\_fixed.hfst}, where translator has POS tags are glued to stems, the result contains only verbal Russian lemma `\textit{бить<v>}'(`hit<v>').
 \begin{code_frame}[float,floatplacement=h]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 PATTERNS
 (RuLemmasBase|RuLemmasTags)+
@@ -47,7 +47,7 @@ RuLemmasV [<v>]
 \end{code_frame}
 
 \begin{code_frame}[float,floatplacement=!htbp]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ hfst-compose translate/rulem2sgh_no_pos.hfst sgh_base_stem.hfst | 
   hfst-invert -o analyze_pos_ignored.hfst

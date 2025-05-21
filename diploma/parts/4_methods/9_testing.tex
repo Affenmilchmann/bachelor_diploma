@@ -5,8 +5,8 @@ Testing is integrated in the project's \texttt{Makefile}. In order to run all ex
 
 \begin{code_frame}[float,floatplacement=!htbp]
     \begin{subbox}[title={A fragment of \texttt{scripts/testing/tests/verb.csv}},
-                   width=15.5cm,height=3.5cm]
-        \begin{footnotesize}
+                   width=15.5cm,height=3cm]
+        \begin{footnotesize}\codespacing
         \begin{verbatim}
 analysis,form,mustpass,hfst,source,page,description
 вāр<v><prs>><1pl>,вāр>āм,pass,sgh_gen_stem_morph_cyr,[Parker 2023],258,…
@@ -17,8 +17,8 @@ analysis,form,mustpass,hfst,source,page,description
         \end{footnotesize}
     \end{subbox}
     \begin{subbox}[title={A fragment of \texttt{scripts/testing/tests/translit.csv}},
-                   width=15.5cm,height=3.5cm]
-        \begin{footnotesize}
+                   width=15.5cm,height=3cm]
+        \begin{footnotesize}\codespacing
         \begin{verbatim}
 input,output,mustpass,hfst,source,page,description
 агāн,agān,pass,translit/cyr2lat,https://pamiri.online/,,
@@ -36,7 +36,7 @@ input,output,mustpass,hfst,source,page,description
 A \textbf{test case} in current context is a single row of a \texttt{.csv} file (e.g. Code block \ref{code:9_1}). For every test case the \texttt{scripts/testing/runtests.py} script does the following: (1) feeds the string from the first column to the FST specified in the fourth column, (2) marks the test case as passed if the string from the second column matches \textbf{any} string in the FSTs output, (3) logs failed cases. Finally, after all test cases were processed, the script prints general statistics. Script's output example is shown in Code block \ref{code:9_2}.
 
 \begin{code_frame}[float,floatplacement=!htbp]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ python3 scripts/testing/runtests.py
 Loaded 27300 test cases from 1 files

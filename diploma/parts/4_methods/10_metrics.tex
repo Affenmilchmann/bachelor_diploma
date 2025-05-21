@@ -6,12 +6,12 @@
 
 $N_{recognized}$ does not take into account if the given glosses are correct. It only shows the fraction of words that exist in the FST model's paradigm. 
 
-The evaluation is done via a \texttt{Python} script \texttt{scripts/coverage/eval.py}. It reads Shughni plain text from \textit{STDIN}, it must be cleared of all punctuation. Then the script tokenizes it and feeds every token to the FST. Input texts come both in Cyrillic and Latin scripts, so the script detects writing system first and calls corresponding FST variation (\texttt{sgh\_analyze\_stem\_word\_cyr.hfst} or \texttt{sgh\_analyze\_stem\_word\_lat.hfst}). The script also calculates 5 most frequent unrecognized words and 5 most frequent unrecognized morphemes (it considers any hyphen-separated word fragments as morphemes).
+The evaluation is done via a \texttt{Python} script \texttt{scripts/coverage/eval.py}. It reads Shughni plain text from \texttt{stdin}, which must be cleared of all punctuation. Then the script tokenizes it and feeds every token to the FST. Input texts come both in Cyrillic and Latin scripts, so the script detects writing system first and calls corresponding FST variation (\texttt{sgh\_analyze\_stem\_word\_cyr.hfst} or \texttt{sgh\_analyze\_stem\_word\_lat.hfst}). The script also calculates 5 most frequent unrecognized words and 5 most frequent unrecognized morphemes (it considers any hyphen-separated word fragments as morphemes).
 
-\textit{Coverage} evaluation is integrated in the \texttt{Makefile} and can be executed as shown in Code block \ref{code:10_1}.
+\textit{Coverage} evaluation is integrated in the \texttt{Makefile}, an example of its output is shown in Code block \ref{code:10_1}.
 
 \begin{code_frame}[float,floatplacement=!htbp]
-    \begin{footnotesize}
+    \begin{footnotesize}\codespacing
     \begin{verbatim}
 $ make coverage 
 cat scripts/coverage/corpus/* | scripts/coverage/eval.py
@@ -28,7 +28,7 @@ Top 5 unrecognized (words):
     \end{verbatim}
     \end{footnotesize}
     \tcblower
-    \captionof{Code}{An example of coverage script work. \textbf{Not actual results!} \todo{maybe actual results, lets see}}
+    \captionof{Code}{ An example of coverage script work. \textbf{Not actual results!} \todo{maybe actual results, lets see}}
     \label{code:10_1}
 \end{code_frame}
 
@@ -38,3 +38,4 @@ Top 5 unrecognized (words):
 \[Accuracy = \frac{N_{correct}}{N_{recognized}}\]
 
 $N_{recognized}$ in the accuracy metric is the same as $N_{recognized}$ in the coverage metric. 
+
