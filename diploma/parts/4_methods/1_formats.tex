@@ -1,5 +1,10 @@
 \subsection{Input and output format}
 Every FST converts between two types of strings: wordforms (e.g. `\texttt{дарйойен}' $\approx$ `rivers') and glossed strings (e.g. `\texttt{дарйо<n>><pl>}' = `\texttt{дарйо.N-PL}'). Glossed strings format is based on Apertium format \todo{citation needed?}, which is a standardized format for HFST-based transducers. The choice of this format is motivated by the fact that this is the standard, and I want to keep it consistent with existing tools and practices in the field. Important keys of the format are:
+
+\todo{Нужно собрать список глосс используемых в тексте и отправить списком в начало. Я ожидаю что-то такое в алфавитном порядке. Список и значение глосс достаточно стандартизирован, и можете взять из моего пакета `lingglosses` (прислал в личку). Еще лингвисты обычно пишут глоссы смолл кэпсом \textsc{}, но можно, наверное, на это забить. 
+
+- PL <pl> --- plural marker.}
+
 \begin{itemize}
     \item Grammatical tags are enclosed with angular brackets and are lowercase.\\
     \texttt{stone.V} = \texttt{stone<v>}
