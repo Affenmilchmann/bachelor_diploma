@@ -9,10 +9,10 @@ Every FST converts between two types of strings: wordforms (e.g. `\texttt{дар
     \item Grammatical tags are enclosed with angular brackets and are lowercase.\\
     \texttt{stone.V} = \texttt{stone<v>}
     \item Part of speech tags (POS) are obligatory and stand next to the stem or lemma.\\
-    \texttt{stone.SG} = \texttt{flood<n><sg>}
+    \texttt{stone.SG} = \texttt{stone<n><sg>}
     \item Different morpheme tags are separated with a single right angular bracket `\texttt{>}'.\\
     \texttt{stone-PL} = \texttt{stone<n>><pl>}
-    \item Multiple stems in a single word is possible.\\
+    \item Multiple stems in a single word are possible.\\
     \texttt{lemma1<adj>><morph>>lemma2<adj>}
 \end{itemize}
 
@@ -21,7 +21,7 @@ The Shughni morphological parser in this work is presented in a variety of input
     \item FST directionality: analyzer or generator. This simply shows the direction of a FST, analyzers take wordforms as input and return glossed strings, generators take glossed strings and return wordforms
     \item Glossed string stem glosses: Shughni stems or Russian lemmas. Notated in file names as \texttt{stem} and \texttt{rulem} respectively.\\
     \texttt{дарйо<n>><pl>} (Shughni stem); \texttt{река<n>><pl>} (Russian lemma)
-    \item Wordform morpheme borders: plain word or morphemes are separated with (`\texttt{>}') delimeter symbol. Notated in file names as \texttt{word} and \texttt{morph} respectively.\\
+    \item Wordform morpheme borders: plain word or morphemes are separated with (`\texttt{>}') delimeter symbol. Notated in file names as \texttt{word} and \texttt{morph} respectively.\\ \todo{я за то, чтобы называть дарйо>йен segmented, а инструмент, который это делает segmenter, так что может быть тэг morph я бы тоже заменил.}
     \texttt{дарйойен} (plain word); \texttt{дарйо>йен} (morphemes separated)
     \item Wordform script: Latin or Cyrillic.\\
     \texttt{дарйойен} (Latin); \texttt{daryoyen} (Cyrillic)
