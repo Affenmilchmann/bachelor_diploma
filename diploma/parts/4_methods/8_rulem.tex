@@ -1,4 +1,5 @@
 \subsection{Russian lemmas \todo{rethink heading}} \label{rulemm_section}
+\todo{Я бы назвал Lemma translation}
 The Shughni stem translator is a separate FST which translates Shughni stems to Russian lemmas. It is supposed to be applied to the glossed side of transducers as shown in Code block \ref{code:8_1}. Shughni has some cases of compound words which consist of multiple stems, e.g. \textit{`дароз-зӯɣ̌'} (=`long-sleeved') \parencite[173]{parker_shughni_2023}. This was taken into account, so the translator FST translates any amount of stems in a single word. This FST is blind to morphology rules and will translate anything that contains a set of existing stems and tags, even if the combination is nonsensical. But after composition with a morphology model FST ungrammatical and nonsensical strings are left outside the of resulted FST's paradigm.
 
 \begin{code_frame}[float,floatplacement=h!]
