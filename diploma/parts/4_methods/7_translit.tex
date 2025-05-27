@@ -3,6 +3,8 @@ The transliteration in this work is implemented for Latin and Cyrillic scripts o
 
 The transliterator only works for wordforms (e.g. `\texttt{daryoyen}'\textit{=river.N-PL}). It does not work for glossed strings (e.g. `\texttt{daryo<n>><pl>}'). The reason for this is that in case of Latin to Cyrillic transliteration the FST would also transliterate grammatical tags, outputting `\texttt{дарйо<н>><пл>}' given `\texttt{daryo<n>><pl>}' as input. This could be solved by listing all the possible grammatical tags as multichar symbols in the transliterator's lexicon, but this seems unnecessarily complicated to me for transliteration purposes. 
 
+\todo{Все же не очень понятно, как Вы различаете dz <-> ӡ и dz <-> дз. Второе возможно?}
+
 As shown in Code block \ref{code:7_1}, transliteration for wordforms works for both plain text wordforms and morpheme-separated wordforms (the difference was explained in Section \ref{morpheme_borders}: \textit{Morpheme borders}). This ensures that the transliteration FST can be successfuly composed with any version of wordform side of FSTs.
 
 \begin{code_frame}[float]
