@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  28 MAY 2025 16:11
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  28 MAY 2025 16:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1570,6 +1570,9 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 LaTeX Warning: Label `stem_lexicons' multiply defined.
 
+
+LaTeX Warning: Label `Tab:all_hfst' multiply defined.
+
 )
 \openout1 = `diploma.aux'.
 
@@ -1990,116 +1993,4 @@ one called
 
 [15]
 Underfull \hbox (badness 10000) in paragraph at lines 78--78
-[]\TU/FreeSerif(0)/m/n/12 горевать, тосковать,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
-[]\TU/FreeSerif(0)/m/n/12 подчинительный союз:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-\TU/FreeSerif(0)/m/n/12 форме вопросительного
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-\TU/FreeSerif(0)/m/n/12 местоимения ЧĀЙ кто
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-\TU/FreeSerif(0)/m/n/12 (см.), употребляемая в
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-\TU/FreeSerif(0)/m/n/12 различных косвенных
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-[]\TU/FreeSerif(0)/m/n/12 косвенная_форма_к_прямой_форме_
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-\TU/FreeSerif(0)/m/n/12 _вопросительного_местоимения_чй_
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]\TU/FreeSerif(0)/m/n/12 Length (charac-
- []
-
-
-Underfull \hbox (badness 3735) in paragraph at lines 101--102
-[]\TU/FreeSerif(0)/m/n/12 105 ‘указывает_на_косвенное_дополнение_со_
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 101--102
-\TU/FreeSerif(0)/m/n/12 _значением_адресата_действия_при_ряде_
- []
-
-
-Underfull \hbox (badness 5578) in paragraph at lines 103--104
-[]\TU/FreeSerif(0)/m/n/12 16 ‘косв_форма_мн_ч_указ_мест_дальн_ст_к_
- []
-
-[16] [17]) (./diploma/parts/4_methods/9_testing.tex
-Underfull \hbox (badness 10000) in paragraph at lines 18--31
-[][]
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 32.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (2.22145pt too wide) in paragraph at lines 47--47
-[]\TU/FreeMono(0)/m/n/10 Fail [verb.csv:sgh_gen_stem_morph_cyr] вуδҷ<v><prs>:ву
-δҷ (fst output: вуδҷ[] 
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 55.
-See the caption package documentation for explanation.
-
-) (./diploma/parts/4_methods/10_metrics.tex [18]
-
-LaTeX Warning: Reference `results_sec' on page 19 undefined on input line 9.
-
-
-Overfull \hbox (1.04744pt too wide) in paragraph at lines 9--10
-[]\TU/FreeSerif(0)/m/n/12 The evaluation is done via a \TU/FreeMono(0)/m/n/12 P
-ython \TU/FreeSerif(0)/m/n/12 script \TU/FreeMono(0)/m/n/12 scripts/coverage/ev
-al.py\TU/FreeSerif(0)/m/n/12 . It reads Shughni
- []
-
-[19])) [20] (./diploma/tmp/diploma.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `diploma.out' has not changed.
-(rerunfilecheck)             Checksum: DBF67D4FBB5663D2E14B84A0FB70ACC4;1999.
-Package logreq Info: Writing requests to 'diploma.run.xml'.
-\openout1 = `diploma.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 51547 strings out of 478029
- 1169590 string characters out of 5842217
- 2286763 words of memory out of 5000000
- 70812 multiletter control sequences out of 15000+600000
- 516425 words of font info for 91 fonts, out of 8000000 for 9000
- 682 hyphenation exceptions out of 8191
- 103i,12n,120p,1627b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on ./diploma/tmp/diploma.pdf (23 pages).
+[]\TU/FreeSerif(0)/

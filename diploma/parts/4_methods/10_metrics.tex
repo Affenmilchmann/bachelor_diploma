@@ -30,15 +30,26 @@ Where \texttt{TP} = `\textit{True positive}', \texttt{FP} = `\textit{False posit
     \item Total $TP$, $FN$ and $FP$ are calculated from the sum of respective $TP_i$, $FN_i$ and $FP_i$
 \end{enumerate}
 
-\begin{table}[!h]
+In other words, $TP$, $FP$ and $FN$ can be thought of as following:
+\begin{itemize}
+    \item $TP$: a glossed string is present both in gold standard and FST output.
+    \item $FP$: a glossed string is present in FST output but not in gold standard.
+    \item $FN$: a glossed string is present in gold standard but not in FST output.
+\end{itemize}
+
+\begin{table}[!htbp]
     \begin{center}
-        \begin{tabular}{|l|l|l|}
+        \begin{tabular}{|l||c|c|}
             \hline
-            \textbf{Transducer file name} & \textbf{Input example} & \textbf{Output example} \\
+            \diagbox{FST output}{Gold standard} & Present & Not present \\
             \hline
+            \hline
+            Present & TP & FP \\
+            \hline
+            Not present & FN & - \\
             \hline
         \end{tabular}
-        \caption{A full list of available HFST transducers}
-        \label{Tab:all_hfst}
+        \caption{textit{TP}, \textit{FP} and \textit{FN} interpretations.}
+        \label{Tab:10_1}
     \end{center}
 \end{table}
