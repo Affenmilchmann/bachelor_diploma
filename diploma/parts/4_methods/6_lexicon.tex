@@ -37,8 +37,8 @@ LEXICON LexiconNoun[pl_all,sg]
     \label{code:6_1}
 \end{code_frame}
 
-\todo{Из примера видно, что по-шугнансик можно написать и *абед*, и *обед*, однако дальше в обработке, второй вариант теряется. Кроме того, непонятно, зачем делить материал по частям речи, а не сделать одну таблицу в три колонки и дальше из нее делать `.lexd`.}
-
 An example of real \texttt{csv} and resulted \texttt{lexd} fragments are shown in Code block \ref{code:6_1}. I decided to keep meanings from the source as \texttt{lexd} comments. Later it makes it easier to debug lexicons manually, this should not influence the compilation process as comments are ignored. The \texttt{form\_lexd.py} script is located in \texttt{scripts/lexicons/} directory. Besides formatting it also preprocesses the Shughni stems: removes stresses, unifies Cyrillic script and filters out affix entries (source dictionaries have entries for affixes alongside with regular stems). For convenience the script also sorts stems alphabetically.
 
 The \texttt{form\_lexd.py} script does not read command line arguments. The configuration is `hard-coded' to read all the \texttt{.csv} files from \texttt{scripts/db\_dumps/} directory and save the generated \texttt{.lexd} files to \texttt{lexd/lexicons/}.
+
+\FloatBarrier

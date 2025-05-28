@@ -1,4 +1,4 @@
-\subsection{\texttt{lexd} rule declaration}
+\subsection{\texttt{lexd} rule declaration} \label{lexd_sec}
 The choice of lexicon compiler was made in favor of \texttt{lexd} as it provides everything that \texttt{lexc} does and in addition has some extra useful functional in form of the tag system, which will be taken advantage of. 
 
 The \texttt{lexd} source code is stored in the \texttt{lexd/} directory. I decided to go with a modular file structure for \texttt{lexd} source code, as it helps to keep the source code organized. The \texttt{lexd/} directory contains \texttt{.lexd} source code files with morpheme lexicons (suffixes, clitics, prefixes, etc.) and lexicon combination patterns. Stem lexicons are stored separately in the \texttt{lexd/lexicons/} directory. For the most part \texttt{lexd/lexicons/} directory contains lexicons obtained from database dumps provided by \textcite{makarov_digital_2022}. The stem lexicon processing is described in Section \ref{stem_lexicons}.
@@ -17,10 +17,236 @@ $ lexd sgh.lexd | hfst-txt2fst -o sgh_base_stem.hfst
     \label{code:4_1}
 \end{code_frame}
 
-\todo{Finish when done!!}
+In the sections below I will describe some important \texttt{lexd} decisions, that had to be made. As well as general inflectional and derivational information.
+
+\subsubsection*{Global patterns}
+As was mentioned before, by default, \texttt{lexd} in this project is implemented with morpheme segmented wordforms. For this purpose, various wordform separators were defined (see Code block \ref{code:4_2}). These separator patterns are inserted into morphological patterns between morphemes, resulting in wordforms looking like \textit{`prefix->stem>-suffix'} by default, with hyphens and morpheme separators mixed together. This is later resolved with the help of \texttt{twol} in the compilation pipeline, as was shown in Section \ref{morpheme_borders}. The \texttt{\_morph\_hyphen\_} pattern is used for suffixes, and the \texttt{\_hyphen\_morph\_} pattern is used for prefixes.
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+PATTERN _morph_
+[>:>]
+
+PATTERN _hyphen_
+[:-]?
+
+PATTERN _morph_hyphen_
+_morph_ _hyphen_
+
+PATTERN _hyphen_morph_
+_hyphen_ _morph_       
+
+LEXICON Adv
+<adv>:{Й}аθ
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{Global patterns and lexicons. Remember, that the default FST is implemented as a generator, meaning that on the left side of `:' is a glossed string, and on the right side is a wordform. So hyphens do not show up in glosses strings and are optional on the wordform side by default.}
+    \label{code:4_2}
+\end{code_frame}
+
+There is also a global lexicon \texttt{Adv}, that contains an adverbalizer suffix `-(й)аθ', that supposedly attaches to nouns and adjectives: \textit{`půnd-aθ'}=`road-ADV' \parencite[139]{parker_shughni_2023}, \textit{`zūr-aθ'}=`great-ADV' \parencite[433]{parker_shughni_2023}. 
+
+\subsubsection*{Clitics}
+Clitics is Shughni for the most part can attach to any part of speech. For example, verbal person agreement in past tense happens with the help of PSC (Personal clitics), which attaches to the right side of the first syntactic constituent in a clause \parencite[262]{parker_shughni_2023}. This exceeds the scope of morphology, so in order to take this into account, clitics were made global, in our formal model they attach to everything. An example of clitics lexicon is shown in Code block \ref{code:4_clit_1}. The exact possible order of all different clitics is also unknown, so the final \texttt{GlobClitics} pattern contains a rule that states: `any zero to three clitics'. The downside is that this significantly increases overgeneration. There is also a prepositional clitic \textit{`ик-'}(EMPH), that is not mentioned by \textcite{parker_shughni_2023}, but is described by \textcite{karamshoev_dict_1988} that is implemented as global.
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+PATTERN GlobClitics
+(AnyClitic > AnyClitic > AnyClitic)?
+
+PATTERN AnyClitic
+PronClitics
+...
+FutureClitic
+
+PATTERN PronClitics
+_morph_hyphen_ PCS
+
+PATTERN FutureClitic
+_morph_hyphen_ FUT
+
+...
+
+LEXICON PCS
+<1sg>:{Й}ум
+...
+<3pl>:{Й}ен
+
+LEXICON FUT
+<fut>:та
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A fragment of \texttt{lexd/clitics.lexd}. `\texttt{...}' is not a part of the source code, here it denotes a content skip in order to take less space and stay informative.}
+    \label{code:4_clit_1}
+\end{code_frame}
+
 \subsubsection*{Nouns}
-\subsubsection*{Verbs}
+Noun inflection implementation consists of number and case, number inflection is shown in Code block \ref{code:4_noun_1}. A plural suffix \textit{`-(й)ен'} applies to every singular noun form. Other plural suffixes only attach to different semantic categories such as in-law family members \parencite[148]{parker_shughni_2023}. Parker also lists a plural suffix \textit{`-(a)ҷев'} that applies to times of day and year, creating a meaning `in the evenings' if combined with \textit{`evening'} stem. But it conflicted with the internal unpublished glosses of the HSE expeditions to Tajikistan, where it was listed as a derivational suffix glossed `TIME'. I decided to stick to the field glosses, as these researchers are the target users of this morphological parser. 
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+PATTERN NounNumberBase
+NounBase                                            [<sg>:]           
+NounBase                            _morph_hyphen_  [<pl>:{Й}ен]        
+NounBase[pl_in-laws]                _morph_hyphen_  [<pl>:орҷ]    
+NounBase[pl_cousins]                _morph_hyphen_  [<pl>:у̊н]
+NounBase[pl_sisters]                _morph_hyphen_  [<pl>:дзинен]  
+LexiconNounPlRegular         [<n>:] _morph_hyphen_  [<pl>:{Й}ен]        
+LexiconNounPlRegular         [<n>:]                 [<sg>:]   
+LexiconNounPlIrregular       [<n><pl>:]
+LexiconAdv                   [<n>:]                 [<sg>:]?
+LexiconAdv                   [<n>:] _morph_hyphen_  [<pl>:{Й}ен]    
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A segment of \texttt{lexd/noun.lexd} showing noun number inflection pattern.}
+    \label{code:4_noun_1}
+\end{code_frame}
+
+Irregular forms of plural nouns were also extracted from the digital dictionary \parencite{makarov_digital_2022} and put into \texttt{LexiconNounPlIrregular} lexicon. In the dictionary both regular and irregular plural noun forms are present. Regular ones were filtered out algorithmically by checking if they have any regular suffixes and their stems were put into \texttt{LexiconNounPlRegular} lexicon, in case any of them are missing from the \texttt{NounBase} lexicon. This was done with the help of \texttt{scripts/lexicons/}\texttt{db\_dumps/filter.py} script.
+
+Adverbs lexicon \texttt{LexiconAdv} is listed here, since they do not have their own POS tag. According to the unpublished field works glosses, the state of adverbs is an open question. I have decided to put it with nouns since at least some are inflected by number as nouns (e.g. \textit{`ах̌ӣб'}=`yesterday', \textit{`ах̌ӣб-ен'}=`yesterday-PL')\parencite{karamshoev_dialect_1963}. This decision is increasing overgeneration, but in my opinion, it is more important to cover such basic lexicon.
+
+Nouns also have several derivational suffixes like the diminutive \textit{`-(й)ик'}/\textit{`-(й)ак'}, the suffix of origin \textit{`-чи'} (\textit{`амму̊м'}=`sauna', \textit{`амму̊м-чи'}=`sauna-ORIG' $\approx$ `sauna operator') and others. The final noun main pattern is shown in Code block \ref{code:4_noun_2}.
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+PATTERNS
+NounPrefix NounNumberBase NounDeriv? NounSuffix
+
+PATTERN NounPrefix
+GlobCliticsPrep (NounPrepos _hyphen_morph_)?
+
+PATTERN NounSuffix
+(_morph_hyphen_ NounAdpos)? (_morph_hyphen_ Adv)? GlobClitics
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A segment of \texttt{lexd/noun.lexd} showing a final noun morphological pattern.}
+    \label{code:4_noun_2}
+\end{code_frame}
+
+\subsubsection*{Verbs} \label{lexd_verbs}
+There are four base verb stems in Shughni: non-past, past, infinitive and perfect ones. They can be regularly derived from one another, but there are also irregular verb stems. The regular pattern for infinitive and past stems is the addition of `-т/-д' to the non-past stem. And for the perfect stem is the addition of `-ч/ҷ' to the non-past stem \parencite[257]{parker_shughni_2023}. For the inflection, verbs can inflect in person, number, gender and negation. Everything except for gender is done via affixation, while the gender inflection is marked with stem-internal alterations \parencite[261]{parker_shughni_2023}. Gender inflection unfortunately was not implemented regularly in this work, it was done with the help of digital dictionary, that contained great amount of gender-inflected verb stems.
+
+Person and number inflection is done via suffixation in present stems and via clitics with past stems. The latter is irrelevant for this work, as it exceeds morphology and was taken into account with global clitics. The present stem \texttt{lexd} pattern is presented in Code block \ref{code:4_verb_1}. All the person- and number-specific lexicons like \texttt{LexiconVerbNpst1sg} were exported from the digital dictionary and stripped of any inflection. This was done to take into account any irregular stem alterations that were not present in the main \texttt{LexiconVerbNpst} lexicon.
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+PATTERN NPastVerbBase
+LexiconVerbNpst|LexiconVerbNpstSh   [<v><prs>:]
+LexiconVerbNpst                     [<v>:] _morph_ [<prs>:] PresSuffixes  
+LexiconVerbNpst1sg                  [<v>:] _morph_ [<prs><1sg>:м]       
+LexiconVerbNpst2sg                  [<v>:] _morph_ [<prs><2sg>:{Й}и]    
+LexiconVerbNpst2pl                  [<v>:] _morph_ [<prs><2pl>:{Й}ет]   
+LexiconVerbNpst3sg                  [<v>:] _morph_ [<prs><3sg>:{vДТ}]   
+LexiconVerbNpst3pl                  [<v>:] _morph_ [<prs><3pl>:{Й}ен]   
+LexiconVerbNpst1sgSh                [<v><prs><1sg>:]                    
+LexiconVerbNpst2sgSh                [<v><prs><2sg>:]                    
+LexiconVerbNpst2plSh                [<v><prs><2pl>:]                    
+LexiconVerbNpst3sgSh                [<v><prs><3sg>:]                    
+LexiconVerbNpst3plSh                [<v><prs><3pl>:]                    
+LexiconVerbNpstF                    [<v><prs><f>:]                      
+LexiconVerbNpstF3sg                 [<v><prs><f><3sg>:]                 
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A fragment of \texttt{lexd/verb.lexd} showing a non-past verb inflection pattern. \texttt{PresSuffixes} contains person-number present inflection suffixes.}
+    \label{code:4_verb_1}
+\end{code_frame}
+
+Verbs also have short forms, which lexicon names end with \texttt{Sh}. They were not stripped of inflection and were left as they are without segmentation, meaning all glosses are considered to belong to the stem.
+
+Other verb stems mostly do not inflect in person or number, but in other aspects they were implemented generally the same with some tense specific minor inflections. The last important details can be shown with perfect stems (see Code block \ref{code:4_verb_2}). Verbal resultive participle is formed only with masculine perfect stems \parencite[370]{parker_shughni_2023}. So perfect lexicon had to be split to take this into account. Perfect lexicons also show how irregular stems are handled. The digital dictionary contains perfect verb forms inflected for plural number, which have regular and irregular forms mixed up together. They were split into two separate lexicons with the help of \texttt{scripts/lexicons/} \texttt{db\_dumps/filter.py} script, that tried to backtrack verb inflection and categorized failed to backtrack verbs as irregular. Regular verb stems were again stripped of inflection, so they can be inflected and segmented later by FST, and irregular verb stems were left untouched.
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+### Perfect ###
+PATTERN PerfVerbBase
+PerfVerbBaseMasc    (_morph_hyphen_ VerbPluQuamPerf)?
+PerfVerbBaseOther   (_morph_hyphen_ VerbPluQuamPerf)?
+
+PATTERN PerfVerbBaseMasc
+LexiconVerbPerfM            [<v><prf><m>:]
+LexiconVerbNpst             [<v>:] _morph_ [<prf>:{vҶЧ}]
+
+PATTERN PerfVerbBaseOther
+LexiconVerbPerfF            [<v><prf><f>:]
+LexiconVerbPerfPlRegular    [<v>:] _morph_ [<prf><pl>:{vҶЧ}]
+LexiconVerbPerfPlIrregular  [<v><prf><pl>:]
+
+### Participle2 ###
+PATTERN Participle2Base
+PerfVerbBaseMasc _morph_hyphen_ [<ptcp2>:ак]               
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A fragment of \texttt{lexd/verb.lexd} showing perfect verb inflection.}
+    \label{code:4_verb_2}
+\end{code_frame}
+
+\subsubsection*{Pronouns and demonstratives}
+Demonstratives and personal pronouns' lexicons were listed manually. The implementation is for the most part straightforward, they inflect in two cases: locative `-(а)нд' and dative `-(а)рд'. A second-person plural personal pronoun can also take a `-йет'(HON) suffix, which is used to address someone honorably.
+
+Common indefinite pronouns were implemented in an elegant way. A list of 20 indefinite pronouns was presented by \textcite[Table 6.4]{parker_shughni_2023}. These pronouns were easily converted into a simple pattern, as they basically consisted of combinations of 5 bases and 4 prefixes with some stem irregularities (see Code block \ref{code:4_pron_1}).
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+LEXICON IndefinitePronRoots # Parker 2023 p.193
+чӣз[g1,g2]
+чай[g1,g2]
+царāнг[g1]
+цаwахт[g1]
+рāнг[g2]
+wахт[g2]
+ҷой[g1,g2]
+
+PATTERN IndefinitePronouns # Parker 2023 p.99
+[ар]  _hyphen_ IndefinitePronRoots[g1] _hyphen_ [ца]    # Assertive
+[йи]  _hyphen_ IndefinitePronRoots[g1]                  # Elective
+[йи]  _hyphen_ IndefinitePronRoots[g1] (_hyphen_ [аθ])? # Negative
+[фук] _hyphen_ IndefinitePronRoots[g2] (_hyphen_ [аθ])? # Universal             
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A \texttt{lexd/pron.lexd} fragment showing an implementation of all 20 common indefinite Shughni pronouns.}
+    \label{code:4_pron_1}
+\end{code_frame}
+
 \subsubsection*{Adjectives}
-\subsubsection*{Pronouns}
+Shughni adjectives besides some inflection can be derived from other parts of speech. As shown in Code block \ref{code:4_adj_1}, adjectives can be derived from noun stems with the help of suffixes like `-(й)ин'($\approx$ `made of') \parencite[169]{parker_shughni_2023}. In addition, adjectives can take noun stems to form compound adjectives like \textit{`рӯшт-куртā'}=`red.ADJ-shirt.N', resulting in an adjective meaning $\approx$`red shirt wearing' \parencite[173]{parker_shughni_2023}.
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+PATTERN AdjBase
+LexiconAdj [<adj>:] (_morph_hyphen_ AdjSuffix|Adv)?
+### Derivation from Nouns ###
+LexiconNoun [<n>:] _morph_hyphen_ NounAdjectivatorsSuffix
+NounAdjectivatorsPrefix _hyphen_morph_ LexiconNoun [<n>:]
+### Compound Adjectives ###
+LexiconAdj [<adj>:] _morph_hyphen_ LexiconNoun [<n>:]        
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A \texttt{lexd/adj.lexd} fragment.}
+    \label{code:4_adj_1}
+\end{code_frame}
+
 \subsubsection*{Numerals}
-\subsubsection*{Anything else(?)}
+Shughni employs a numeral system that contains both Shughni and Tajik borrowed lexicon \parencite[176]{parker_shughni_2023}. Both systems are widely used, so they both were implemented. No derivation or inflection is happening with numerals, except for clitic `=ат'(and) used for complex number formation when attaching to \textit{`δӣс'}(`ten') in Shughni native numeral system.
+
+\subsubsection*{Other parts of speech}
+Everything else is implemented in quite straightforward manner: interjections, conjunctions, prepositions, postpositions and particles contain lexicons with only morphological patterns being global clitics attachment. 
+
+\FloatBarrier
+

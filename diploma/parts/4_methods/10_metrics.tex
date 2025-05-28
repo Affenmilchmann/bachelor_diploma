@@ -1,41 +1,44 @@
 \subsection{Metrics} \label{metrics_section}
-\subsubsection*{Coverage}
+\subsubsection{Quantitative metrics}
 \textit{Coverage} metric is defined as relation of the amount tokens that were given any glossed output by FST ($N_{recognized}$) to the total amount of tokens ($N_{total}$) given to the FST:
 
 \[Coverage = \frac{N_{recognized}}{N_{total}}\]
 
 $N_{recognized}$ does not take into account if the given glosses are correct. It only shows the fraction of words that exist in the FST model's paradigm. 
 
-The evaluation is done via a \texttt{Python} script \texttt{scripts/coverage/eval.py}. It reads Shughni plain text from \texttt{stdin}, which must be cleared of all punctuation. Then the script tokenizes it and feeds every token to the FST. Input texts come both in Cyrillic and Latin scripts, so the script detects writing system first and calls corresponding FST variation (\texttt{sgh\_analyze\_stem\_word\_cyr.hfst} or \texttt{sgh\_analyze\_stem\_word\_lat.hfst}). The script also calculates 5 most frequent unrecognized words and 5 most frequent unrecognized morphemes (it considers any hyphen-separated word fragments as morphemes).
+The evaluation is done via a \texttt{Python} script \texttt{scripts/coverage/eval.py}. It reads Shughni plain text from \texttt{stdin}, which must be cleared of all punctuation. Then the script tokenizes it and feeds every token to the FST. Input texts come both in Cyrillic and Latin scripts, so the script detects writing system and calls corresponding FST variation (\texttt{sgh\_analyze\_stem\_word\_cyr.hfst} or \texttt{sgh\_analyze\_stem\_word\_lat.hfst}). The script also calculates 5 most frequent unrecognized words and most frequent unrecognized morphemes (it considers any hyphen-separated word fragments as morphemes). An example of its work is shown in the Section \ref{results_sec}.
 
-\textit{Coverage} evaluation is integrated in the \texttt{Makefile}, an example of its output is shown in Code block \ref{code:10_1}.
+\subsubsection*{Qualitative metrics}
+There are four qualitative metrics: \textit{Precision}, \textit{Recall}, \textit{F-Score} and \textit{Accuracy(any)}. The first three metrics are evaluated conventionally:
 
-\begin{code_frame}[float,floatplacement=!htbp]
-    \begin{footnotesize}\codespacing
-    \begin{verbatim}
-$ make coverage 
-cat scripts/coverage/corpus/* | scripts/coverage/eval.py
-Coverage corpus
-╭──────────┬─────────┬───────────────╮
-│ metric   │   value │ absolute      │
-├──────────┼─────────┼───────────────┤
-│ coverage │  82.65% │ 154685/187149 │
-╰──────────┴─────────┴───────────────╯
-Top 5 unrecognized (morphs):
-[('на', 914), ('инд', 548), ('ат', 520), ('та', 456), ('ирд', 429)]
-Top 5 unrecognized (words):
-[('су̊д', 619), ('ғал', 601), ('дāк', 310), ('čīdōw', 304), ('ку', 276)]
-    \end{verbatim}
-    \end{footnotesize}
-    \tcblower
-    \captionof{Code}{ An example of coverage script work. \textbf{Not actual results!} \todo{maybe actual results, lets see}}
-    \label{code:10_1}
-\end{code_frame}
+\[Precision = \frac{TP}{TP + FP};\ 
+Recall = \frac{TP}{TP + FN};\ 
+FScore = \frac{2*Precision*Recall}{Precision + Recall}\]
 
-\subsubsection*{Accuracy}
-\textit{Accuracy} metric is defined as relation of the amount of tokens, to which a FST has given a correct output ($N_{correct}$) to the amount of tokens, which were given any glossed output by the FST ($N_{recognized}$):
+Where \texttt{TP} = `\textit{True positive}', \texttt{FP} = `\textit{False positive}' and \texttt{FN} = `\textit{False negative}'. The principle of these values' evaluation by \texttt{scripts/metrics/eval.py} is the following: 
+\begin{enumerate}
+    \item The script loads the Gold Standard's pairs of wordforms and glossed strings
+    \item For each unique wordform$_i$:
+    \begin{enumerate}
+        \item all possible Gold Standard's glossed strings are gathered for wordform$_i$ ($=G_i$)
+        \item wordform$_i$ is fed into a FST analyzer and all possible predicted glossed strings are gathered ($=P_i$)
+        \item the following is calculated: \\
+        $TP_i = |G_i \cap P_i|$ (amount of elements in intersection)\\
+        $FN_i = |G_i \setminus P_i|$ (amount of elements in $G_i$ that are not in $P_i$)\\
+        $FP_i = |P_i \setminus G_i|$ (amount of elements in $P_i$ that are not in $G_i$)
+    \end{enumerate}
+    \item Total $TP$, $FN$ and $FP$ are calculated from the sum of respective $TP_i$, $FN_i$ and $FP_i$
+\end{enumerate}
 
-\[Accuracy = \frac{N_{correct}}{N_{recognized}}\]
-
-$N_{recognized}$ in the accuracy metric is the same as $N_{recognized}$ in the coverage metric. 
-
+\begin{table}[!h]
+    \begin{center}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            \textbf{Transducer file name} & \textbf{Input example} & \textbf{Output example} \\
+            \hline
+            \hline
+        \end{tabular}
+        \caption{A full list of available HFST transducers}
+        \label{Tab:all_hfst}
+    \end{center}
+\end{table}

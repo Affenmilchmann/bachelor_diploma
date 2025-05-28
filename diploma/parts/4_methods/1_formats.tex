@@ -1,9 +1,5 @@
 \subsection{Input and output format}
-Every FST converts between two types of strings: wordforms (e.g. `\texttt{дарйойен}' $\approx$ `rivers') and glossed strings (e.g. `\texttt{дарйо<n>><pl>}' = `\texttt{дарйо.N-PL}'). Glossed strings format is based on Apertium format \todo{citation needed?}, which is a standardized format for HFST-based transducers. The choice of this format is motivated by the fact that this is the standard, and I want to keep it consistent with existing tools and practices in the field. Important keys of the format are:
-
-\todo{Нужно собрать список глосс используемых в тексте и отправить списком в начало. Я ожидаю что-то такое в алфавитном порядке. Список и значение глосс достаточно стандартизирован, и можете взять из моего пакета `lingglosses` (прислал в личку). Еще лингвисты обычно пишут глоссы смолл кэпсом \textsc{}, но можно, наверное, на это забить. 
-
-- PL <pl> --- plural marker.}
+Every FST converts between two types of strings: wordforms (e.g. `\texttt{дарйойен}' $\approx$ `rivers') and glossed strings (e.g. `\texttt{дарйо<n>><pl>}' = `\texttt{дарйо.N-PL}', POS tag and gloss descriptions are listed in Tables \ref{Tab:glosses_1}, \ref{Tab:glosses_2} and \ref{Tab:pos_tags}). Glossed strings format is based on Apertium format, which is a standardized format for HFST-based transducers. The choice of this format is motivated by the fact that this is the standard, and I want to keep it consistent with existing tools and practices in the field. Important key points of the format are:
 
 \begin{itemize}
     \item Grammatical tags are enclosed with angular brackets and are lowercase.\\
@@ -13,7 +9,7 @@ Every FST converts between two types of strings: wordforms (e.g. `\texttt{дар
     \item Different morpheme tags are separated with a single right angular bracket `\texttt{>}'.\\
     \texttt{stone-PL} = \texttt{stone<n>><pl>}
     \item Multiple stems in a single word are possible.\\
-    \texttt{lemma1<adj>><morph>>lemma2<adj>}
+    \texttt{stem1<adj>><morph>>stem2<adj>}
 \end{itemize}
 
 The Shughni morphological parser in this work is presented in a variety of input and output formats. A full list of \texttt{.hfst} files with their formats of input and output is shown in Table \ref{Tab:all_hfst}. Motivation for this many variations of the morphological parser was support of different formats. Parser comes with four format variables:
@@ -21,8 +17,8 @@ The Shughni morphological parser in this work is presented in a variety of input
     \item FST directionality: analyzer or generator. This simply shows the direction of a FST, analyzers take wordforms as input and return glossed strings, generators take glossed strings and return wordforms
     \item Glossed string stem glosses: Shughni stems or Russian lemmas. Notated in file names as \texttt{stem} and \texttt{rulem} respectively.\\
     \texttt{дарйо<n>><pl>} (Shughni stem); \texttt{река<n>><pl>} (Russian lemma)
-    \item Wordform morpheme borders: plain word or morphemes are separated with (`\texttt{>}') delimeter symbol. Notated in file names as \texttt{word} and \texttt{morph} respectively.\\ \todo{я за то, чтобы называть дарйо>йен segmented, а инструмент, который это делает segmenter, так что может быть тэг morph я бы тоже заменил.}
-    \texttt{дарйойен} (plain word); \texttt{дарйо>йен} (morphemes separated)
+    \item Wordform morpheme segmentation: plain word or segmented word (morphemes separated with (`\texttt{>}') delimeter symbol). Notated in file names as \texttt{word} and \texttt{segm} respectively.\\
+    \texttt{дарйойен} (plain word); \texttt{дарйо>йен} (segmented word)
     \item Wordform script: Latin or Cyrillic.\\
     \texttt{дарйойен} (Latin); \texttt{daryoyen} (Cyrillic)
 \end{itemize}
@@ -33,21 +29,21 @@ The Shughni morphological parser in this work is presented in a variety of input
             \hline
             \textbf{Transducer file name} & \textbf{Input example} & \textbf{Output example} \\
             \hline
-            sgh\_gen\_stem\_morph\_cyr.hfst & \texttt{дарйо<n>><pl>} & \texttt{дарйо>йен} \\
+            sgh\_gen\_stem\_segm\_cyr.hfst & \texttt{дарйо<n>><pl>} & \texttt{дарйо>йен} \\
             sgh\_gen\_stem\_word\_cyr.hfst & \texttt{дарйо<n>><pl>} & \texttt{дарйойен} \\
-            sgh\_gen\_rulem\_morph\_cyr.hfst & \texttt{река<n>><pl>} & \texttt{дарйо>йен} \\
+            sgh\_gen\_rulem\_segm\_cyr.hfst & \texttt{река<n>><pl>} & \texttt{дарйо>йен} \\
             sgh\_gen\_rulem\_word\_cyr.hfst & \texttt{река<n>><pl>} & \texttt{дарйойен} \\
-            sgh\_gen\_stem\_morph\_lat.hfst & \texttt{дарйо<n>><pl>} & \texttt{daryo>yen} \\
+            sgh\_gen\_stem\_segm\_lat.hfst & \texttt{дарйо<n>><pl>} & \texttt{daryo>yen} \\
             sgh\_gen\_stem\_word\_lat.hfst & \texttt{дарйо<n>><pl>} & \texttt{daryoyen} \\
-            sgh\_gen\_rulem\_morph\_lat.hfst & \texttt{река<n>><pl>} & \texttt{daryo>yen} \\
+            sgh\_gen\_rulem\_segm\_lat.hfst & \texttt{река<n>><pl>} & \texttt{daryo>yen} \\
             sgh\_gen\_rulem\_word\_lat.hfst & \texttt{река<n>><pl>} & \texttt{daryoyen} \\
-            sgh\_analyze\_stem\_morph\_cyr.hfst & \texttt{дарйо>йен} & \texttt{дарйо<n>><pl>} \\
+            sgh\_analyze\_stem\_segm\_cyr.hfst & \texttt{дарйо>йен} & \texttt{дарйо<n>><pl>} \\
             sgh\_analyze\_stem\_word\_cyr.hfst & \texttt{дарйойен} & \texttt{дарйо<n>><pl>} \\
-            sgh\_analyze\_rulem\_morph\_cyr.hfst & \texttt{дарйо>йен} & \texttt{река<n>><pl>} \\
+            sgh\_analyze\_rulem\_segm\_cyr.hfst & \texttt{дарйо>йен} & \texttt{река<n>><pl>} \\
             sgh\_analyze\_rulem\_word\_cyr.hfst & \texttt{дарйойен} & \texttt{река<n>><pl>} \\
-            sgh\_analyze\_stem\_morph\_lat.hfst & \texttt{daryo>yen} & \texttt{дарйо<n>><pl>} \\
+            sgh\_analyze\_stem\_segm\_lat.hfst & \texttt{daryo>yen} & \texttt{дарйо<n>><pl>} \\
             sgh\_analyze\_stem\_word\_lat.hfst & \texttt{daryoyen} & \texttt{дарйо<n>><pl>} \\
-            sgh\_analyze\_rulem\_morph\_lat.hfst & \texttt{daryo>yen} & \texttt{река<n>><pl>} \\
+            sgh\_analyze\_rulem\_segm\_lat.hfst & \texttt{daryo>yen} & \texttt{река<n>><pl>} \\
             sgh\_analyze\_rulem\_word\_lat.hfst & \texttt{daryoyen} & \texttt{река<n>><pl>} \\
             \hline
         \end{tabular}
@@ -61,8 +57,8 @@ Four binary variables result in 16 ($=2^4$) FST variations. Every FST listed in 
 \begin{code_frame}[float]
     \begin{footnotesize}\codespacing
     \begin{verbatim}
-$ make sgh_gen_stem_morph_cyr.hfst
-$ make sgh_gen_stem_morph_cyr.hfstol
+$ make sgh_gen_stem_segm_cyr.hfst
+$ make sgh_gen_stem_segm_cyr.hfstol
     \end{verbatim}
     \end{footnotesize}
     \tcblower

@@ -1,64 +1,74 @@
 \subsection{\texttt{twol} phonology}
-Shughni is not rich for morphonological rules. The only global phonological rule is `й' drop (Latin: `y'; IPA: /j/) (\todo{citation needed; `drop' is a questinable name for this}) on some morphemes' borders after a consonant:
+\subsubsection{Global patterns}
+Shughni is not rich for morphonological rules. The only global phonological rule is `й' (Latin: `y'; IPA: /j/) drop on some morphemes' borders after a consonant. In the rule below `>' symbols stands for morpheme border:
+
 \[
-j \rightarrow \emptyset 
+й \rightarrow \emptyset 
 \ /\ 
 [+consonant]
+>
 \ \_
 \]
-\todo{как показать границу морфемы, нужна ли вообще нотация правила если я не могу на неё сослаться}
 
-\todo{Границы морфем принято показывать при помощи `+`}
+A special multichar symbol is introduced to stand in place of `й' letters that are affected by this phonological rule: `\texttt{\{Й\}}'. We capitalize it and frame it with curly brackets so it is never confused with plain letters. A FST treats multichar symbols as single unique symbols, even though they visually consist of multiple characters. This feature allows us to mark which lexicon entries are affected by this phonological rule and which are not. Examples of lexicon definitions with this special symbol were shown in Section \ref{lexd_sec} (Code blocks \ref{code:4_1}, \ref{code:4_clit_1}, \ref{code:4_noun_1} and \ref{code:4_verb_1}).
 
-A special multichar symbol can be introduced to stand in place of `й' letters that are affected by this phonological rule: `\texttt{\{Й\}}'. We capitalize it and frame it with curly brackets so it is never confused with plain letters. A FST treats multichar symbols as single unique symbols, even though they visually consist of multiple characters. This feature allows us to mark which lexicon entries are affected by this phonological rule and which are not. An example of lexicon definition with this symbol is shown in Code block \ref{code:5_1}.
+Without \texttt{twol} rules these morphemes will remain as they are specified in \texttt{lexd}, meaning that feeding `\texttt{вирод<n>><dim>}'(=`brother.N-DIM') to the input of a generator will output literally `\texttt{вирод\{Й\}ик}'. After applying a \texttt{twol} rule (shown in Code block \ref{code:5_2}) it generates wordforms `\texttt{виродик}' (=`brother.N-DIM') and `\texttt{туйик}' (=`you.PERS.2SG-DIM'). The composition process of \texttt{twol} rules with the main FST is the same as it was for morpheme border filtration (Code block \ref{code:bash_8}).
 
-\begin{code_frame}[float]
+\begin{code_frame}[float,floatplacement=!h]
     \begin{footnotesize}\codespacing
     \begin{verbatim}
-LEXICON PCS # Personal clitics
-<1sg>:{Й}ум
-<2sg>:{Й}ат
-<2sg>:т
-<3sg>:{Й}и
-<1pl>:{Й}āм
-<1pl>:{Й}ам
-<2pl>:{Й}ет
-<3pl>:{Й}ен
-
-LEXICON DIM # Diminutive clitic
-<dim>:{Й}ик
-<dim>:{Й}ак
-    \end{verbatim}
-    \end{footnotesize}
-    \tcblower
-    \captionof{Code}{A real \texttt{lexd} example of `\texttt{\{Й\}}' multichar usage.}
-    \label{code:5_1}
-\end{code_frame}
-
-\todo{Выглядит как то, что Вы повторяете себя. Возможно стоит выделить все морфемы типа <2sg>:т в отдельный класс, а дальше гиперфонему {Й} добавить один раз в  разделе Patterns}.
-
-Without \texttt{twol} rules these morphemes will remain as they are specified in \texttt{lexd}, meaning that feeding `\texttt{вирод<n>><dim>}'(\textit{=brother.N-DIM}) to the input of a generator will output literally `\texttt{вирод\{Й\}ик}'. After applying a \texttt{twol} rule (shown in Code block \ref{code:5_2}) it generates wordforms `\texttt{виродик}' (=вирод.N-DIM/brother.N-DIM) and `\texttt{туйик}' (=ту.PERS.2SG-DIM/you.PERS.2SG-DIM). The composition of \texttt{twol} rules with the main FST is the same as it was for morpheme border filtration (Code block \ref{code:bash_8}). This rule applies to all morphemes that can start with `j'. Including, but not limited to personal clitics shown in Code block \ref{code:5_1}, noun adjectivator suffix `-jin' \parencite[168]{parker_shughni_2023}, noun plural suffix `-yen'
-
-\begin{code_frame}[float]
-    \begin{footnotesize}\codespacing
-    \begin{verbatim}
-"j drop after consonant"
+"й drop after consonant"
 %{Й%}:0 <=> Consonant (%>) (%-) (%>) _ ;
+
+"й drop after consonant"
+%{Й%}:й <=> Vowel (%>) (%-) (%>) _ ;
     \end{verbatim}
     \end{footnotesize}
     \tcblower
-    \captionof{Code}{A \texttt{twol} rule for `j' drop depending on the previous morpheme's segment. Symbol `\%' in \texttt{twol} is used to escape a character.}
+    \captionof{Code}{A \texttt{twol} rule for `й' drop depending on the previous morpheme's segment. Symbol `\%' in \texttt{twol} is used to escape a character. Morpheme separators are enclosed with brackets, which in \texttt{twol} syntax is a way to make anything inside brackets optional.}
     \label{code:5_2}
 \end{code_frame}
 
-\todo{Здесь Вы называете `j' drop --- унифицируйте, пожалуйста.}
+\subsubsection{Verb phonology}
+Some verb stems can regularly be formed from non-past tense stems. This was briefly discussed in \hyperref[lexd_verbs]{`Verbs' subsection} of Section \ref{lexd_sec}. \textcite[256]{parker_shughni_2023} describes two context groups for these rules. The first group contains voiced obstruents, vowels and semivowels `w'(Latin: `w'; IPA: /v/) and `й', these contexts are followed by `д'(Latin: `d'; IPA: /d/) for past and infinitive stems and by `ҷ'(Latin: `ǰ'; IPA: /d͡ʒ/) for perfect stems. The second group contains everything else and is followed by `т'(Latin: `t'; IPA: /t/) for past and infinitive and by `ч'(Latin: `č'; IPA: /tʃ/) for perfect stems. The \texttt{twol} formalism rules for verb stem-forming endings are shown in Code block \ref{code:5_3}. 
 
-There are other phonological rules that do not apply to such variety of contexts:
-\begin{itemize}
-    \item Two clitics drop a vowel `а' when following a vowel: `=(а)нд' (locative) and `=(а)рд' (dative) \todo{citation needed}. \texttt{twol} rule looks like this:\\
-    \texttt{\%\{А\%\}:0 <=> Vowel (\%>) (\%-) (\%>) \_ ;}
-    \item A verb PRS suffix `-д/-т' becomes `-д' preceeded by voiced obstruents or vowels and `-т' in all other contexts \parencite[262]{parker_shughni_2023}. \texttt{twol} rule looks like this:\\
-    \texttt{\%\{ДТ\%\}:д <=> DGroup \_ ;}\\
-    Where \texttt{DGroup} stands for all vowels and voiced obstruents.
-\end{itemize}
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+"Past and Inf verb stem endings"
+%{vДТ%}:д => [VoicedObstruent | Vowel | Semivowel] (%>) _ ;
 
+"Past and Inf verb stem endings"
+%{vДТ%}:т => [VoicelessConsonant | Nasal | Liquid] (%>) _ ;
+
+"Perf verb stem endings"
+%{vҶЧ%}:ҷ => [VoicedObstruent | Vowel | Semivowel] (%>) _ ;
+
+"Perf verb stem endings"
+%{vҶЧ%}:ч => [VoicelessConsonant | Nasal | Liquid] (%>) _ ;
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{\texttt{twol} rules for verb endings phonology.}
+    \label{code:5_3}
+\end{code_frame}
+
+\subsubsection{Pronoun phonology}
+Pronouns in Shughni can be inflected in locative and dative case with suffixes `-(а)нд' and `-(а)рд' respectively. The optional `а' letter also depends on the final letter of the previous segment. The contexts are the same here as for the `й' drop rule, so the \texttt{twol} rules are very similar (see Code block \ref{code:5_4}).
+
+\begin{code_frame}[float,floatplacement=!h]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+"pronouns loc and dat"
+%{А%}:а <=> Consonant (%>) (%-) (%>) _ ;
+
+"pronouns loc and dat"
+%{А%}:0 <=> Vowel (%>) (%-) (%>) _ ;
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{\texttt{twol} rules for noun suffixes phonology.}
+    \label{code:5_4}
+\end{code_frame}
+
+\FloatBarrier

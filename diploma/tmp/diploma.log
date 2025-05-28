@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  21 MAY 2025 10:22
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.2.8)  28 MAY 2025 16:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1566,7 +1566,11 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(./diploma/tmp/diploma.aux)
+(./diploma/tmp/diploma.aux
+
+LaTeX Warning: Label `stem_lexicons' multiply defined.
+
+)
 \openout1 = `diploma.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
@@ -1580,8 +1584,7 @@ LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 4.
@@ -1767,106 +1770,52 @@ Overfull \hbox (17.34482pt too wide) in paragraph at lines 21--33
 \openout8 = `diploma.toc'.
 
 
-[3] (./diploma/parts/1_introduction.tex
-File: ./diploma/img/map.png Graphic file (type bmp)
-<./diploma/img/map.png>
- [1])
-(./diploma/parts/2_existing_solutions.tex [2]
-File: ./diploma/img/transducer1.png Graphic file (type bmp)
-<./diploma/img/transducer1.png>
-File: ./diploma/img/transducer1_1.png Graphic file (type bmp)
-<./diploma/img/transducer1_1.png>
+[3] (./diploma/parts/4_methods.tex (./diploma/parts/4_methods/1_formats.tex
+
+LaTeX Warning: Reference `Tab:glosses_1' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Reference `Tab:glosses_2' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Reference `Tab:pos_tags' on page 1 undefined on input line 2.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3]) (./diploma/parts/3_data.tex [4] [5]) (./diploma/parts/4_methods.tex
-(./diploma/parts/4_methods/1_formats.tex [6]
-
-LaTeX Warning: Reference `Tab:all_hfst' on page 7 undefined on input line 14.
-
-
-LaTeX Warning: Reference `Tab:all_hfst' on page 7 undefined on input line 54.
-
-
-LaTeX Warning: Reference `code:make_1' on page 7 undefined on input line 54.
-
-[7]
 LaTeX Font Info:    Font shape `TU/FreeMono(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 58.
-
+(Font)              scaled to size 10.0pt on input line 59.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 64.
+(caption)                particular \caption on input line 65.
 See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown Code defaults to 0 on input l
-ine 64.
-) (./diploma/parts/4_methods/2_pipeline.tex
-
-LaTeX Warning: Reference `code:pipeline_1' on page 8 undefined on input line 3.
-
-
+ine 65.
+) (./diploma/parts/4_methods/2_pipeline.tex [1]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 17.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `code:pipeline_2' on page 8 undefined on input line 21
-.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 31.
 See the caption package documentation for explanation.
 
-
-LaTeX Warning: Reference `code:pipeline_3' on page 8 undefined on input line 36
-.
-
-[8]
+[2]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 57.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
-
- []
-
-
-LaTeX Warning: Reference `code:bash_7' on page 9 undefined on input line 67.
-
-
-LaTeX Warning: Reference `rulemm_section' on page 9 undefined on input line 67.
-
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 77.
+(caption)                particular \caption on input line 78.
 See the caption package documentation for explanation.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-
-LaTeX Warning: Reference `code:bash_7' on page 9 undefined on input line 87.
-
-
-LaTeX Warning: Reference `translit_section' on page 9 undefined on input line 8
-7.
-
-[9]
-
-LaTeX Warning: Reference `code:twol_4_1' on page 10 undefined on input line 92.
-
-
-
-Overfull \hbox (0.97276pt too wide) in paragraph at lines 92--93
+[3]
+Overfull \hbox (0.97276pt too wide) in paragraph at lines 95--96
 \TU/FreeSerif(0)/m/n/12 contains both hyphens and morpheme separators, which lo
 oks like ‘\TU/FreeMono(0)/m/n/12 дарйо>-йен\TU/FreeSerif(0)/m/n/12 ’ and ‘\TU/F
 reeMono(0)/m/n/12 дарйо>йен\TU/FreeSerif(0)/m/n/12 ’
@@ -1874,222 +1823,232 @@ reeMono(0)/m/n/12 дарйо>йен\TU/FreeSerif(0)/m/n/12 ’
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 109.
+(caption)                particular \caption on input line 112.
 See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `code:bash_8' on page 10 undefined on input line 113.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 125.
+(caption)                particular \caption on input line 128.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `Tab:all_hfst' on page 10 undefined on input line 129.
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./diploma/parts/4_methods/3_file_structure.tex)
 (./diploma/parts/4_methods/4_lexd.tex
 LaTeX Font Info:    Font shape `TU/FreeMono(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 1.
- [10]
-
-LaTeX Warning: Reference `stem_lexicons' on page 11 undefined on input line 4.
-
-
-LaTeX Warning: Reference `code:4_1' on page 11 undefined on input line 6.
-
+ [4]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 16.
 See the caption package documentation for explanation.
 
-) (./diploma/parts/4_methods/5_twol.tex
-
-LaTeX Warning: Reference `code:5_1' on page 11 undefined on input line 11.
-
-[11]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 32.
+(caption)                particular \caption on input line 45.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `code:5_2' on page 12 undefined on input line 36.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `code:bash_8' on page 12 undefined on input line 36.
-
-
-LaTeX Warning: Reference `code:5_1' on page 12 undefined on input line 36.
-
-
-Overfull \hbox (48.54376pt too wide) in paragraph at lines 36--37
-\TU/FreeSerif(0)/m/n/12 feeding ‘\TU/FreeMono(0)/m/n/12 вирод<n>><dim>\TU/FreeS
-erif(0)/m/n/12 ’(\TU/FreeSerif(0)/m/it/12 =brother.N-DIM\TU/FreeSerif(0)/m/n/12
- ) to the input of a generator will output literally ‘\TU/FreeMono(0)/m/n/12 ви
-род{Й}ик\TU/FreeSerif(0)/m/n/12 ’.
- []
-
+[5]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 46.
-See the caption package documentation for explanation.
-
-) (./diploma/parts/4_methods/6_lexicon.tex [12]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 36.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `code:6_1' on page 13 undefined on input line 40.
-
-) (./diploma/parts/4_methods/7_translit.tex [13]
-
-LaTeX Warning: Reference `code:7_1' on page 14 undefined on input line 6.
-
-
-LaTeX Warning: Reference `morpheme_borders' on page 14 undefined on input line 
-6.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 22.
-See the caption package documentation for explanation.
-
-) (./diploma/parts/4_methods/8_rulem.tex
-
-LaTeX Warning: Reference `code:8_1' on page 14 undefined on input line 2.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 22.
+(caption)                particular \caption on input line 83.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `code:8_2' on page 14 undefined on input line 26.
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 107.
+See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `code:8_3' on page 14 undefined on input line 26.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[6]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 131.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[7]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 161.
+See the caption package documentation for explanation.
+
+[8]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 192.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 221.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 241.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+Overfull \hbox (3.00081pt too wide) in paragraph at lines 249--250
+[]\TU/FreeSerif(0)/m/n/12 Everything else is implemented in quite straightforwa
+rd manner: interjections, conjunctions, prepo-
+ []
+
+) (./diploma/parts/4_methods/5_twol.tex
+Missing character: There is no й ("439) in font cmmi12!
+[10]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 28.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 52.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 70.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11]) (./diploma/parts/4_methods/6_lexicon.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 36.
+See the caption package documentation for explanation.
+
+[12]) (./diploma/parts/4_methods/7_translit.tex
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 22.
+See the caption package documentation for explanation.
+
+[13]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 44.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (35.07945pt too wide) in paragraph at lines 26--47
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 63.
+See the caption package documentation for explanation.
+
+) (./diploma/parts/4_methods/8_rulem.tex [14]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 22.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 42.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (35.07945pt too wide) in paragraph at lines 26--45
 \TU/FreeSerif(0)/m/it/12 ‘этот<v>’\TU/FreeSerif(0)/m/n/12 (‘this_one<v>’), whic
 h is an unwanted result. But when fed into \TU/FreeMono(0)/m/n/12 analyze_pos_f
 ixed.hfst\TU/FreeSerif(0)/m/n/12 ,
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 64.
+(caption)                particular \caption on input line 62.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]\TU/FreeSerif(0)/m/n/12 Code 15: |[]A comparison of FST analyzers. The first 
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+[]\TU/FreeSerif(0)/m/n/12 Code 26: |[]A comparison of FST analyzers. The first 
 one called
  []
 
-
-LaTeX Warning: Reference `code:4_1' on page 14 undefined on input line 69.
-
-
-Overfull \hbox (57.10077pt too wide) in paragraph at lines 69--70
-\TU/FreeSerif(0)/m/n/12 not share source code with the main morphology FST, so 
-its lexicons are stored in a separate \TU/FreeMono(0)/m/n/12 translate/lexd/
- []
-
-[14]
-
-LaTeX Warning: Reference `Tab:8_1' on page 15 undefined on input line 71.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
 []\TU/FreeSerif(0)/m/n/12 горевать, тосковать,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
+Underfull \hbox (badness 10000) in paragraph at lines 82--82
 []\TU/FreeSerif(0)/m/n/12 подчинительный союз:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 \TU/FreeSerif(0)/m/n/12 форме вопросительного
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 \TU/FreeSerif(0)/m/n/12 местоимения ЧĀЙ кто
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 \TU/FreeSerif(0)/m/n/12 (см.), употребляемая в
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
 \TU/FreeSerif(0)/m/n/12 различных косвенных
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 []\TU/FreeSerif(0)/m/n/12 косвенная_форма_к_прямой_форме_
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 \TU/FreeSerif(0)/m/n/12 _вопросительного_местоимения_чй_
  []
 
 
-LaTeX Warning: Reference `Tab:8_2' on page 15 undefined on input line 94.
-
-
-LaTeX Warning: Reference `Tab:8_1' on page 15 undefined on input line 94.
-
-
-LaTeX Warning: Reference `Tab:8_2' on page 15 undefined on input line 94.
-
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 101--101
 []\TU/FreeSerif(0)/m/n/12 Length (charac-
  []
 
 
-Underfull \hbox (badness 3735) in paragraph at lines 103--104
+Underfull \hbox (badness 3735) in paragraph at lines 101--102
 []\TU/FreeSerif(0)/m/n/12 105 ‘указывает_на_косвенное_дополнение_со_
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
 \TU/FreeSerif(0)/m/n/12 _значением_адресата_действия_при_ряде_
  []
 
 
-Underfull \hbox (badness 5578) in paragraph at lines 105--106
+Underfull \hbox (badness 5578) in paragraph at lines 103--104
 []\TU/FreeSerif(0)/m/n/12 16 ‘косв_форма_мн_ч_указ_мест_дальн_ст_к_
  []
 
-) (./diploma/parts/4_methods/9_testing.tex
-
-LaTeX Warning: Reference `code:9_1' on page 17 undefined on input line 4.
-
-
+[16] [17]) (./diploma/parts/4_methods/9_testing.tex
 Underfull \hbox (badness 10000) in paragraph at lines 18--31
 [][]
  []
@@ -2098,12 +2057,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--31
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 32.
 See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `code:9_1' on page 17 undefined on input line 36.
-
-
-LaTeX Warning: Reference `code:9_2' on page 17 undefined on input line 36.
 
 
 Overfull \hbox (2.22145pt too wide) in paragraph at lines 47--47
@@ -2116,75 +2069,37 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 55.
 See the caption package documentation for explanation.
 
-) (./diploma/parts/4_methods/10_metrics.tex [17] [18]
+) (./diploma/parts/4_methods/10_metrics.tex [18]
+
+LaTeX Warning: Reference `results_sec' on page 19 undefined on input line 9.
+
+
 Overfull \hbox (1.04744pt too wide) in paragraph at lines 9--10
 []\TU/FreeSerif(0)/m/n/12 The evaluation is done via a \TU/FreeMono(0)/m/n/12 P
 ython \TU/FreeSerif(0)/m/n/12 script \TU/FreeMono(0)/m/n/12 scripts/coverage/ev
 al.py\TU/FreeSerif(0)/m/n/12 . It reads Shughni
  []
 
-
-Overfull \hbox (13.35979pt too wide) in paragraph at lines 9--10
-\TU/FreeSerif(0)/m/n/12 writing system first and calls corresponding FST variat
-ion (\TU/FreeMono(0)/m/n/12 sgh_analyze_stem_word_cyr.hfst
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 31.
-See the caption package documentation for explanation.
-
-)) (./diploma/parts/5_results.tex) (./diploma/parts/6_conclusion.tex)
-(./diploma/parts/7_references.tex [19] [20])
-Overfull \hbox (3.70172pt too wide) in paragraph at lines 26--26
-[][]\TU/FreeSerif(0)/m/n/12 Edelman, D. I. (2009). Сравнительная грамматика вос
-точноиранских языков [Comparative Gram-
- []
-
-
-Overfull \hbox (20.98573pt too wide) in paragraph at lines 26--26
-\TU/FreeSerif(0)/m/it/12 Shughni language]\TU/FreeSerif(0)/m/n/12 . изд-во АН Т
-адж. ССР. []$[][][][][] [] [] [] [][][][][] [] [][][][][][] [] [][] [] [][][][]
-[] [] [][] [] [][][][][][][][][][][][]$[] 
- []
-
-
-Overfull \hbox (0.72575pt too wide) in paragraph at lines 26--26
-[][]\TU/FreeSerif(0)/m/n/12 Melenchenko, M. G. (2021). \TU/FreeSerif(0)/m/it/12
- Автоматический морфологический анализ шугнанского языка [Au-
- []
-
-[21] [22] (./diploma/tmp/diploma.aux)
+[19])) [20] (./diploma/tmp/diploma.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `diploma.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `diploma.out':
-(rerunfilecheck)             Before: FE2CE6F0EF85117E25AF28990F5254DA;2535
-(rerunfilecheck)             After:  3DD89F5543F15E020B34BB1289193C0B;3861.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                diploma
-(biblatex)                and rerun LaTeX afterwards.
-
+Package rerunfilecheck Info: File `diploma.out' has not changed.
+(rerunfilecheck)             Checksum: DBF67D4FBB5663D2E14B84A0FB70ACC4;1999.
 Package logreq Info: Writing requests to 'diploma.run.xml'.
 \openout1 = `diploma.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51752 strings out of 478029
- 1177250 string characters out of 5842217
- 2290909 words of memory out of 5000000
- 70994 multiletter control sequences out of 15000+600000
+ 51547 strings out of 478029
+ 1169590 string characters out of 5842217
+ 2286763 words of memory out of 5000000
+ 70812 multiletter control sequences out of 15000+600000
  516425 words of font info for 91 fonts, out of 8000000 for 9000
  682 hyphenation exceptions out of 8191
- 103i,12n,120p,1627b,5371s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,120p,1627b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ./diploma/tmp/diploma.pdf (25 pages).
+Output written on ./diploma/tmp/diploma.pdf (23 pages).

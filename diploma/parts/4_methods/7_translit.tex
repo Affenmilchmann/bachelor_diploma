@@ -1,9 +1,7 @@
 \subsection{Transliteration} \label{translit_section}
 The transliteration in this work is implemented for Latin and Cyrillic scripts of the Shughni language. It is developed as a pair of separate FSTs: \texttt{translit/lat2cyr.hfst} (Latin to Cyrillic transliteration) and \texttt{translit/cyr2lat.hfst} (Cyrillic to Latin transliteration). I found it more convenient to compile transducers with \texttt{lexd} (opposed to raw `strings' format). \texttt{Lexd} allows splitting characters and special symbols into separate lexicons and writing comments, which makes the source file much more readable. Also, as a side bonus, \texttt{lexd} syntax allows repeating (making it infinitely cyclic) the transducer without the need to repeat it via HFST tools in the \texttt{Makefile}.
 
-The transliterator only works for wordforms (e.g. `\texttt{daryoyen}'\textit{=river.N-PL}). It does not work for glossed strings (e.g. `\texttt{daryo<n>><pl>}'). The reason for this is that in case of Latin to Cyrillic transliteration the FST would also transliterate grammatical tags, outputting `\texttt{дарйо<н>><пл>}' given `\texttt{daryo<n>><pl>}' as input. This could be solved by listing all the possible grammatical tags as multichar symbols in the transliterator's lexicon, but this seems unnecessarily complicated to me for transliteration purposes. 
-
-\todo{Все же не очень понятно, как Вы различаете dz <-> ӡ и dz <-> дз. Второе возможно?}
+The transliterator only works for wordforms (e.g. `\texttt{daryoyen}'=`river.N-PL'). It does not work for glossed strings (e.g. `\texttt{daryo<n>><pl>}'). The reason for this is that in case of Latin to Cyrillic transliteration the FST would also transliterate grammatical tags, outputting `\texttt{дарйо<н>><пл>}' given `\texttt{daryo<n>><pl>}' as input. This could be solved by listing all the possible grammatical tags as multichar symbols in the transliterator's lexicon, but this seems unnecessarily complicated to me for transliteration purposes. 
 
 As shown in Code block \ref{code:7_1}, transliteration for wordforms works for both plain text wordforms and morpheme-separated wordforms (the difference was explained in Section \ref{morpheme_borders}: \textit{Morpheme borders}). This ensures that the transliteration FST can be successfuly composed with any version of wordform side of FSTs.
 
@@ -25,3 +23,45 @@ $ cat cyr.txt | hfst-lookup -q translit/cyr2lat.hfst
     \label{code:7_1}
 \end{code_frame}
 
+Two separate \texttt{lexd} files were used to generate transliterators of \texttt{lat2cyr} and \texttt{cyr2lat} directionalities. Earlier in the development, only one direction was defined with \texttt{lexd}, while the other was compiled by inverting the default direction. This brought some complications, as Cyrillic and Latin scripts are not strictly standardized. Some letters have different variations, for example the /θ/ representation, which can be ther be representated either by `ϑ'(Unicode `\texttt{U+03D1}') or `θ'(Unicode `\texttt{U+03B8}') (lower- and upper-cased variations of a symbol, for human eye it looks the same in some fonts, so it gets confused sometimes). The another example is variations of Latin /ð/, which can be represented by both `δ'(Unicode `\texttt{U+03B4}') and `ð'(Unicode `\texttt{U+00F0}') symbols, but only by `δ' for Cyrillic. The issue with having a FST definition for only a single direction is that one of the directions will always be overgenerated for all the letter variants. A real example is shown in Code block \ref{code:7_2}. The \texttt{lat2cyr} direction standardizes different /ð/ variations, while the inverted \texttt{cyr2lat} FST generates all 4 possible combinations of two /ð/ instances.
+
+\begin{code_frame}[float]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+$ lexd translit/lat2cyr.lexd | hfst-txt2fst -o translit/lat2cyr.hfst
+$ cat lat.txt | hfst-lookup -q translit/lat2cyr.hfst
+δāδān   δāδāн   0.000000
+ðāðān   δāδāн   0.000000
+$ hfst-invert translit/lat2cyr.hfst -o translit/cyr2lat.hfst
+$ echo "δāδāн" | hfst-lookup -q translit/cyr2lat.hfst
+δāδāн   ðāðān   0.000000
+δāδāн   ðāδān   0.000000
+δāδāн   δāðān   0.000000
+δāδāн   δāδān   0.000000
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A transliterator FST pair example, where one of the directions is compiled via the inversion of other.}
+    \label{code:7_2}
+\end{code_frame}
+
+It was solved by two separate \texttt{lexd} definitions for each of the directions. This approach made transliteration more flexible, as it was possible to control each direction separately. A real example of the final transliterator FST version is shown in Code block \ref{code:7_3}. Transliterator FSTs are later attached to the FST generators' output and analyzers' input. This ensures that both transliteration directions minimize variability, which prevents unnecessary overgeneration on the transliteration stage.
+
+\begin{code_frame}[float]
+    \begin{footnotesize}\codespacing
+    \begin{verbatim}
+$ lexd translit/lat2cyr.lexd | hfst-txt2fst -o translit/lat2cyr.hfst
+$ cat lat.txt | hfst-lookup -q translit/lat2cyr.hfst
+δāδān   δāδāн   0.000000
+ðāðān   δāδāн   0.000000
+$ lexd translit/cyr2lat.lexd | hfst-txt2fst -o translit/cyr2lat.hfst
+$ echo "δāδāн" | hfst-lookup -q translit/cyr2lat.hfst
+δāδāн   δāδān   0.000000
+    \end{verbatim}
+    \end{footnotesize}
+    \tcblower
+    \captionof{Code}{A transliterator FST pair example, where bith directions are compiled from individual \texttt{lexd} definitions.}
+    \label{code:7_3}
+\end{code_frame}
+
+\FloatBarrier
