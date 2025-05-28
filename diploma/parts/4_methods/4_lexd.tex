@@ -18,6 +18,7 @@ $ lexd sgh.lexd | hfst-txt2fst -o sgh_base_stem.hfst
 \end{code_frame}
 
 In the sections below I will describe some important \texttt{lexd} decisions, that had to be made. As well as general inflectional and derivational information.
+\FloatBarrier
 
 \subsubsection*{Global patterns}
 As was mentioned before, by default, \texttt{lexd} in this project is implemented with morpheme segmented wordforms. For this purpose, various wordform separators were defined (see Code block \ref{code:4_2}). These separator patterns are inserted into morphological patterns between morphemes, resulting in wordforms looking like \textit{`prefix->stem>-suffix'} by default, with hyphens and morpheme separators mixed together. This is later resolved with the help of \texttt{twol} in the compilation pipeline, as was shown in Section \ref{morpheme_borders}. The \texttt{\_morph\_hyphen\_} pattern is used for suffixes, and the \texttt{\_hyphen\_morph\_} pattern is used for prefixes.
@@ -47,6 +48,8 @@ LEXICON Adv
 \end{code_frame}
 
 There is also a global lexicon \texttt{Adv}, that contains an adverbalizer suffix `-(й)аθ', that supposedly attaches to nouns and adjectives: \textit{`půnd-aθ'}=`road-ADV' \parencite[139]{parker_shughni_2023}, \textit{`zūr-aθ'}=`great-ADV' \parencite[433]{parker_shughni_2023}. 
+
+\FloatBarrier
 
 \subsubsection*{Clitics}
 Clitics is Shughni for the most part can attach to any part of speech. For example, verbal person agreement in past tense happens with the help of PSC (Personal clitics), which attaches to the right side of the first syntactic constituent in a clause \parencite[262]{parker_shughni_2023}. This exceeds the scope of morphology, so in order to take this into account, clitics were made global, in our formal model they attach to everything. An example of clitics lexicon is shown in Code block \ref{code:4_clit_1}. The exact possible order of all different clitics is also unknown, so the final \texttt{GlobClitics} pattern contains a rule that states: `any zero to three clitics'. The downside is that this significantly increases overgeneration. There is also a prepositional clitic \textit{`ик-'}(EMPH), that is not mentioned by \textcite{parker_shughni_2023}, but is described by \textcite{karamshoev_dict_1988} that is implemented as global.
@@ -83,6 +86,8 @@ LEXICON FUT
     \captionof{Code}{A fragment of \texttt{lexd/clitics.lexd}. `\texttt{...}' is not a part of the source code, here it denotes a content skip in order to take less space and stay informative.}
     \label{code:4_clit_1}
 \end{code_frame}
+
+\FloatBarrier
 
 \subsubsection*{Nouns}
 Noun inflection implementation consists of number and case, number inflection is shown in Code block \ref{code:4_noun_1}. A plural suffix \textit{`-(й)ен'} applies to every singular noun form. Other plural suffixes only attach to different semantic categories such as in-law family members \parencite[148]{parker_shughni_2023}. Parker also lists a plural suffix \textit{`-(a)ҷев'} that applies to times of day and year, creating a meaning `in the evenings' if combined with \textit{`evening'} stem. But it conflicted with the internal unpublished glosses of the HSE expeditions to Tajikistan, where it was listed as a derivational suffix glossed `TIME'. I decided to stick to the field glosses, as these researchers are the target users of this morphological parser. 
@@ -131,6 +136,8 @@ PATTERN NounSuffix
     \captionof{Code}{A segment of \texttt{lexd/noun.lexd} showing a final noun morphological pattern.}
     \label{code:4_noun_2}
 \end{code_frame}
+
+\FloatBarrier
 
 \subsubsection*{Verbs} \label{lexd_verbs}
 There are four base verb stems in Shughni: non-past, past, infinitive and perfect ones. They can be regularly derived from one another, but there are also irregular verb stems. The regular pattern for infinitive and past stems is the addition of `-т/-д' to the non-past stem. And for the perfect stem is the addition of `-ч/ҷ' to the non-past stem \parencite[257]{parker_shughni_2023}. For the inflection, verbs can inflect in person, number, gender and negation. Everything except for gender is done via affixation, while the gender inflection is marked with stem-internal alterations \parencite[261]{parker_shughni_2023}. Gender inflection unfortunately was not implemented regularly in this work, it was done with the help of digital dictionary, that contained great amount of gender-inflected verb stems.
@@ -193,6 +200,8 @@ PerfVerbBaseMasc _morph_hyphen_ [<ptcp2>:ак]
     \label{code:4_verb_2}
 \end{code_frame}
 
+\FloatBarrier
+
 \subsubsection*{Pronouns and demonstratives}
 Demonstratives and personal pronouns' lexicons were listed manually. The implementation is for the most part straightforward, they inflect in two cases: locative `-(а)нд' and dative `-(а)рд'. A second-person plural personal pronoun can also take a `-йет'(HON) suffix, which is used to address someone honorably.
 
@@ -222,6 +231,8 @@ PATTERN IndefinitePronouns # Parker 2023 p.99
     \label{code:4_pron_1}
 \end{code_frame}
 
+\FloatBarrier
+
 \subsubsection*{Adjectives}
 Shughni adjectives besides some inflection can be derived from other parts of speech. As shown in Code block \ref{code:4_adj_1}, adjectives can be derived from noun stems with the help of suffixes like `-(й)ин'($\approx$ `made of') \parencite[169]{parker_shughni_2023}. In addition, adjectives can take noun stems to form compound adjectives like \textit{`рӯшт-куртā'}=`red.ADJ-shirt.N', resulting in an adjective meaning $\approx$`red shirt wearing' \parencite[173]{parker_shughni_2023}.
 
@@ -241,6 +252,8 @@ LexiconAdj [<adj>:] _morph_hyphen_ LexiconNoun [<n>:]
     \captionof{Code}{A \texttt{lexd/adj.lexd} fragment.}
     \label{code:4_adj_1}
 \end{code_frame}
+
+\FloatBarrier
 
 \subsubsection*{Numerals}
 Shughni employs a numeral system that contains both Shughni and Tajik borrowed lexicon \parencite[176]{parker_shughni_2023}. Both systems are widely used, so they both were implemented. No derivation or inflection is happening with numerals, except for clitic `=ат'(and) used for complex number formation when attaching to \textit{`δӣс'}(`ten') in Shughni native numeral system.

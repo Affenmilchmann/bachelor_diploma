@@ -1,0 +1,36 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Shughni}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Morphology modeling}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Existing methods}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Machine learning methods}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Rule-based methods}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Finite-state transducers}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}FST formalisms}{4}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Helsinki finite-state technology}{4}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Existing morphology models for Shughni}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Data}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Grammar descriptions}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Dictionaries}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Text corpora}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Methods}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Input and output format}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}FST compilation pipeline}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\texttt {lexd} rule declaration}{11}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}\texttt {twol} phonology}{17}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Global patterns}{17}{subsubsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.2}Verb phonology}{17}{subsubsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.3}Pronoun phonology}{18}{subsubsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.5}Stem lexicons processing}{18}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Transliteration}{19}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Lemma translation}{21}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Testing}{23}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Metrics}{25}{subsection.4.9}%
+\contentsline {subsubsection}{\numberline {4.9.1}Quantitative metrics}{25}{subsubsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.2}Qualitative metrics}{25}{subsubsection.4.9.2}%
+\contentsline {section}{\numberline {5}Results}{27}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{28}{section.6}%
+\contentsline {section}{References}{29}{section.6}%
+\contentsline {section}{Appendix}{31}{section*.59}%
+\contentsline {subsection}{Links}{31}{section*.60}%
+\contentsline {subsection}{Tables}{32}{section*.61}%

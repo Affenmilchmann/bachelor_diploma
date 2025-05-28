@@ -3037,22 +3037,170 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">./diploma/ref.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">melenchenko_2021_parser</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">osorgin_2024_twol</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">makarov_digital_2022</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">makarov_digital_2022</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">osorgin_2024_twol</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">plungian_study_2022</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">karamshoev_dialect_1963</bcf:citekey>
     <bcf:citekey order="6" intorder="1">parker_shughni_2023</bcf:citekey>
     <bcf:citekey order="7" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">karamshoev_dict_1988</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">karamshoev_dict_1988</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">makarov_digital_2022</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">karamshoev_dialect_1963</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">parker_shughni_2023</bcf:citekey>
-    <bcf:citekey order="19" int
+    <bcf:citekey order="8" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">edelman_dodykhudoeva_shughni_2009</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">devlin_2019</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">lstm_1997</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">lstm_1997</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">transformer_2017</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">transformer_2017</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">devlin_2019</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">kondratyuk_straka_model_2019</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">kondratyuk_straka_model_2019</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">Turing_1937</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">beesley_fst_2002</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">beesley_fst_2002</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">koskenniemi_twol_1983</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">karttunen_twolc_1987</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">karttunen_twolc_1987</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">karttunen_lexc_1993</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">swanson_lexd_2021</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">linden_hfst_2009</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">sarveswaran_morph_2021</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">washington_finite_2012</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">buntyakova_2023_twol</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">buntyakova_2023_twol</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">arakelova_2021_analyzer</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">budilova_2023_twol</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">budilova_2023_twol</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">karlsson_1995_cg</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">salemann_dict_1895</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">karamshoev_dialect_1963</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">karamshoev_dialect_1963</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">edelman_gram_2009</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">edelman_languages_1999</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">tumanovich_gram_1906</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">salemann_dict_1895</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">karamshoev_dialect_1963</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">karamshoev_dict_1988</bcf:citekey>
+    <bcf:citekey order="93" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">zarubin_dict_1960</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">parker_shughni_2023</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">makarov_digital_2022</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">melenchenko_2021_parser</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">karlsson_1995_cg</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="apa">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="5">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">pubstate</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+      <bcf:sortitem literal="1" order="3">-2000000000</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">month</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="7">
+      <bcf:sortitem order="1">day</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">-2000000000</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="8">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="9">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="apa/apasortcite//global/global"
+                type="entry"
+                sortingtemplatename="apa"
+                sortingnamekeytemplatename="apasortcite"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="0"
+                name="apa/global//global/global"
+                type="entry"
+                sortingtemplatename="apa"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

@@ -1,1 +1,72 @@
-\section{Results} \label{results_sec}
+\section{Results}
+The result of the morphological parser development is a set of binary FST files listed in Table \ref{Tab:all_hfst}. They are developed using HFST (Helsinki finite-state technology tools) toolset and come in two variations: \texttt{.hfst} files, listed in the table, and \texttt{.hfstol} files, an optimized lookup format, which can be compiled as shown in Code block \ref{code:make_1}. For production use, the latter is strongly recommended. 
+
+An unexpected product of this work was the script for qualitative metrics evaluation. It greatly helped during the development process, and it was decided to make an independent user-friendly version of it. The details of its work are not discussed in this work, for more information see the output of `\texttt{scripts/metrics/eval.py --help}' command.
+
+The \texttt{lexd}, \texttt{twol}, \texttt{Python} source code with all required \texttt{.hfst} and \texttt{.hfstol} building dependencies is uploaded to the \texttt{GitHub} repository hosting as a public repository under \texttt{GNU GPLv3} license. The link is listed in the \hyperref[github_repo]{Appendix: Links} Section.
+
+Final morphology parsing metrics are presented in Tables \ref{Tab:5_1}, \ref{Tab:5_2} (quantitative) and \ref{Tab:5_3} (qualitative).
+
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{|l|r|r|r|r|}
+            \hline
+            \textbf{Equality function} & \textbf{Accuracy(any)} & \textbf{F-Score} & \textbf{Precision} & 
+            \textbf{Recall} \\
+            \hline
+            \hline
+            Exact           & 0.726 & 0.390 & 0.316 & 0.510 \\
+            Stem            & 0.954 & 0.929 & 0.879 & 0.984 \\
+            POS             & 0.933 & 0.802 & 0.730 & 0.889 \\
+            Tagset          & 0.787 & 0.437 & 0.357 & 0.565 \\
+            Tagset and stem & 0.727 & 0.396 & 0.322 & 0.515 \\
+            \hline
+        \end{tabular}
+        \caption{Quality metrics evaluated using all tokens in the Gold Standard.}
+        \label{Tab:5_1}
+    \end{center}
+\end{table}
+
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{|l|r|r|r|r|}
+            \hline
+            \textbf{Equality function} & \textbf{Accuracy(any)} & \textbf{F-Score} & \textbf{Precision} & 
+            \textbf{Recall} \\
+            \hline
+            \hline
+            Exact           & 0.684 & 0.397 & 0.288 & 0.637 \\
+            Stem            & 0.918 & 0.853 & 0.770 & 0.956 \\
+            POS             & 0.885 & 0.808 & 0.719 & 0.923 \\
+            Tagset          & 0.730 & 0.447 & 0.329 & 0.698 \\
+            Tagset and stem & 0.686 & 0.411 & 0.300 & 0.648 \\
+            \hline
+        \end{tabular}
+        \caption{Quality metrics evaluated using only unique tokens in the Gold Standard.}
+        \label{Tab:5_2}
+    \end{center}
+\end{table}
+
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{|l|r|r|}
+            \hline
+            \textbf{Dataset} & \textbf{Coverage} & \textbf{Coverage absolute} \\
+            \hline
+            \hline
+            Dictionary examples         & 0.917 & 171478/186939 \\
+            Gold Standard all tokens    & 0.878 & 3279/3735 \\
+            Gold Standard unique tokens & 0.804 & 1039/1293 \\
+            \hline
+        \end{tabular}
+        \caption{Coverage metric evaluated for different datasets. `Dictionary examples' dataset was described in Section \ref{data_section}, Table \ref{Tab:all_texts}.}
+        \label{Tab:5_3}
+    \end{center}
+\end{table}
+
+\FloatBarrier
+The developed morphological parser covers a decent amount of Shughni wordforms: $87.8\%$ of native texts in Gold Standard and $91.7\%$ of tokens from the large corpus of dictionary entries' examples (see Table \ref{Tab:5_3}). As for the qualitative performance, which was measured only for the wordforms that were covered by the FST model, the morphological parser gives at least one correct answer for $72.6\%$ tokens in the Gold Standard, $51.0\%$ of all the parser's answers are correct (see Table \ref{Tab:5_1}). As also can bee seed from the table, parser shows the best performance when it comes to stemming or POS tagging, returning a correct stem in $98.4\%$ output variants (at least one correct stem for $95.4\%$ of all the tokens).
+
+The low \textit{Precision} scores (excluding POS tagging and stemming) likely reflect significant overgeneration, though this interpretation is partial since the Gold Standard is not guaranteed to contain all possible glossing variants. Thus, \textit{Precision} represents both FST overgeneration and potential gaps in the Gold Standard. Either way, of all parser output variants, only $31.6\%$ are present in the Gold Standard. 
+
+It is a strong alternative to the existing parser developed by \textcite{melenchenko_2021_parser}. It is hard to objectively compare these two tools, as Melenchenko's metrics evaluation methods and data differs from methods and data in this work. The only objective common metric is \textit{Coverage} (it is called `\textit{Recall}' in the existing work, but the evaluation method seems to match my \textit{Coverage} metric's), in which the existing parser covers $90\%$ of all tokens ($886/989$), when my solution covers $87.8\%$ ($3279/3735$) of all tokens from the data that is a superset of Melenchenko's data.

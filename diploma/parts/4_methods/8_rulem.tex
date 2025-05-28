@@ -23,7 +23,7 @@ $ cat nonsense.txt | hfst-lookup -q sgh_gen_rulem_word_cyr.hfst
     \label{code:8_1}
 \end{code_frame}
 
-The \texttt{lexd} source code pattern is shown in Code block \ref{code:8_2}. \texttt{RuLemmasBase} pattern contains lexicons grouped by POS. This ensures that homographs (wordforms with same graphical form but different meanings) with different POS will not share contexts. An example of a homograph in Shughni is \textit{`ди'}, which can stand for a verb (\textit{`hit.V.PRS/IMP'}), a demonstrative (\textit{`D2.M.SG'}) or a conjunction (=\textit{`when.CONJ'}). An example of FST with and without POS-grouping is shown in Code block \ref{code:8_3}. A wordform `\texttt{ди}', when fed into \texttt{analyze\_pos\_ignored.hfst}, where homographs are not taken into account, returns ungrammatical glosses like \textit{`когда<v>'}(`when<v>') and \textit{`этот<v>'}(`this\_one<v>'), which is an unwanted result. But when fed into \texttt{analyze\_pos\_fixed.hfst}, where translator has POS tags are glued to stems, the result contains only verbal Russian lemma `\textit{бить<v>}'(`hit<v>').
+The \texttt{lexd} source code pattern is shown in Code block \ref{code:8_2}. \texttt{RuLemmasBase} pattern contains lexicons grouped by POS. This ensures that homographs (wordforms with same graphical form but different meanings) with different POS will not share contexts. An example of a homograph in Shughni is \textit{`ди'}, which can stand for a verb (\textit{`hit.V.PRS/IMP'}), a demonstrative (\textit{`D2.M.SG'}) or a conjunction (=\textit{`when.CONJ'}). An example of FST with and without POS-grouping is shown in Code block \ref{code:8_3}. A wordform `\texttt{ди}', when fed into \texttt{analyze\_pos\_ignored.hfst}, where homographs are not taken into account, returns ungrammatical glosses like \textit{`когда<v>'}(`when<v>') and \textit{`этот<v>'}(`this\_one<v>'), which is unwanted. But when fed into \texttt{analyze\_pos\_fixed.hfst}, where translator has POS tags are glued to stems, the result contains only verbal Russian lemma `\textit{бить<v>}'(`hit<v>').
 \begin{code_frame}[float,floatplacement=h]
     \begin{footnotesize}\codespacing
     \begin{verbatim}
@@ -63,7 +63,9 @@ $ echo "мā>ди" | hfst-lookup -q analyze_pos_fixed.hfst
     \label{code:8_3}
 \end{code_frame}
 
-\subsubsection*{Translation lexicon generation} \label{stem_lexicons}
+\FloatBarrier
+
+\subsubsection*{Translation lexicon generation} \label{translation_lexicons}
 Translation lexicons (\texttt{RuLemmasAdj}, \texttt{RuLemmasConj}, etc.) are compiled using a \texttt{Python} script \texttt{scripts/ru\_lemmas/form\_lexd.py}. This FST module (\texttt{sgh2rulem.hfst}) does not share source code with the main morphology FST, so its lexicons are stored in a separate directory \texttt{translate/lexd/}. For convenience every POS lexicon is stored in a separate file under this directory. Compilation process is done by the same principle as for the main FST (see Code block \ref{code:4_1}).
 
 The biggest challenge of this process was the extraction of Russian lemmas from the database dictionary (provided by \textcite{makarov_digital_2022}). Gloss lemmas are preferred to be concise. They usually consist of a single word like (e.g. \textit{swim}) or maximum of 2-3 words (e.g. \textit{swim\_deep}) if lemma language can not describe semantics in a single word, and it is important to mention this semantic nuance. Dictionary entries in the database are parsed from real dictionaries, that were written by hand and therefore do not have a strict format. This fact makes it challenging to consistently extract perfect lemmas, some examples are presented in Table \ref{Tab:8_1}. In addition, as shown by `чи' entry, sometimes a real lemma (in this case `кто') can be hidden in the middle of a text. 

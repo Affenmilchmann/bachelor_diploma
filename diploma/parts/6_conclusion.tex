@@ -1,1 +1,6 @@
 \section{Conclusion}
+The resulted morphological parser shows a decent performance, providing a strong alternative for the existing solutions. It can surely be used for usual NLP tasks such as POS-tagging, stemming, morphological analysis, or even wordform inflection and generation, thanks to the FST ability to be inverted. 
+
+Qualitative metrics are expected to provide a representative and objective evaluation of the morphology model's performance, there is an important moment to mention. That is, the provided Gold Standard in this work is not guaranteed to contain $100\%$ accurate glosses. I cannot even subjectively evaluate how accurate the Gold Standard is, but while development and debugging I was facing questionable tokens in the Gold Standard from time to time. I made a principal decision not to edit the Gold Standard in any way.
+
+The future possible work including this morphological parser can include an integration with Constrain Grammar (CG) formalism \parencite{karlsson_1995_cg}. It will add a possibility to take into account the syntactic aspect of the language and apply disambiguation, which will filter out syntactically invalid gloss variants, given wordform's context.

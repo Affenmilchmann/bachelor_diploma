@@ -8,20 +8,23 @@ $N_{recognized}$ does not take into account if the given glosses are correct. It
 
 The evaluation is done via a \texttt{Python} script \texttt{scripts/coverage/eval.py}. It reads Shughni plain text from \texttt{stdin}, which must be cleared of all punctuation. Then the script tokenizes it and feeds every token to the FST. Input texts come both in Cyrillic and Latin scripts, so the script detects writing system and calls corresponding FST variation (\texttt{sgh\_analyze\_stem\_word\_cyr.hfst} or \texttt{sgh\_analyze\_stem\_word\_lat.hfst}). The script also calculates 5 most frequent unrecognized words and most frequent unrecognized morphemes (it considers any hyphen-separated word fragments as morphemes). An example of its work is shown in the Section \ref{results_sec}.
 
-\subsubsection*{Qualitative metrics}
+\subsubsection{Qualitative metrics}
+By the Gold Standard \texttt{.eaf} dataset described in Section \ref{text_corpora} is assumed. The punctuation is filtered out, as well as tokens with no glosses or which glosses fail to be parsed.
+
 There are four qualitative metrics: \textit{Precision}, \textit{Recall}, \textit{F-Score} and \textit{Accuracy(any)}. The first three metrics are evaluated conventionally:
 
 \[Precision = \frac{TP}{TP + FP};\ 
 Recall = \frac{TP}{TP + FN};\ 
 FScore = \frac{2*Precision*Recall}{Precision + Recall}\]
 
-Where \texttt{TP} = `\textit{True positive}', \texttt{FP} = `\textit{False positive}' and \texttt{FN} = `\textit{False negative}'. The principle of these values' evaluation by \texttt{scripts/metrics/eval.py} is the following: 
+Where \texttt{TP} = `\textit{True positive}', \texttt{FP} = `\textit{False positive}' and \texttt{FN} = `\textit{False negative}'. The algorithm of these values' evaluation by \texttt{scripts/metrics/eval.py} is the following: 
+\begin{samepage}
 \begin{enumerate}
     \item The script loads the Gold Standard's pairs of wordforms and glossed strings
-    \item For each unique wordform$_i$:
+    \item For each wordform$_i$ in the Gold Standard:
     \begin{enumerate}
-        \item all possible Gold Standard's glossed strings are gathered for wordform$_i$ ($=G_i$)
-        \item wordform$_i$ is fed into a FST analyzer and all possible predicted glossed strings are gathered ($=P_i$)
+        \item all possible Gold Standard's glossed strings are gathered for the wordform$_i$ ($=G_i$)
+        \item the wordform$_i$ is fed into a FST analyzer and all predicted glossed strings are gathered ($=P_i$)
         \item the following is calculated: \\
         $TP_i = |G_i \cap P_i|$ (amount of elements in intersection)\\
         $FN_i = |G_i \setminus P_i|$ (amount of elements in $G_i$ that are not in $P_i$)\\
@@ -29,27 +32,59 @@ Where \texttt{TP} = `\textit{True positive}', \texttt{FP} = `\textit{False posit
     \end{enumerate}
     \item Total $TP$, $FN$ and $FP$ are calculated from the sum of respective $TP_i$, $FN_i$ and $FP_i$
 \end{enumerate}
+\end{samepage}
 
-In other words, $TP$, $FP$ and $FN$ can be thought of as following:
-\begin{itemize}
-    \item $TP$: a glossed string is present both in gold standard and FST output.
-    \item $FP$: a glossed string is present in FST output but not in gold standard.
-    \item $FN$: a glossed string is present in gold standard but not in FST output.
-\end{itemize}
+This algorithm is applied to the Gold Standard two times: one for all the tokens, which contain duplicates, and the second time it is applied to the unique tokens, that contain to duplicates. All metrics are calculated separately for these two token sets.
+
+In other words, $TP$, $FP$ and $FN$ can be represented as shown in Table \ref{Tab:10_1}. Notice, that $FP$ cell is left empty. This is due to the fact that in this work I do not possess negative Gold Standard entries, that represent ungrammatical examples. With this in mind, \textit{Precision} metric can be thought of as `the fraction of FST's correct answers', and \textit{Recall} can be interpreted as `the fraction of covered Gold Standard glossed string variants by FST'. \textit{Precision} can also represent the overgeneration, if Gold Standard is guaranteed to contain all grammatical glossed strings of the wordforms. This is not the case in this project, so the \textit{Precision} metric only partially represents the overgeneration degree.
 
 \begin{table}[!htbp]
     \begin{center}
-        \begin{tabular}{|l||c|c|}
+        \begin{tabular}{|l|c|c|}
             \hline
             \diagbox{FST output}{Gold standard} & Present & Not present \\
-            \hline
             \hline
             Present & TP & FP \\
             \hline
             Not present & FN & - \\
             \hline
         \end{tabular}
-        \caption{textit{TP}, \textit{FP} and \textit{FN} interpretations.}
+        \caption{\textit{TP}, \textit{FP} and \textit{FN} interpretations.}
         \label{Tab:10_1}
     \end{center}
 \end{table}
+
+Multiple variations of equality function metric is implemented. An equality function is a \textit{boolean} function that determines if two glossed string variants are considered equal. A full list of measured equality function variants is provided in Table \ref{Tab:10_2}.
+
+\begin{table}[!htbp]
+    \begin{center}
+        \begin{tabular}{|p{6cm}|p{4cm}|p{5cm}|}
+            \hline
+            \textbf{Equality function variant} & \textbf{Match conditions} & \textbf{Match example} \\
+            \hline
+            \hline
+            \texttt{Exact} & strings are equal & \makecell{\texttt{amīn<n>><sup>} \\ $=$ \\ \texttt{amīn<n>><sup>}} \\
+            \hline
+            \texttt{Stem} & stems are equal & \makecell{\texttt{amīn<n>><sup>} \\ $=$ \\ \texttt{<neg>>amīn<v>><1sg>}} \\
+            \hline
+            \texttt{POS} & part of speech tag matches & \makecell{\texttt{amīn<n>><sup>} \\ $=$ \\ \texttt{kūdak<n>}} \\
+            \hline
+            \texttt{Tagset} & The set of tags matches independently of order & \makecell{\texttt{amīn<dem><d3><pl>} \\ $=$ \\ \texttt{wāδ<d3><pl><dem>}} \\
+            \hline
+            \texttt{Tagset and stem} & \texttt{Stem} and \texttt{Tagset} & \makecell{\texttt{wāδ<dem><d3><pl>} \\ $=$ \\ \texttt{wāδ<d3><pl><dem>}} \\
+            \hline
+        \end{tabular}
+        \caption{Caption}
+        \label{Tab:10_2}
+    \end{center}
+\end{table}
+
+\FloatBarrier
+\subsubsection*{Accuracy(any)}
+The \textit{Accuracy(any)} metric is a custom metric that I thought would be helpful to have. It simply represents how many times FST returned \textbf{at least one} correct glossed string. Its formula is shown below:
+
+\[Accuracy(any) = \frac{N_{any\_correct}}{N_{recognized}}\]
+
+$N_{recognized}$ is the same as it is in the \textit{Coverage} formula, $N_{any\_correct}$ is simply the amount of tokens that fulfill the condition $TP_i>0$.
+
+\FloatBarrier
