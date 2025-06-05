@@ -1,22 +1,22 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [1] Config.pm:309> INFO - Logfile is './diploma/tmp/diploma.blg'
-[167] biber:340> INFO - === Ср мая 28, 2025, 19:13:56
-[190] Biber.pm:418> INFO - Reading './diploma/tmp/diploma.bcf'
-[422] Biber.pm:978> INFO - Found 30 citekeys in bib section 0
-[446] Biber.pm:4401> INFO - Processing section 0
-[460] Biber.pm:4592> INFO - Looking for bibtex file './diploma/ref.bib' for section 0
-[463] bibtex.pm:1713> INFO - LaTeX decoding ...
-[508] bibtex.pm:1518> INFO - Found BibTeX data source './diploma/ref.bib'
-[874] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[874] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[874] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[874] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[956] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[956] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[956] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
-[956] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[1000] bbl.pm:654> INFO - Writing './diploma/tmp/diploma.bbl' with encoding 'UTF-8'
-[1071] bbl.pm:757> INFO - Output to ./diploma/tmp/diploma.bbl
-[1071] Biber.pm:130> WARN - legacy month field 'may' in entry 'washington_finite_2012' is not an integer - this will probably not sort properly.
-[1071] Biber.pm:130> WARN - legacy year field '1988--1999' in entry 'karamshoev_dict_1988' is not an integer - this will probably not sort properly.
-[1071] Biber.pm:132> INFO - WARNINGS: 2
+[203] biber:340> INFO - === Чт июн  5, 2025, 13:07:55
+[227] Biber.pm:418> INFO - Reading './diploma/tmp/diploma.bcf'
+[349] Biber.pm:978> INFO - Found 30 citekeys in bib section 0
+[373] Biber.pm:4401> INFO - Processing section 0
+[388] Biber.pm:4592> INFO - Looking for bibtex file './diploma/ref.bib' for section 0
+[390] bibtex.pm:1713> INFO - LaTeX decoding ...
+[430] bibtex.pm:1518> INFO - Found BibTeX data source './diploma/ref.bib'
+[839] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[839] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[839] Biber.pm:4221> INFO - Sorting list 'apa/apasortcite//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[839] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[940] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[940] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[940] Biber.pm:4221> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-US'
+[940] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[1017] bbl.pm:654> INFO - Writing './diploma/tmp/diploma.bbl' with encoding 'UTF-8'
+[1083] bbl.pm:757> INFO - Output to ./diploma/tmp/diploma.bbl
+[1083] Biber.pm:130> WARN - legacy month field 'may' in entry 'washington_finite_2012' is not an integer - this will probably not sort properly.
+[1083] Biber.pm:130> WARN - legacy year field '1988--1999' in entry 'karamshoev_dict_1988' is not an integer - this will probably not sort properly.
+[1083] Biber.pm:132> INFO - WARNINGS: 2
